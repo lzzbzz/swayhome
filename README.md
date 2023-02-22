@@ -1,3 +1,0 @@
-## dotfiles
-
-managed with `yadm`.
