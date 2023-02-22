@@ -1,0 +1,5 @@
+xdg_open = false
+
+[display]
+show_icons = false
+show_borders = false
