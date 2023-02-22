@@ -1,0 +1,34 @@
+[commit]
+	gpgsign = true
+
+[core]
+	editor = hx
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	required = true
+	smudge = git-lfs smudge -- %f
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[status]
+	short = true
+
+[url "git@git.sr.ht:"]
+	insteadOf = https://git.sr.ht/
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
+
+[user]
+	email = hervyqa@proton.me
+	name = Hervy Qurrotul Ainur Rozi
+	signingKey = 85161EB8
