@@ -1,3 +1,0 @@
-<profiles version="1">
- <profile speeds="preset=veryslow" category="Generic (HD for web, mobile devices...)" name="MP4-H264/AAC Instagram Reels" extension="mp4" defaultaudioquality="0" defaultaudiobitrate="260" args="f=mp4 vcodec=libx264 width=720 height=1280 display_aspect_num=9 display_aspect_den=16 frame_rate_num=30 frame_rate_den=1 crf=%quality vmaxrate=%bitrate+'k' g=15 bf=0 acodec=aac ab=%audiobitrate+'k'" defaultquality="23" defaultbitrate="3500"/>
-</profiles>

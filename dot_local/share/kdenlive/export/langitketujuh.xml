@@ -1,0 +1,14 @@
+<profiles version="0.1">
+ <group name="LangitKetujuh Social Media (mobile)" renderer="avformat" type="av">
+  <profile name="MP4-H264/AAC Instagram Reels (720p) - (Default)"
+   speeds="preset=veryslow" extension="mp4"
+   defaultaudioquality="0" defaultaudiobitrate="260"
+   args="f=mp4 vcodec=libx264 width=1280 height=720 display_aspect_num=9 display_aspect_den=16 frame_rate_num=30 frame_rate_den=1 crf=%quality vmaxrate=%bitrate+'k' g=15 bf=0 acodec=aac ab=%audiobitrate+'k' movflags=+faststart pix_fmt=yuv420p real_time=-1 threads=0"
+   defaultquality="23" defaultbitrate="3500"/>
+  <profile name="MP4-H264/AAC Instagram Reels (1080p)"
+   speeds="preset=veryslow" extension="mp4"
+   defaultaudioquality="0" defaultaudiobitrate="260"
+   args="f=mp4 vcodec=libx264 width=1920 height=1080 display_aspect_num=9 display_aspect_den=16 frame_rate_num=30 frame_rate_den=1 crf=%quality vmaxrate=%bitrate+'k' g=15 bf=0 acodec=aac ab=%audiobitrate+'k' movflags=+faststart pix_fmt=yuv420p real_time=-1 threads=0"
+   defaultquality="23" defaultbitrate="3500"/>
+ </group>
+</profiles>
