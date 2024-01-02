@@ -1,0 +1,103 @@
+{
+  config,
+  pkgs,
+  ...
+}: let
+  name = "hervyqa";
+in {
+  home-manager = {
+    users.${name} = {
+      home = {
+        packages = with pkgs; [
+          (
+            python3.withPackages (
+              ps:
+                with ps; [
+                  appdirs
+                  astroid
+                  beautifulsoup4
+                  bokeh
+                  cairosvg
+                  catboost
+                  chispa
+                  cycler
+                  cython
+                  dash
+                  dask
+                  django
+                  fastapi
+                  flask
+                  gensim
+                  glueviz
+                  graphviz
+                  h5py
+                  hiredis
+                  imbalanced-learn
+                  ipython
+                  jedi
+                  jupyterlab
+                  jupyterlab-widgets
+                  jupyterlab-pygments
+                  jupyterlab-lsp
+                  jupyterlab-git
+                  kaggle
+                  keras
+                  mahotas
+                  matplotlib
+                  mido
+                  mkdocs
+                  mkdocs-material
+                  mkdocs-material-extensions
+                  mkdocs-minify
+                  mutagen
+                  nltk
+                  nose
+                  notebook
+                  numpy
+                  opencv4
+                  orange3
+                  pandas
+                  pendulum
+                  pillow
+                  pip
+                  pipenv
+                  plotly
+                  pytorch
+                  pydot
+                  pygobject3
+                  pymongo
+                  pyspark
+                  pytest
+                  redis
+                  requests
+                  scikit-learn
+                  scikitimage
+                  scipy
+                  scrapy
+                  seaborn
+                  selenium
+                  simpleitk
+                  six
+                  sphinx
+                  spyder
+                  statsmodels
+                  sympy
+                  torch
+                  torchaudio
+                  torchvision
+                  tox
+                  tqdm
+                  transformers
+                  virtualenv
+                  wheel
+                  xarray
+                  xgboost
+                  yt-dlp
+                ]
+            )
+          )
+        ];
+      };
+    };
+  };
+}
