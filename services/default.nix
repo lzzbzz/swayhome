@@ -4,11 +4,9 @@
     ./clickhouse
     ./dnscrypt
     ./earlyoom
-    ./espanso
     ./fstrim
     ./grafana
     ./hdapsd
-    ./jupyter
     ./metabase
     ./mongodb
     ./mysql
