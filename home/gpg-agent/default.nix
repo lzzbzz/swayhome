@@ -7,9 +7,11 @@
 in {
   home-manager = {
     users.${name} = {
-      programs = {
-        gpg = {
+      services = {
+        gpg-agent = {
           enable = true;
+          enableFishIntegration = true;
+          enableSshSupport = true;
         };
       };
     };
