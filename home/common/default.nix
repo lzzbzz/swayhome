@@ -112,6 +112,9 @@ in {
           luaformatter
           z-lua
 
+          # root
+          root
+
           # theme
           qt5ct
           themechanger
