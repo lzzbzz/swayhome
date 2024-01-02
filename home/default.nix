@@ -32,6 +32,7 @@ in {
     ./python
     ./qutebrowser
     ./rstudio
+    ./ssh-agent
     ./sway
     ./swaylock
     ./swayosd
