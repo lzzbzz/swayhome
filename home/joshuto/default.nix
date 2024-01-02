@@ -13,8 +13,8 @@ in {
           settings = {
             numbered_command = false;
             scroll_offset = 3;
-            show_borders = true;
-            use_trash = false;
+            show_borders = false;
+            use_trash = true;
             watch_files = true;
             xdg_open = true;
             xdg_open_fork = false;
