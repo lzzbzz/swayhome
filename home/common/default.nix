@@ -11,52 +11,52 @@ in {
         packages = with pkgs; [
           # base
           autotiling # auto tiling for i3/sway
-          babelfish
-          bat
+          babelfish # convert bash to fish shell
+          bat # alternative of cat
           clinfo
           direnv
           dmidecode
-          duf
+          duf # alternate du
           efibootmgr
           exiftool
-          fastfetch
-          ffmpeg
-          ghostscript
-          git
+          fastfetch # show your current hardware
+          ffmpeg # convert video
+          ghostscript # convert pdf document
           glib # gsettings
           glxinfo
           grim # screenshot functionality
-          imagemagick
-          inxi
+          imagemagick # convert image
+          inxi # info for device specification
           jq
           kanshi # dynamic display configuration tool
-          lshw
+          lshw # show your current hardware
           marksman
-          mediainfo
-          odt2txt
+          mediainfo # info for image file
+          odt2txt # convert odt to txt
           pamixer # audio volume
-          pandoc
+          pandoc # convert document
           pcmanfm # file manager gtk
-          scour
-          scrcpy
+          qimgv # qt image viewer
+          scour # compress svg
+          scrcpy # mirroring device
           slurp # screenshot functionality
           swayidle # idle management daemon
           swaykbdd # per-window keyboard layout for sway
           swaylock # lockscreen sway
-          translate-shell
-          upterm
-          ventoy
+          translate-shell # translate via google api
+          upterm # remote console
+          ventoy # cerate usb bootable
           vulkan-tools
-          w3m
+          w3m # image viewer
           wayland-utils
           wdisplays # configuring displays
           wf-recorder # screen recording
-          wget
-          wl-clipboard
+          wget # cli downloader
+          wl-clipboard # copy for wayland
           wmctrl # interact netwm x wm
           wvkbd # on-screen keyboard for wlroots
           xdg-utils # for opening default programs when clicking links
-          xlsx2csv
+          xlsx2csv # convert xlsx to csv
 
           # archiver
           atool
