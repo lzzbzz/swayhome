@@ -25,6 +25,7 @@ in {
     ./latex
     ./lazygit
     ./mako
+    ./micro
     ./mpd
     ./mpv
     ./neovim
