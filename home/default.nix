@@ -19,6 +19,7 @@ in {
     ./gpg-agent
     ./helix
     ./htop
+    ./imv
     ./java
     ./joshuto
     ./latex
