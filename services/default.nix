@@ -11,6 +11,7 @@
     ./mongodb
     ./mysql
     ./openssh
+    ./pcscd
     ./pipewire
     ./postgresql
     ./power-profiles
