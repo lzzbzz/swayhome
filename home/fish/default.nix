@@ -63,8 +63,8 @@ in {
             gbl = "git blame -b -w";
             gbr = "git branch --remote";
 
-            gcm = "git commit -m";
-            gcam = "git commit --amend";
+            gcm = "git commit -S -m";
+            gcam = "git commit S --amend";
 
             gcb = "git checkout -b";
             gck = "git checkout main";
