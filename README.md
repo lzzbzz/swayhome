@@ -17,8 +17,6 @@ cd swayhome
 
 - Configuration
 
-## Symlink to `/etc`
-
 ```sh
 sudo mv /etc/configuration.nix /etc/configuration.nix.backup
 sudo ln -s $PWD/configuration.nix /etc/nixos/
@@ -47,6 +45,9 @@ version = "24.05";
 ```
 
 ## Build configuration
+
+This dotfile is installed with the nixos module. There is no need to run 
+`home-manager switch`, because it has unified the system and user configuration automatically.
 
 ```sh
 sudo nixos-rebuild switch
