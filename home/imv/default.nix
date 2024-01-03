@@ -11,6 +11,10 @@ in {
         imv = {
           enable = true;
           settings = {
+            options = {
+              fullscreen = true;
+              recursively = true;
+            };
           };
         };
       };
