@@ -51,7 +51,6 @@ in {
                 { command = "hx"; }
                 { command = "nvim"; }
                 { command = "micro"; }
-                { command = "gedit"; fork = true; silent = true; }
                 { command = "bat"; args = [ "--paging=always" ]; }
               ];
 
@@ -207,7 +206,6 @@ in {
                 { command = "nvim"; }
                 { command = "micro"; }
                 { command = "mpv"; silent = true; }
-                { command = "gedit"; fork = true; silent = true; }
                 { command = "bat"; confirm_exit = true; }
               ];
 
@@ -237,7 +235,6 @@ in {
                 { command = "hx"; }
                 { command = "nvim"; }
                 { command = "micro"; }
-                { command = "gedit"; fork = true; silent = true; }
                 { command = "bat"; confirm_exit = true; }
                 { command = "pdflatex"; silent = true; }
               ];
