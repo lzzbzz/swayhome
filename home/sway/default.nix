@@ -1,8 +1,13 @@
 {
   config,
+  lib,
+  option,
   pkgs,
   ...
-}: let
+}:
+with lib;
+with pkgs;
+let
   name = "hervyqa";
   mod = "Mod4";
 in {
@@ -16,8 +21,6 @@ in {
               gaps = {
                 inner = 10;
               };
-              menu = "${pkgs.dmenu}/bin/dmenu}";
-              terminal = "${pkgs.foot}/bin/foot}";
               modifier = "${mod}";
               window.border = 0;
               bars = [{
@@ -49,8 +52,26 @@ in {
                 };
               };
               startup = [
-                { command = "autotiling"; always = true; }
+                { command = "autotiling"; }
               ];
+              keybindings = let
+                modifier = config.wayland.windowManager.sway.config.modifier;
+              in mkOptionDefault {
+                # audio control
+                "XF86AudioRaiseVolume" = "exec swayosd --output-volume 2";
+                "XF86AudioLowerVolume" = "exec swayosd --output-volume -2";
+                "XF86AudioMute" = "exec swayosd --output-volume mute-toggle";
+                "XF86AudioMicMute" = "exec swayosd --input-volume mute-toggle";
+                # brightness
+                "XF86MonBrightnessUp" = "exec swayosd --brightness 2";
+                "XF86MonBrightnessDown" = "exec swayosd --brightness -2";
+                # print+copy
+                "Print" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+Shift" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                # print+save
+                "Print+${mod}" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+Shift+${mod}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
+              };
             };
             swaynag = {
               enable = true;
