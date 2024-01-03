@@ -17,6 +17,7 @@ in {
           userEmail = "${email}";
           userName = "${fullname}";
           signing = {
+            signByDefault = true;
             key = "${signingkey}";
           };
           lfs = {
