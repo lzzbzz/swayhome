@@ -14,6 +14,7 @@ in {
             numbered_command = false;
             scroll_offset = 3;
             show_borders = false;
+            use_preview_script = true;
             use_trash = true;
             watch_files = true;
             xdg_open = true;
@@ -24,7 +25,7 @@ in {
             };
 
             preview = {
-              max_preview_size = 2097152;
+              max_preview_size = 50000097152;
               preview_script = "${./preview_file.sh}";
             };
           };
