@@ -12,7 +12,7 @@ in {
           enable = true;
           settings = {
             mainBar = {
-              layer = "top";
+              layer = "bottom";
               position = "top";
               height = 15;
               spacing = 0;
