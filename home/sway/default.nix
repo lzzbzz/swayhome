@@ -4,6 +4,7 @@
   ...
 }: let
   name = "hervyqa";
+  mod = "Mod4";
 in {
   home-manager = {
     users.${name} = {
@@ -15,21 +16,31 @@ in {
               gaps = {
                 inner = 10;
               };
-              menu = "wofi --show run";
-              modifier = "Mod4";
+              menu = "${pkgs.dmenu}/bin/dmenu}";
+              terminal = "${pkgs.foot}/bin/foot}";
+              modifier = "${mod}";
+              window.border = 0;
+              bars = [{
+                command = "waybar";
+              }];
+              floating = {
+                modifier = "${mod}";
+                border = 0;
+              };
+              focus = {
+                forceWrapping = false;
+                followMouse = false;
+              };
               fonts = {
                 names = ["monospace"];
                 size = 8.0;
               };
-              bars = [{
-                command = "waybar";
-              }];
               input = {
                 "type:touchpad" = {
-                    dwt = "enabled";
-                    tap = "enabled";
-                    natural_scroll = "enabled";
-                    middle_emulation = "enabled";
+                  dwt = "enabled";
+                  tap = "enabled";
+                  natural_scroll = "enabled";
+                  middle_emulation = "enabled";
                 };
               };
               output = {
@@ -37,7 +48,9 @@ in {
                   bg = "${./../../image/wallpaper.jpg} fill";
                 };
               };
-              terminal = "foot";
+              startup = [
+                { command = "autotiling"; always = true; }
+              ];
             };
             swaynag = {
               enable = true;
