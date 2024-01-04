@@ -66,11 +66,11 @@ in {
                 "XF86MonBrightnessUp" = "exec swayosd --brightness 2";
                 "XF86MonBrightnessDown" = "exec swayosd --brightness -2";
                 # print+copy
-                "Print" = ''exec ${grim}/bin/grim -l 0 -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png'';
-                "Print+Shift" = ''exec ${grim}/bin/grim -l 0 - | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+Shift" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png'';
                 # print+save
-                "Print+${mod}" = ''exec ${grim}/bin/grim -l 0 -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
-                "Print+Shift+${mod}" = ''exec ${grim}/bin/grim -l 0 | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+${mod}" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+Shift+${mod}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
               };
             };
             swaynag = {
