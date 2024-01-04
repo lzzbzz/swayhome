@@ -43,9 +43,9 @@
     ];
     fontconfig = {
       defaultFonts = {
-        monospace = ["Noto Sans Mono" "Source Code Pro"];
-        serif = ["Noto Serif" "Source Serif Pro"];
-        sansSerif = ["Noto Sans" "Source Sans Pro"];
+        monospace = ["Monospace" "Noto Sans Mono" "Source Code Pro"];
+        serif = ["Monospace" "Noto Serif" "Source Serif Pro"];
+        sansSerif = ["Monospace" "Noto Sans" "Source Sans Pro"];
         emoji = ["Noto Color Emoji"];
       };
     };
