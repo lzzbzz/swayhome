@@ -38,6 +38,7 @@ in {
     ./ssh-agent
     ./sway
     ./swaylock
+    ./swayidle
     ./swayosd
     ./theme
     ./unixodbc

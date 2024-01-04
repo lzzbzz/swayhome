@@ -39,9 +39,7 @@ in {
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
-          swayidle # idle management daemon
           swaykbdd # per-window keyboard layout for sway
-          swaylock # lockscreen sway
           translate-shell # translate via google api
           upterm # remote console
           ventoy # cerate usb bootable
