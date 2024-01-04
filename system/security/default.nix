@@ -10,6 +10,11 @@ in {
     rtkit = {
       enable = true;
     };
+    pam = {
+      services = {
+        swaylock = {};
+      };
+    };
     sudo = {
       enable = true;
       wheelNeedsPassword = false;
