@@ -3,8 +3,8 @@
 Configuration of Nixos operating system with Sway DE (disk
 encrypted) for Hobbyist.
 
-![image](image/grim_1.png)
-![image](image/grim_2.png)
+![image](image/grim_1.webp)
+![image](image/grim_2.webp)
 
 ## Installation
 
