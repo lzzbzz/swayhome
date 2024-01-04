@@ -66,9 +66,9 @@ in {
                 tooltip-format = "{app}: {title}";
               };
               "mpd" = {
-                format = "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon} ({elapsedTime:%M:%S}/{totalTime:%M:%S})";
+                format = "{stateIcon} {randomIcon}({elapsedTime:%M:%S}/{totalTime:%M:%S})";
                 format-disconnected = "Disconnected ";
-                format-stopped = "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ";
+                format-stopped = "{randomIcon}Stopped ";
                 unknown-tag = "N/A";
                 interval = 2;
                 consume-icons = {
@@ -100,7 +100,7 @@ in {
               };
               "tray" = {
                 # icon-size = 21;
-                spacing = 10;
+                spacing = 5;
               };
               "clock" = {
                 timezone = "Asia/Jakarta";
