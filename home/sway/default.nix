@@ -24,7 +24,7 @@ in {
               modifier = "${mod}";
               window.border = 0;
               bars = [{
-                command = "waybar";
+                command = "${waybar}/bin/waybar";
               }];
               floating = {
                 modifier = "${mod}";
