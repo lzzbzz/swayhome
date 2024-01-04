@@ -22,6 +22,7 @@ in {
     ./imv
     ./java
     ./joshuto
+    ./kanshi
     ./latex
     ./lazygit
     ./mako
