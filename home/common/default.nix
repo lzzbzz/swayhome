@@ -28,7 +28,6 @@ in {
           imagemagick # convert image
           inxi # info for device specification
           jq
-          kanshi # dynamic display configuration tool
           lshw # show your current hardware
           marksman
           mediainfo # info for image file
