@@ -24,10 +24,16 @@ sudo ln -s $PWD/configuration.nix /etc/nixos/
 
 - Home manager
 
+I am using stable release version `23.11`, home-manager is also using the same version.
+Make sure the system and home-manager also use the same version.
+
 ```sh
-sudo ix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+sudo ix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager
 sudo nix-channel --update
 ```
+
+If using a different version, please replace `stateVersion` variables from
+`home/default.nix` (home-manager) and `system/system/default.nix` (nixos).
 
 - Change variable
 
@@ -41,16 +47,31 @@ extralocale = "id_ID.UTF-8";
 layout = "us";
 gpgkey = "C10684E03E228DC0";
 hostname = "nixos";
-version = "24.05";
+version = "23.11";
 ```
 
-## Build configuration
+## How to build
 
-This dotfile is installed with the nixos module. There is no need to run 
-`home-manager switch`, because it has unified the system and user configuration automatically.
+This dotfile is installed with the nixos module.
+There is no need to run `home-manager switch`
+because the system and user configuration are built together.
 
 ```sh
 sudo nixos-rebuild switch
+```
+
+For next build, i prefer using `doas` as an alternative to `sudo`.
+
+```sh
+doas nixos-rebuild switch
+
+```
+
+Or using `nrs` from fish abbreviation.
+More info: `home/fish/default.nix`
+
+```sh
+nrs
 ```
 
 ## License
