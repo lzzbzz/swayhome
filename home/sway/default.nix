@@ -17,8 +17,6 @@ in {
         windowManager = {
           sway = {
             enable = true;
-            extraPackages = with pkgs; [
-            ];
             config = {
               gaps = {
                 inner = 10;
@@ -54,7 +52,7 @@ in {
                 };
               };
               startup = [
-                { command = "autotiling"; }
+                { command = "${autotiling}/bin/autotiling"; }
               ];
               keybindings = let
                 modifier = config.wayland.windowManager.sway.config.modifier;

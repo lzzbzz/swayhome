@@ -10,7 +10,6 @@ in {
       home = {
         packages = with pkgs; [
           # base
-          autotiling # auto tiling for i3/sway
           babelfish # convert bash to fish shell
           bat # alternative of cat
           clinfo
