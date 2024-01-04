@@ -49,6 +49,7 @@ in {
             nel = "doas nix-env -p /nix/var/nix/profiles/system --list-generations";
             ned = "doas nix-env -p /nix/var/nix/profiles/system --delete-generations old";
 
+            ncl = "doas nix-channel --list";
             ncu = "doas nix-channel --update";
             nrd = "doas nixos-rebuild dry-build";
             nrs = "doas nixos-rebuild switch";
