@@ -11,7 +11,7 @@ in {
         qutebrowser = {
           enable = true;
           settings = {
-            tabs.tabs_are_windows = true;
+            tabs.tabs_are_windows = false;
             scrolling.smooth = true;
             zoom.default = 90;
             colors = {
