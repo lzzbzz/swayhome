@@ -24,11 +24,11 @@ sudo ln -s $PWD/configuration.nix /etc/nixos/
 
 - Home manager
 
-I am using stable release version `23.11`, home-manager is also using the same version.
-Make sure the system and home-manager also use the same version.
+I am using stable release version `23.11`, home-manager is also using the same
+version. Make sure the system and home-manager also use the same version.
 
 ```sh
-sudo ix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager
+sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager
 sudo nix-channel --update
 ```
 
