@@ -30,7 +30,6 @@ in {
       QT_QPA_PLATFORM="wayland";
       QT_QPA_PLATFORMTHEME = "qt5ct";
       QT_WAYLAND_DISABLE_WINDOWDECORATION="1";
-      QTWEBENGINE_CHROMIUM_FLAGS = "--force-dark-mode";
     };
   };
 }
