@@ -33,11 +33,11 @@ in {
                 };
                 selected = {
                   even = {
-                    bg = "#263741";
+                    bg = "#31363b";
                     fg = "#fcfcfc";
                   };
                   odd = {
-                    bg = "#263741";
+                    bg = "#31363b";
                     fg = "#fcfcfc";
                   };
                 };
