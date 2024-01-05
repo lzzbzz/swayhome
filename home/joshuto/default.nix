@@ -33,34 +33,92 @@ in {
           mimetype = {
             class = {
               audio_default = [
-                { command = "mpv"; args = [ "--" ]; }
-                { command = "mediainfo"; confirm_exit = true; }
+                {
+                  command = "mpv";
+                  args = [ "--" ];
+                }
+                {
+                  command = "mediainfo";
+                  confirm_exit = true;
+                }
               ];
               image_default = [
-                { command = "imv"; args = [ "--" ]; fork = true; silent = true; }
-                { command = "qimgv"; args = [ "--" ]; fork = true; silent = true; }
-                { command = "krita"; args = [ "--" ]; fork = true; silent = true; }
-                { command = "exiftool"; confirm_exit = true; }
-                { command = "swappy"; args = [ "-f" ]; fork = true; }
+                {
+                  command = "imv";
+                  args = [ "--" ];
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "qimgv";
+                  args = [ "--" ];
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "krita";
+                  args = [ "--" ];
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "exiftool";
+                  confirm_exit = true;
+                }
+                {
+                  command = "swappy";
+                  args = [ "
+                  f" ]; fork = true;
+                }
               ];
               video_default = [
-                { command = "mpv"; args = [ "--" ]; fork = true; silent = true; }
-                { command = "mediainfo"; confirm_exit = true; }
-                { command = "mpv"; args = [ "--mute" "on" "--" ]; fork = true; silent = true; }
+                {
+                  command = "mpv";
+                  args = [ "--" ];
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "mediainfo";
+                  confirm_exit = true;
+                }
+                {
+                  command = "mpv";
+                  args = [ "--mute" "on" "--" ];
+                  fork = true;
+                  silent = true;
+                }
               ];
               text_default = [
-                { command = "hx"; }
-                { command = "nvim"; }
-                { command = "micro"; }
-                { command = "bat"; args = [ "--paging=always" ]; }
+                {
+                  command = "hx";
+                }
+                {
+                  command = "nvim";
+                }
+                {
+                  command = "micro";
+                }
+                {
+                  command = "bat";
+                  args = [ "--paging=always" ];
+                }
               ];
 
               reader_default = [
-                { command = "zathura"; fork = true; silent = true; }
+                {
+                  command = "zathura";
+                  fork = true;
+                  silent = true;
+                }
               ];
 
               libreoffice_default = [
-                { command = "libreoffice"; fork = true; silent = true; }
+                {
+                  command = "libreoffice";
+                  fork = true;
+                  silent = true;
+                }
               ];
             };
 
@@ -80,12 +138,28 @@ in {
               webp."inherit" = "image_default";
 
               svg.app_list = [
-                { command = "inkview"; fork = true; silent = true; }
-                { command = "inkscape"; fork = true; silent = true; }
+                {
+                  command = "inkview";
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "inkscape";
+                  fork = true;
+                  silent = true;
+                }
               ];
               tiff.app_list = [
-                { command = "qimgv"; fork = true; silent = true; }
-                { command = "krita"; fork = true; silent = true; }
+                {
+                  command = "qimgv";
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "krita";
+                  fork = true;
+                  silent = true;
+                }
               ];
 
               ## audio formats
@@ -165,49 +239,128 @@ in {
 
               # archive formats
               "7z".app_list = [
-                { command = "7z"; args = [ "x" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "7z";
+                  args = [ "x" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               bz2.app_list = [
-                { command = "tar"; args = [ "-xvjf" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "tar";
+                  args = [ "-xvjf" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               gz.app_list = [
-                { command = "tar"; args = [ "-xvzf" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "tar";
+                  args = [ "-xvzf" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               tar.app_list = [
-                { command = "tar"; args = [ "-xvf" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "tar";
+                  args = [ "-xvf" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               tgz.app_list = [
-                { command = "tar"; args = [ "-xvzf" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "tar";
+                  args = [ "-xvzf" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               rar.app_list = [
-                { command = "unrar"; args = [ "x" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "unrar";
+                  args = [ "x" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               xz.app_list = [
-                { command = "tar"; args = [ "-xvJf" ]; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "tar";
+                  args = [ "-xvJf" ];
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
               zip.app_list = [
-                { command = "unzip"; confirm_exit = true; }
-                { command = "file-roller"; fork = true; silent = true; }
+                {
+                  command = "unzip";
+                  confirm_exit = true;
+                }
+                {
+                  command = "file-roller";
+                  fork = true;
+                  silent = true;
+                }
               ];
 
               # misc formats
               aup.app_list = [
-                { command = "audacity"; fork = true; silent = true; }
+                {
+                  command = "audacity";
+                  fork = true;
+                  silent = true;
+                }
               ];
 
               m3u.app_list = [
-                { command = "hx"; }
-                { command = "nvim"; }
-                { command = "micro"; }
-                { command = "mpv"; silent = true; }
-                { command = "bat"; confirm_exit = true; }
+                {
+                  command = "hx";
+                }
+                {
+                  command = "nvim";
+                }
+                {
+                  command = "micro";
+                }
+                {
+                  command = "mpv";
+                  silent = true;
+                }
+                {
+                  command = "bat";
+                  confirm_exit = true;
+                }
               ];
 
               odt."inherit" = "libreoffice_default";
@@ -225,23 +378,47 @@ in {
               pdf."inherit" = "reader_default";
 
               kra.app_list = [
-                { command = "krita"; fork = true; silent = true; }
+                {
+                  command = "krita";
+                  fork = true;
+                  silent = true;
+                }
               ];
 
               kdenlive.app_list = [
-                { command = "kdenlive"; fork = true; silent = true; }
+                {
+                  command = "kdenlive";
+                  fork = true;
+                  silent = true;
+                }
               ];
 
               tex.app_list = [
-                { command = "hx"; }
-                { command = "nvim"; }
-                { command = "micro"; }
-                { command = "bat"; confirm_exit = true; }
-                { command = "pdflatex"; silent = true; }
+                {
+                  command = "hx";
+                }
+                {
+                  command = "nvim";
+                }
+                {
+                  command = "micro";
+                }
+                {
+                  command = "bat";
+                  confirm_exit = true;
+                }
+                {
+                  command = "pdflatex";
+                  silent = true;
+                }
               ];
 
               torrent.app_list = [
-                { command = "transmission-gtk"; fork = true; silent = true; }
+                {
+                  command = "transmission-gtk";
+                  fork = true;
+                  silent = true;
+                }
               ];
             };
 
