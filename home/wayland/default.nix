@@ -7,6 +7,6 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./sway
+    ./sway.nix
   ];
 }

@@ -7,7 +7,7 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./gtk
-    ./qt
+    ./gtk.nix
+    ./qt.nix
   ];
 }

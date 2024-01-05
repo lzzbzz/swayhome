@@ -7,11 +7,11 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./common
-    ./latex
-    ./octave
-    ./python
-    ./rstudio
-    ./unixodbc
+    ./common.nix
+    ./latex.nix
+    ./octave.nix
+    ./python.nix
+    ./rstudio.nix
+    ./unixodbc.nix
   ];
 }
