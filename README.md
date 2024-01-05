@@ -11,7 +11,7 @@ Compatible with GTK & QT Themes (breeze-dark) or other themes.
 
 Minimalist Waybar.
 
-![image](image/grim_2.png)
+![image](image/grim_3.png)
 
 ## Installation
 
