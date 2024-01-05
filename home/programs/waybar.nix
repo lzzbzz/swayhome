@@ -14,7 +14,7 @@ in {
             mainBar = {
               layer = "bottom";
               position = "top";
-              height = 15;
+              height = 23;
               spacing = 0;
               output = [
                 "eDP-1"
@@ -30,10 +30,9 @@ in {
                 "sway/window"
               ];
               modules-right = [
-                "mpd"
-                "idle_inhibitor"
-                "pulseaudio"
                 "network"
+                "mpd"
+                "pulseaudio"
                 "cpu"
                 "memory"
                 "temperature"
@@ -59,14 +58,14 @@ in {
                 format = "{icon} {count}";
                 show-empty = false;
                 format-icons = [
-                  ""
+                  ""
                   ""
                 ];
                 tooltip = true;
                 tooltip-format = "{app}: {title}";
               };
               "mpd" = {
-                format = "{stateIcon} {randomIcon}({elapsedTime:%M:%S}/{totalTime:%M:%S})";
+                format = "{stateIcon} ({elapsedTime:%M:%S}/{totalTime:%M:%S})";
                 format-disconnected = "Disconnected ";
                 format-stopped = "{randomIcon}Stopped ";
                 unknown-tag = "N/A";
@@ -79,10 +78,10 @@ in {
                   on = " ";
                 };
                 repeat-icons = {
-                  on = " ";
+                  on = "";
                 };
                 single-icons = {
-                  on = "1 ";
+                  on = " ";
                 };
                 state-icons = {
                   paused = "";
@@ -105,7 +104,8 @@ in {
               "clock" = {
                 timezone = "Asia/Jakarta";
                 tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-                format-alt = "{:%Y-%m-%d}";
+                format = "{:%H:%M }";
+                format-alt = "{:%Y-%m-%d }";
               };
               "cpu" = {
                 format = "{usage}% ";
@@ -121,16 +121,17 @@ in {
                 # format-critical = "{temperatureC}°C {icon}";
                 format = "{temperatureC}°C {icon}";
                 format-icons = [
-                  ""
+                  ""
                   ""
-                  ""
+                  ""
+                  ""
                 ];
               };
               "backlight" = {
                 # device = "acpi_video1";
                 format = "{percent}% {icon}";
                 format-icons = [
-                  "" "" "" "" "" "" "" "" ""
+                  "" "" "" "" "" "" "" "" ""
                 ];
               };
               "battery" = {
@@ -147,9 +148,6 @@ in {
                 # "format-full": "";
                 format-icons = [
                   ""
-                  ""
-                  ""
-                  ""
                   ""
                 ];
               };
@@ -162,7 +160,7 @@ in {
                 format-ethernet = "{ipaddr}/{cidr} ";
                 tooltip-format = "{ifname} via {gwaddr} ";
                 format-linked = "{ifname} (No IP) ";
-                format-disconnected = "Disconnected ⚠";
+                format-disconnected = "Disconnected ";
                 format-alt = "{ifname} = {ipaddr}/{cidr}";
               };
               "pulseaudio" = {
@@ -192,11 +190,10 @@ in {
                 max-length = 40;
                 format-icons = {
                   spotify = "";
-                  default = "🎜";
+                  default = "";
                 };
                 escape = true;
                 exec = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; # Script in resources folder
-                # exec = "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null"; # Filter player based on name
               };
             };
           };
@@ -207,9 +204,9 @@ in {
             }
 
             window#waybar {
-              background-color: rgba(43, 48, 59, 0.5);
-              border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-              color: #ffffff;
+              background-color: rgba(49, 54, 59, 0.8);
+              border-bottom: 3px solid rgba(35, 38, 41, 0.8);
+              color: #fcfcfc;
               transition-property: background-color;
               transition-duration: .5s;
             }
@@ -223,16 +220,16 @@ in {
               background-color: transparent;
             }
             window#waybar.solo {
-              background-color: #FFFFFF;
+              background-color: #3daee9;
             }
             */
 
             window#waybar.termite {
-              background-color: #3F3F3F;
+              background-color: #3daee9;
             }
 
             window#waybar.chromium {
-              background-color: #000000;
+              background-color: #3daee9;
               border: none;
             }
 
@@ -258,16 +255,16 @@ in {
             }
 
             #workspaces button.focused {
-              background-color: #64727D;
+              background-color: #3daee9;
               box-shadow: inset 0 -3px #ffffff;
             }
 
             #workspaces button.urgent {
-              background-color: #eb4d4b;
+              background-color: #3daee9;
             }
 
             #mode {
-              background-color: #64727D;
+              background-color: #3daee9;
               border-bottom: 3px solid #ffffff;
             }
 
@@ -288,7 +285,6 @@ in {
             #scratchpad,
             #mpd {
               padding: 0 10px;
-              color: #ffffff;
             }
 
             #window,
@@ -305,26 +301,26 @@ in {
             }
 
             #clock {
-              background-color: #64727D;
+              background-color: #263741;
             }
 
             #battery {
-              background-color: #26a69a;
+              background-color: #2e607c;
             }
 
             #battery.charging, #battery.plugged {
               color: #ffffff;
-              background-color: #26A65B;
+              background-color: #2e607c;
             }
 
             @keyframes blink {
               to {
-                background-color: #ffffff;
+                background-color: #3daee9;
               }
             }
 
             #battery.critical:not(.charging) {
-              background-color: #f53c3c;
+              background-color: #3daee9;
               color: #ffffff;
               animation-name: blink;
               animation-duration: 0.5s;
@@ -334,74 +330,74 @@ in {
             }
 
             label:focus {
-              background-color: #000000;
+              background-color: #3daee9;
             }
 
             #cpu {
-              background-color: #2ecc71;
+              background-color: #368bb8;
             }
 
             #memory {
-              background-color: #9b59b6;
+              background-color: #399ccf;
             }
 
             #disk {
-              background-color: #964B00;
+              background-color: #3daee9;
             }
 
             #backlight {
-              background-color: #90b1b1;
+              background-color: #3687b2;
             }
 
             #network {
-              background-color: #2980b9;
+              background-color: #28404d;
             }
 
             #network.disconnected {
-              background-color: #f53c3c;
+              background-color: #28404d;
             }
 
             #pulseaudio {
-              background-color: #f9a825;
+              background-color: #337aa0;
             }
 
             #pulseaudio.muted {
-              background-color: #90b1b1;
+              background-color: #337aa0;
               color: #2a5c45;
             }
 
             #wireplumber {
-              background-color: #fff0f5;
+              background-color: #337aa0;
             }
 
             #wireplumber.muted {
-              background-color: #f53c3c;
+              background-color: #337aa0;
             }
 
             #custom-media {
-              background-color: #66cc99;
+              background-color: #3daee9;
               color: #2a5c45;
               min-width: 100px;
             }
 
             #custom-media.custom-spotify {
-              background-color: #66cc99;
+              background-color: #3daee9;
             }
 
             #custom-media.custom-vlc {
-              background-color: #ffa000;
+              background-color: #3daee9;
             }
 
             #temperature {
-              background-color: #f0932b;
+              background-color: #3daee9;
             }
 
             #temperature.critical {
-              background-color: #eb4d4b;
+              background-color: #3daee9;
             }
 
             #tray {
-              background-color: #2980b9;
+              background-color: #232629;
             }
 
             #tray > .passive {
@@ -410,33 +406,32 @@ in {
 
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
-              background-color: #eb4d4b;
+              background-color: #3daee9;
             }
 
             #idle_inhibitor {
-              background-color: #2d3436;
+              background-color: #3daee9;
             }
 
             #idle_inhibitor.activated {
-              background-color: #ecf0f1;
+              background-color: #3daee9;
               color: #2d3436;
             }
 
             #mpd {
-              background-color: #66cc99;
-              color: #2a5c45;
+              background-color: #2d5b74;
             }
 
             #mpd.disconnected {
-              background-color: #f53c3c;
+              background-color: #2d5b74;
             }
 
             #mpd.stopped {
-              background-color: #90b1b1;
+              background-color: #2d5b74;
             }
 
             #mpd.paused {
-              background-color: #51a37a;
+              background-color: #2d5b74;
             }
 
             #language {
