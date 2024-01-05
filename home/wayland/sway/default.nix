@@ -48,7 +48,7 @@ in {
               };
               output = {
                 "*" = {
-                  bg = "${./../../image/wallpaper.jpg} fill";
+                  bg = "${./image/wallpaper.jpg} fill";
                 };
               };
               startup = [
