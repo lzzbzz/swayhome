@@ -17,7 +17,7 @@ let
   text-color = "#fcfcfc";
   inactive-text-color = "#7f8c8d";
   urgent-bg-color = "#3daee9";
-  indicator = "#4d4d4d";
+  indicator = "#232629";
 in {
   home-manager = {
     users.${name} = {
@@ -60,7 +60,7 @@ in {
               };
               output = {
                 "*" = {
-                  bg = "${./image/wallpaper.jpg} fill";
+                  bg = "${./image/wallpaper.png} fill";
                 };
               };
               startup = [
