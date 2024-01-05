@@ -22,7 +22,10 @@ in {
                 inner = 10;
               };
               modifier = "${mod}";
-              window.border = 0;
+              window = {
+                border = 3;
+                titlebar = false;
+              };
               bars = [{
                 command = "${waybar}/bin/waybar";
               }];
