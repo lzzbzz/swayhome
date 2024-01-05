@@ -167,8 +167,8 @@ in {
                 # "scroll-step" = 1; # %; can be a float
                 format = "{volume}% {icon} {format_source}";
                 format-bluetooth = "{volume}% {icon} {format_source}";
-                format-bluetooth-muted = " {icon} {format_source}";
-                format-muted = " {format_source}";
+                format-bluetooth-muted = " {icon} {format_source}";
+                format-muted = " {format_source}";
                 format-source = "{volume}% ";
                 format-source-muted = "";
                 format-icons = {
@@ -247,7 +247,6 @@ in {
             #workspaces button {
               padding: 0 5px;
               background-color: transparent;
-              color: #ffffff;
             }
 
             #workspaces button:hover {
@@ -309,7 +308,6 @@ in {
             }
 
             #battery.charging, #battery.plugged {
-              color: #ffffff;
               background-color: #2e607c;
             }
 
@@ -321,7 +319,6 @@ in {
 
             #battery.critical:not(.charging) {
               background-color: #3daee9;
-              color: #ffffff;
               animation-name: blink;
               animation-duration: 0.5s;
               animation-timing-function: linear;
@@ -363,7 +360,6 @@ in {
 
             #pulseaudio.muted {
               background-color: #337aa0;
-              color: #2a5c45;
             }
 
             #wireplumber {
@@ -376,7 +372,6 @@ in {
 
             #custom-media {
               background-color: #3daee9;
-              color: #2a5c45;
               min-width: 100px;
             }
 
@@ -415,7 +410,6 @@ in {
 
             #idle_inhibitor.activated {
               background-color: #3daee9;
-              color: #2d3436;
             }
 
             #mpd {
@@ -436,7 +430,6 @@ in {
 
             #language {
               background: #00b093;
-              color: #740864;
               padding: 0 5px;
               margin: 0 5px;
               min-width: 16px;
@@ -444,7 +437,6 @@ in {
 
             #keyboard-state {
               background: #97e1ad;
-              color: #000000;
               padding: 0 0px;
               margin: 0 5px;
               min-width: 16px;
