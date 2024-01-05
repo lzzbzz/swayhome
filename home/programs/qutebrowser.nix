@@ -16,10 +16,37 @@ in {
             zoom.default = 90;
             colors = {
               hints = {
-                bg = "#2980b9";
-                fg = "#ffffff";
+                bg = "#232629";
+                fg = "#fcfcfc";
               };
-              tabs.bar.bg = "#000000";
+              tabs = {
+                bar = {
+                  bg = "#232629";
+                };
+                even = {
+                  bg = "#232629";
+                  fg = "#fcfcfc";
+                };
+                odd = {
+                  bg = "#232629";
+                  fg = "#fcfcfc";
+                };
+                selected = {
+                  even = {
+                    bg = "#263741";
+                    fg = "#fcfcfc";
+                  };
+                  odd = {
+                    bg = "#263741";
+                    fg = "#fcfcfc";
+                  };
+                };
+              };
+              webpage = {
+                darkmode = {
+                  enabled = true;
+                };
+              };
             };
             fonts = {
               completion.entry = "8.0pt Monospace";
