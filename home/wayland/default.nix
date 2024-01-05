@@ -7,7 +7,6 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./gtk
-    ./qt
+    ./sway
   ];
 }

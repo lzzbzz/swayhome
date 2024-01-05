@@ -7,11 +7,29 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./packages
-    ./programs
-    ./services
-    ./theme
-    ./wayland
+    ./bat
+    ./cava
+    ./fish
+    ./foot
+    ./gh
+    ./git
+    ./gpg
+    ./helix
+    ./htop
+    ./imv
+    ./java
+    ./joshuto
+    ./lazygit
+    ./micro
+    ./mpv
+    ./neovim
+    ./ncmpcpp
+    ./qutebrowser
+    ./swaylock
+    ./waybar
+    ./wofi
+    ./zathura
+    ./zellij
   ];
 
   home-manager = {

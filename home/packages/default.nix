@@ -7,7 +7,11 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./gtk
-    ./qt
+    ./common
+    ./latex
+    ./octave
+    ./python
+    ./rstudio
+    ./unixodbc
   ];
 }

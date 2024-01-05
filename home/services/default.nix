@@ -7,7 +7,12 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./gtk
-    ./qt
+    ./espanso
+    ./gpg-agent
+    ./kanshi
+    ./mako
+    ./mpd
+    ./swayidle
+    ./swayosd
   ];
 }

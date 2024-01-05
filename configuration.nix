@@ -1,10 +1,6 @@
 {...}: {
   imports = [
-    ./hardware
+    ./nixos
     ./home
-    ./programs
-    ./services
-    ./system
-    ./virtual
   ];
 }
