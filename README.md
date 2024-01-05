@@ -32,8 +32,9 @@ sudo nix-channel --add https://github.com/nix-community/home-manager/archive/rel
 sudo nix-channel --update
 ```
 
-If using a different version, please replace `stateVersion` variables from
-`home/default.nix` (home-manager) and `system/system/default.nix` (nixos).
+If using a different version, please replace `stateVersion` variables from:
+* nixos = `nixos/system/system/default.nix`.
+* home-manager = `home/default.nix`.
 
 - Change variable
 
