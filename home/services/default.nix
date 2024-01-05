@@ -12,6 +12,7 @@ in {
     ./kanshi
     ./mako
     ./mpd
+    ./ssh-agent
     ./swayidle
     ./swayosd
   ];
