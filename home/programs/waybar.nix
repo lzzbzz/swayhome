@@ -66,8 +66,8 @@ in {
               };
               "mpd" = {
                 format = "{stateIcon} ({elapsedTime:%M:%S}/{totalTime:%M:%S})";
-                format-disconnected = "Disconnected ";
-                format-stopped = "{randomIcon}Stopped ";
+                format-disconnected = "Disconnected ";
+                format-stopped = "{randomIcon}Stopped ";
                 unknown-tag = "N/A";
                 interval = 2;
                 consume-icons = {
