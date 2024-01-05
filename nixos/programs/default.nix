@@ -1,11 +1,11 @@
 {...}: {
   imports = [
-    ./adb
-    ./cnf
-    ./dconf
-    ./fish
-    ./gnupg
-    ./light
-    ./mtr
+    ./adb.nix
+    ./cnf.nix
+    ./dconf.nix
+    ./fish.nix
+    ./gnupg.nix
+    ./light.nix
+    ./mtr.nix
   ];
 }

@@ -4,13 +4,13 @@
 }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-    ./boot
-    ./filesystem
-    ./networking
-    ./opengl
-    ./platform
-    ./processor
-    ./sane
-    ./swapdevices
+    ./boot.nix
+    ./filesystem.nix
+    ./networking.nix
+    ./opengl.nix
+    ./platform.nix
+    ./processor.nix
+    ./sane.nix
+    ./swapdevices.nix
   ];
 }
