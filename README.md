@@ -1,10 +1,17 @@
 # NixOS + Sway + Home Manager
 
 Configuration of Nixos operating system with Sway DE (disk
-encrypted) for Hobbyist.
+encrypted).
 
-![image](image/grim_1.webp)
-![image](image/grim_2.webp)
+![image](image/grim_1.png)
+
+Compatible with GTK & QT Themes (breeze-dark) or other themes.
+
+![image](image/grim_2.png)
+
+Minimalist Waybar.
+
+![image](image/grim_2.png)
 
 ## Installation
 
