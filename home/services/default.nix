@@ -7,7 +7,6 @@
 in {
   imports = [
     <home-manager/nixos>
-    ./espanso.nix
     ./gpg-agent.nix
     ./kanshi.nix
     ./mako.nix
