@@ -10,6 +10,14 @@ with pkgs;
 let
   name = "hervyqa";
   mod = "Mod4";
+
+  # colors
+  bg-color = "#232629";
+  inactive-bg-color = "#31363b";
+  text-color = "#fcfcfc";
+  inactive-text-color = "#7f8c8d";
+  urgent-bg-color = "#3daee9";
+  indicator = "#4d4d4d";
 in {
   home-manager = {
     users.${name} = {
@@ -32,6 +40,7 @@ in {
               floating = {
                 modifier = "${mod}";
                 border = 3;
+                titlebar = false;
               };
               focus = {
                 forceWrapping = false;
@@ -60,6 +69,8 @@ in {
               keybindings = let
                 modifier = config.wayland.windowManager.sway.config.modifier;
               in mkOptionDefault {
+                # menu
+                "${mod}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${text-color}' -nb '${bg-color}' -sf '${text-color}' -sb '${urgent-bg-color}' | ${findutils}/bin/xargs swaymsg exec --";
                 # audio control
                 "XF86AudioRaiseVolume" = "exec ${swayosd}/bin/swayosd --output-volume 2";
                 "XF86AudioLowerVolume" = "exec ${swayosd}/bin/swayosd --output-volume -2";
@@ -75,14 +86,7 @@ in {
                 "Print+${mod}" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
                 "Print+Shift+${mod}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
               };
-              colors = let
-                bg-color = "#232629";
-                inactive-bg-color = "#31363b";
-                text-color = "#fcfcfc";
-                inactive-text-color = "#7f8c8d";
-                urgent-bg-color = "#3daee9";
-                indicator = "#4d4d4d";
-              in {
+              colors = {
                 background = bg-color;
                 focused = {
                   border = bg-color;
