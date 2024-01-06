@@ -1,4 +1,4 @@
-# NixOS + Sway + Home Manager
+# ❄️ NixOS + Sway + Home Manager
 
 Configuration of Nixos operating system with Sway DE (disk
 encrypted).
@@ -13,7 +13,22 @@ Minimalist Waybar.
 
 ![image](image/grim_3.png)
 
-## List of apps
+## 📖 Content
+
+- `home`: configuration of home-manager for user.
+  - `packages`: list of packages user without declaration.
+  - `programs`: list of packages and user configuration sets.
+  - `services`: list of user services.
+  - `theme`: themes of GTK and QT.
+  - `wayland`: window manager.
+- `nixos`: system configuration.
+  - `hardware`: list hardware configuration.
+  - `programs`: list of programs installed through the system.
+  - `systems`: operating system settings.
+  - `virtual`: isolation environments and virtual machines.
+- `image`: list of screenshot images.
+
+## 📦 List of apps
 
 Category | Name | Description
 :--- | :--- | :---
@@ -36,7 +51,7 @@ Fonts | `monospace 8` | minimalist monospaced font.
 Icons | `papirus-icon` | pixel perfect icon theme for linux.
 GTK & QT Theme | `breeze-dark` | kde plasma theme.
 
-## Installation
+## 💻 Installation
 
 1. Cloning
 
@@ -81,7 +96,7 @@ hostname = "nixos";
 version = "23.11";
 ```
 
-## How to build
+## ☕️ How to build
 
 This dotfile is installed with the nixos module.
 There is no need to run `home-manager switch`
@@ -105,7 +120,7 @@ More info: `home/programs/fish.nix`
 nrs
 ```
 
-## Check system
+## 🌤 Check system
 
 ```sh
 nix-shell -p nix-info --run 'nix-info -m'
@@ -122,7 +137,7 @@ Sample output.
 - channels(root): `"home-manager-23.11.tar.gz, nixos-23.11"`
 - nixpkgs: `/nix/var/nix/profiles/per-user/root/channels/nixos`
 
-## License
+## 🌱 License
 
 [MIT License](/LICENSE.md)
 
