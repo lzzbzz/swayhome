@@ -200,12 +200,12 @@ in {
           style = ''
             * {
               font-family: FontAwesome, Monospace;
-              font-size: 12px;
+              font-size: 14px;
             }
 
             window#waybar {
-              background-color: rgba(49, 54, 59, 0.8);
-              border-bottom: 3px solid rgba(40, 64, 77, 1.0);
+              background-color: rgba(49, 54, 59, 0.9);
+              border-bottom: 3px solid rgba(61, 74, 233, 0.9);
               color: #fcfcfc;
               transition-property: background-color;
               transition-duration: .5s;
