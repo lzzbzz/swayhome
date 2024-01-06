@@ -22,7 +22,7 @@ Minimalist Waybar.
   - `theme`: themes of GTK and QT.
   - `wayland`: window manager.
 - `nixos`: system configuration.
-  - `hardware`: list hardware configuration.
+  - `hardware`: list of hardware configuration.
   - `programs`: list of programs installed through the system.
   - `systems`: operating system settings.
   - `virtual`: isolation environments and virtual machines.
