@@ -14,6 +14,7 @@ in {
             main = {
               font = "monospace:size=8";
               dpi-aware = "yes";
+              pad = "15x15 center";
             };
             mouse = {
               hide-when-typing = "yes";
