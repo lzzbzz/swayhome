@@ -12,12 +12,12 @@ let
   mod = "Mod4";
 
   # colors
-  bg-color = "#232629";
-  inactive-bg-color = "#31363b";
+  bg-color = "#3daee9";
+  inactive-bg-color = "#232629";
   text-color = "#fcfcfc";
   inactive-text-color = "#7f8c8d";
   urgent-bg-color = "#3daee9";
-  indicator = "#232629";
+  indicator = "#3daee9";
 in {
   home-manager = {
     users.${name} = {
@@ -60,7 +60,7 @@ in {
               };
               output = {
                 "*" = {
-                  bg = "${./image/wallpaper.png} fill";
+                  bg = "${./image/wallpaper.jpg} fill";
                 };
               };
               startup = [
@@ -70,7 +70,7 @@ in {
                 modifier = config.wayland.windowManager.sway.config.modifier;
               in mkOptionDefault {
                 # menu
-                "${mod}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${text-color}' -nb '${bg-color}' -sf '${text-color}' -sb '${urgent-bg-color}' | ${findutils}/bin/xargs swaymsg exec --";
+                "${mod}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${text-color}' -nb '${inactive-bg-color}' -sf '${text-color}' -sb '${bg-color}' | ${findutils}/bin/xargs swaymsg exec --";
                 # audio control
                 "XF86AudioRaiseVolume" = "exec ${swayosd}/bin/swayosd --output-volume 2";
                 "XF86AudioLowerVolume" = "exec ${swayosd}/bin/swayosd --output-volume -2";
@@ -87,7 +87,7 @@ in {
                 "Print+Shift+${mod}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
               };
               colors = {
-                background = bg-color;
+                background = inactive-bg-color;
                 focused = {
                   border = bg-color;
                   background = bg-color;
@@ -99,14 +99,14 @@ in {
                   border = inactive-bg-color;
                   background = inactive-bg-color;
                   text = inactive-text-color;
-                  indicator = indicator;
+                  indicator = inactive-bg-color;
                   childBorder = inactive-bg-color;
                 };
                 unfocused = {
                   border = inactive-bg-color;
                   background = inactive-bg-color;
                   text = inactive-text-color;
-                  indicator = indicator;
+                  indicator = inactive-bg-color;
                   childBorder = inactive-bg-color;
                 };
                 urgent = {
