@@ -22,6 +22,7 @@ in {
           ffmpeg # convert video
           ghostscript # convert pdf document
           glib # gsettings
+          glow # markdown renderer
           glxinfo
           grim # screenshot functionality
           imagemagick # convert image
