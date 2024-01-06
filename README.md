@@ -96,7 +96,7 @@ hostname = "nixos";
 version = "23.11";
 ```
 
-## ☕️ How to build
+## 🍵 How to build
 
 This dotfile is installed with the nixos module.
 There is no need to run `home-manager switch`
