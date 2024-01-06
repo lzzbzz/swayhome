@@ -200,7 +200,7 @@ in {
           style = ''
             * {
               font-family: FontAwesome, Monospace;
-              font-size: 14px;
+              font-size: 12px;
             }
 
             window#waybar {

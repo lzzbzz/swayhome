@@ -13,7 +13,7 @@ in {
           settings = {
             main = {
               font = "monospace:size=8";
-              dpi-aware = "yes";
+              dpi-aware = "no";
               pad = "15x15 center";
             };
             mouse = {
