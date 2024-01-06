@@ -34,6 +34,7 @@ Category | Name | Description
 :--- | :--- | :---
 Window manager | `sway` | i3-compatible tiling wayland compositor.
 Bar | `waybar` | customizable wayland bar for sway.
+Terminal session | `zellij` | terminal workspace with batteries included.
 Audio player | `ncmpcpp` `mpd` | ncurses based mpd client.
 Browser | `qutebrowser` | keyboard-focused browser.
 File manager | `joshuto` `pcmanfm` | ranger-like terminal file manager.
