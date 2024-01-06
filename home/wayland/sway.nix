@@ -31,7 +31,7 @@ in {
               };
               modifier = "${mod}";
               window = {
-                border = 3;
+                border = 5;
                 titlebar = false;
               };
               bars = [{
@@ -39,7 +39,7 @@ in {
               }];
               floating = {
                 modifier = "${mod}";
-                border = 3;
+                border = 5;
                 titlebar = false;
               };
               focus = {
