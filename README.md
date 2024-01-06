@@ -16,7 +16,7 @@ Minimalist Waybar.
 ## List of apps
 
 Category | Name | Description
-:--- | :--- | : ---
+:--- | :--- | :---
 Window manager | `sway` | i3-compatible tiling wayland compositor.
 Bar | `waybar` | customizable wayland bar for sway.
 Audio player | `ncmpcpp` | ncurses based mpd client.
