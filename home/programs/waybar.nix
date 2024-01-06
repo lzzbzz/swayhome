@@ -204,8 +204,8 @@ in {
             }
 
             window#waybar {
-              background-color: rgba(49, 54, 59, 0.9);
-              border-bottom: 3px solid rgba(61, 74, 233, 0.9);
+              background-color: rgba(49, 54, 59, 1);
+              border-bottom: 3px solid rgba(61, 174, 230, 1);
               color: #fcfcfc;
               transition-property: background-color;
               transition-duration: .5s;
