@@ -13,7 +13,6 @@ in {
           settings = {
             numbered_command = false;
             scroll_offset = 3;
-            show_borders = false;
             use_preview_script = true;
             use_trash = true;
             watch_files = true;
@@ -21,6 +20,7 @@ in {
             xdg_open_fork = true;
 
             display = {
+              show_borders = false;
               show_icons = false;
             };
 
