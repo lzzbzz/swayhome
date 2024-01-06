@@ -13,13 +13,13 @@ in {
           settings = {
             main = {
               font = "monospace:size=8";
-              dpi-aware = "no";
+              dpi-aware = "yes";
             };
             mouse = {
               hide-when-typing = "yes";
             };
             colors = {
-              alpha = 0.8;
+              alpha = 0.9;
             };
           };
         };
