@@ -15,27 +15,26 @@ Minimalist Waybar.
 
 ## List of apps
 
-| Category | Name |
-| :--- | :--- |
-| Window manager | sway |
-| Bar | waybar |
-| Audio player | ncmpcpp |
-| Browser | qutebrowser |
-| File manager | joshuto |
-| Image viewer | imv |
-| Menu | dmenu |
-| Notification | mako |
-| PDF viewer | zathura |
-| Shell | fish |
-| Terminal | foot |
-| Text editor | helix & neovim |
-| Video player | mpv |
-| Backlight | swayosd |
-| Volume control | swayosd |
-| Fonts | monospace 8 |
-| Icons | papirus-icon |
-| GTK Theme | breeze-dark |
-| QT Theme | breeze-dark |
+| Category | Name | Description |
+| :--- | :--- | : --- |
+| Window manager | `sway` | i3-compatible tiling wayland compositor. |
+| Bar | `waybar` | customizable wayland bar for sway. |
+| Audio player | `ncmpcpp` | ncurses based mpd client. |
+| Browser | `qutebrowser` | keyboard-focused browser. |
+| File manager | `joshuto` | ranger-like terminal file manager. |
+| Image viewer | `imv` | command line image viewer. |
+| Menu | `dmenu` | an efficient dynamic menu. |
+| Notification | `mako` | lightweight wayland notification daemon. |
+| PDF viewer | `zathura` | highly customizable and functional pdf viewer. |
+| Shell | `fish` | smart and user-friendly command line shell. |
+| Terminal | `foot` | minimalistic Wayland terminal emulator. |
+| Text editor | `helix`/neovim | A post-modern modal text editor. |
+| Video player | `mpv` | general-purpose media player. |
+| Backlight | `swayosd` | screen display for keyboard shortcuts. |
+| Volume control | `swayosd` | screen display for keyboard shortcuts. |
+| Fonts | `monospace 8` | minimalist monospaced font. |
+| Icons | `papirus-icon` | pixel perfect icon theme for linux. |
+| GTK & QT Theme | `breeze-dark` | kde plasma theme. |
 
 ## Installation
 
@@ -105,6 +104,23 @@ More info: `home/programs/fish.nix`
 ```sh
 nrs
 ```
+
+## Check system
+
+```sh
+nix-shell -p nix-info --run 'nix-info -m'
+```
+
+Sample output.
+
+- system: `"x86_64-linux"`
+- host os: `Linux 6.6.8, NixOS, 23.11 (Tapir), 23.11.2451.2d2ea8eab9e4`
+- multi-user?: `yes`
+- sandbox: `yes`
+- version: `nix-env (Nix) 2.18.1`
+- channels(hervyqa): `""`
+- channels(root): `"home-manager-23.11.tar.gz, nixos-23.11"`
+- nixpkgs: `/nix/var/nix/profiles/per-user/root/channels/nixos
 
 ## License
 
