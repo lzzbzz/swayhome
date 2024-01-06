@@ -13,7 +13,7 @@ in {
           settings = {
             tabs.tabs_are_windows = false;
             scrolling.smooth = true;
-            zoom.default = 90;
+            zoom.default = 95;
             colors = {
               hints = {
                 bg = "#232629";
