@@ -17,8 +17,8 @@ Minimalist Waybar.
 
 | Category | Name |
 | :--- | :--- |
-| Window Manager | sway |
-| Bar | Waybar |
+| Window manager | sway |
+| Bar | waybar |
 | Audio player | ncmpcpp |
 | Browser | qutebrowser |
 | File manager | joshuto |
@@ -28,11 +28,12 @@ Minimalist Waybar.
 | PDF viewer | zathura |
 | Shell | fish |
 | Terminal | foot |
-| Text editor | helix, neovim |
+| Text editor | helix & neovim |
 | Video player | mpv |
 | Backlight | swayosd |
 | Volume control | swayosd |
 | Fonts | monospace 8 |
+| Icons | papirus-icon |
 | GTK Theme | breeze-dark |
 | QT Theme | breeze-dark |
 
