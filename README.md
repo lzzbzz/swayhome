@@ -15,26 +15,26 @@ Minimalist Waybar.
 
 ## List of apps
 
-| Category | Name | Description |
-| :--- | :--- | : --- |
-| Window manager | `sway` | i3-compatible tiling wayland compositor. |
-| Bar | `waybar` | customizable wayland bar for sway. |
-| Audio player | `ncmpcpp` | ncurses based mpd client. |
-| Browser | `qutebrowser` | keyboard-focused browser. |
-| File manager | `joshuto` | ranger-like terminal file manager. |
-| Image viewer | `imv` | command line image viewer. |
-| Menu | `dmenu` | an efficient dynamic menu. |
-| Notification | `mako` | lightweight wayland notification daemon. |
-| PDF viewer | `zathura` | highly customizable and functional pdf viewer. |
-| Shell | `fish` | smart and user-friendly command line shell. |
-| Terminal | `foot` | minimalistic Wayland terminal emulator. |
-| Text editor | `helix`/neovim | A post-modern modal text editor. |
-| Video player | `mpv` | general-purpose media player. |
-| Backlight | `swayosd` | screen display for keyboard shortcuts. |
-| Volume control | `swayosd` | screen display for keyboard shortcuts. |
-| Fonts | `monospace 8` | minimalist monospaced font. |
-| Icons | `papirus-icon` | pixel perfect icon theme for linux. |
-| GTK & QT Theme | `breeze-dark` | kde plasma theme. |
+Category | Name | Description
+:--- | :--- | : ---
+Window manager | `sway` | i3-compatible tiling wayland compositor.
+Bar | `waybar` | customizable wayland bar for sway.
+Audio player | `ncmpcpp` | ncurses based mpd client.
+Browser | `qutebrowser` | keyboard-focused browser.
+File manager | `joshuto` | ranger-like terminal file manager.
+Image viewer | `imv` | command line image viewer.
+Menu | `dmenu` | an efficient dynamic menu.
+Notification | `mako` | lightweight wayland notification daemon.
+PDF viewer | `zathura` | highly customizable and functional pdf viewer.
+Shell | `fish` | smart and user-friendly command line shell.
+Terminal | `foot` | minimalistic Wayland terminal emulator.
+Text editor | `helix`/neovim | A post-modern modal text editor.
+Video player | `mpv` | general-purpose media player.
+Backlight | `swayosd` | screen display for keyboard shortcuts.
+Volume control | `swayosd` | screen display for keyboard shortcuts.
+Fonts | `monospace 8` | minimalist monospaced font.
+Icons | `papirus-icon` | pixel perfect icon theme for linux.
+GTK & QT Theme | `breeze-dark` | kde plasma theme.
 
 ## Installation
 
