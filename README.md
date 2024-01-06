@@ -54,21 +54,21 @@ GTK & QT Theme | `breeze-dark` | kde plasma theme.
 
 ## 💻 Installation
 
-1. Cloning
+### Cloning
 
 ```sh
 git clone git@github.com:hervyqa/swayhome.git
 cd swayhome
 ```
 
-2. Configuration
+### Configuration
 
 ```sh
 sudo mv /etc/configuration.nix /etc/configuration.nix.backup
 sudo ln -s $PWD/configuration.nix /etc/nixos/
 ```
 
-3. Home manager
+### Home manager
 
 I am using stable release version `23.11`, home-manager is also using the same
 version. Make sure the system and home-manager also use the same version.
@@ -82,7 +82,7 @@ If using a different version, please replace `stateVersion` variables from:
 * nixos = `nixos/system/system/default.nix`.
 * home-manager = `home/default.nix`.
 
-4. Change variable
+### Change variable
 
 ```plain
 name = "hervyqa";
