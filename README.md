@@ -13,23 +13,46 @@ Minimalist Waybar.
 
 ![image](image/grim_3.png)
 
+## List of apps
+
+| Category | Name |
+| :--- | :--- |
+| Window Manager | sway |
+| Bar | Waybar |
+| Audio player | ncmpcpp |
+| Browser | qutebrowser |
+| File manager | joshuto |
+| Image viewer | imv |
+| Menu | dmenu |
+| Notification | mako |
+| PDF viewer | zathura |
+| Shell | fish |
+| Terminal | foot |
+| Text editor | helix, neovim |
+| Video player | mpv |
+| Backlight | swayosd |
+| Volume control | swayosd |
+| Fonts | monospace 8 |
+| GTK Theme | breeze-dark |
+| QT Theme | breeze-dark |
+
 ## Installation
 
-- Cloning
+1. Cloning
 
 ```sh
 git clone git@github.com:hervyqa/swayhome.git
 cd swayhome
 ```
 
-- Configuration
+2. Configuration
 
 ```sh
 sudo mv /etc/configuration.nix /etc/configuration.nix.backup
 sudo ln -s $PWD/configuration.nix /etc/nixos/
 ```
 
-- Home manager
+3. Home manager
 
 I am using stable release version `23.11`, home-manager is also using the same
 version. Make sure the system and home-manager also use the same version.
@@ -43,7 +66,7 @@ If using a different version, please replace `stateVersion` variables from:
 * nixos = `nixos/system/system/default.nix`.
 * home-manager = `home/default.nix`.
 
-- Change variable
+4. Change variable
 
 ```plain
 name = "hervyqa";
@@ -76,7 +99,7 @@ doas nixos-rebuild switch
 ```
 
 Or using `nrs` from fish abbreviation.
-More info: `home/fish/default.nix`
+More info: `home/programs/fish.nix`
 
 ```sh
 nrs
