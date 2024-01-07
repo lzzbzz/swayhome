@@ -3,15 +3,15 @@
 Configuration of Nixos operating system with Sway DE (disk
 encrypted).
 
-![images](./imgs/grim_1.webp)
+![images](./imgs/grim_1.png)
 
 Compatible with GTK & QT Themes (breeze-dark) or other themes.
 
-![images](./imgs/grim_2.webp)
+![images](./imgs/grim_2.png)
 
 Minimalist Waybar.
 
-![images](./imgs/grim_3.webp)
+![images](./imgs/grim_3.png)
 
 ## 📖 File structure
 
