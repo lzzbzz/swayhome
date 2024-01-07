@@ -3,15 +3,16 @@
 Configuration of Nixos operating system with Sway DE (disk
 encrypted).
 
-![images](./imgs/zellij-float.png )
+![images](./imgs/wallpaper.png )
+![images](./imgs/zellij.png )
 
-Compatible with GTK & QT Themes (breeze-dark) or other themes.
+Uniform look for Qt and GTK applications (breeze-dark or other themes).
 
-![images](./imgs/gtk-qt-theme.png)
+![images](./imgs/themes.png)
 
 Minimalist Waybar.
 
-![images](./imgs/minimalist-bar.png)
+![images](./imgs/waybar.png)
 
 ## 📖 File structure
 
