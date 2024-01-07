@@ -12,6 +12,7 @@ in {
           # base
           babelfish # convert bash to fish shell
           bat # alternative of cat
+          bottom # process/system monitor
           clinfo # information about opencl platforms
           cpufetch # cpu fetching architecture tool
           direnv # shell extension that manages environment
