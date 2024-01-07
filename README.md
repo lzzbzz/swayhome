@@ -2,13 +2,12 @@
   <img src="https://raw.githubusercontent.com/hervyqa/swayhome/main/imgs/logo.png" width="500px" alt="swayhome logo"/>
 </p>
 
-Configuration of Nixos operating system with Sway DE (disk
-encrypted).
+Personal [NixOS](https://nixos.org/),
+[Sway WM](https://swaywm.org) and
+[Home Manager](https://nix-community.github.io/home-manager/) configuration.
 
-## 🖼 Gallery
-
-![images](./imgs/wallpaper.png )
-![images](./imgs/zellij.png )
+![images](./imgs/wallpaper.png)
+![images](./imgs/zellij.png)
 
 Uniform look for Qt and GTK applications (breeze-dark or other themes).
 
