@@ -4,6 +4,7 @@
   ...
 }: let
   name = "hervyqa";
+  ver = "23.11";
 in {
   imports = [
     <home-manager/nixos>
@@ -19,7 +20,7 @@ in {
     users.${name} = {
       home = {
         homeDirectory = "/home/${name}";
-        stateVersion = "23.11";
+        stateVersion = "${ver}";
         sessionVariables = {
           MOZ_ENABLE_WAYLAND = "1";
           MOZ_USE_XINPUT2 = "1";
