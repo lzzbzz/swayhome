@@ -79,7 +79,7 @@ sudo nix-channel --update
 ```
 
 If using a different version, please replace `stateVersion` variables from
-[nixos](./nixos/system/default.nix) and [home](./home/default.nix)
+[nixos](./nixos/system/default.nix) and [home](./home/default.nix).
 
 ### Change variable
 
@@ -114,7 +114,7 @@ doas nixos-rebuild switch
 ```
 
 Or using `nrs` from fish abbreviation.
-More info: [home/programs/fish.nix](./home/programs/fish.nix)
+More info: [home/programs/fish.nix](./home/programs/fish.nix).
 
 ```sh
 nrs
