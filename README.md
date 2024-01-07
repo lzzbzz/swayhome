@@ -4,8 +4,6 @@ Configuration of Nixos operating system with Sway DE (disk
 encrypted).
 
 ![images](./imgs/zellij-float.png )
-![images](./imgs/zellij-full.png )
-![images](./imgs/qutebrowser-dark.png )
 
 Compatible with GTK & QT Themes (breeze-dark) or other themes.
 
