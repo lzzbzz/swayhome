@@ -12,29 +12,31 @@ in {
           # base
           babelfish # convert bash to fish shell
           bat # alternative of cat
-          clinfo
-          direnv
-          dmidecode
+          clinfo # information about opencl platforms
+          cpufetch # cpu fetching architecture tool
+          direnv # shell extension that manages environment
+          disfetch # distro fetching program
+          dmidecode # reads information about system hardware
           duf # alternate du
-          efibootmgr
-          exiftool
+          efibootmgr # efi boot manager
+          exiftool # exif meta information
           fastfetch # show your current hardware
           ffmpeg # convert video
           ghostscript # convert pdf document
           glib # gsettings
           glow # markdown renderer
-          glxinfo
+          glxinfo # test utilities for opengl
           grim # screenshot functionality
           imagemagick # convert image
           inxi # info for device specification
-          jq
+          jq # command-line json processor
           lshw # show your current hardware
-          marksman
           mediainfo # info for image file
           odt2txt # convert odt to txt
           pamixer # audio volume
           pandoc # convert document
           pcmanfm # file manager gtk
+          pfetch # pretty system information tool
           qimgv # qt image viewer
           scour # compress svg
           scrcpy # mirroring device
@@ -43,9 +45,9 @@ in {
           translate-shell # translate via google api
           upterm # remote console
           ventoy # cerate usb bootable
-          vulkan-tools
+          vulkan-tools # khronos official vulkan tools and utilities
           w3m # image viewer
-          wayland-utils
+          wayland-utils # wayland utilities (wayland-info)
           wdisplays # configuring displays
           wf-recorder # screen recording
           wget # cli downloader
