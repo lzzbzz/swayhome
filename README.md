@@ -3,30 +3,30 @@
 Configuration of Nixos operating system with Sway DE (disk
 encrypted).
 
-![image](image/grim_1.png)
+![images](imgs/grim_1.png)
 
 Compatible with GTK & QT Themes (breeze-dark) or other themes.
 
-![image](image/grim_2.png)
+![images](imgs/grim_2.png)
 
 Minimalist Waybar.
 
-![image](image/grim_3.png)
+![images](imgs/grim_3.png)
 
 ## 📖 File structure
 
-- `home`: home-manager configuration.
-  - `packages`: list of user packages without configuration.
-  - `programs`: list of user packages with configuration.
-  - `services`: list of user services.
-  - `theme`: list of user themes (gtk and qt).
-  - `wayland`: window manager configuration (sway).
-- `nixos`: system configuration.
-  - `hardware`: list of hardware configuration.
-  - `programs`: list of programs installed through the system.
-  - `systems`: list of system settings.
-  - `virtual`: isolation environments and virtual machines.
-- `image`: list of screenshot images.
+- [home](/home): home-manager configuration.
+  - [packages](/home/packages): list of user packages without configuration.
+  - [programs](/home/programs): list of user packages with configuration.
+  - [services](/home/services): list of user services.
+  - [theme](/home/theme): list of user themes (gtk and qt).
+  - [wayland](/home/wayland): window manager configuration (sway).
+- [nixos](/nixos): system configuration.
+  - [hardware](/nixos/hardware): list of hardware configuration.
+  - [programs](/nixos/programs): list of programs installed through the system.
+  - [systems](/nixos/systems): list of system settings.
+  - [virtual](/nixos/virtual): isolation environments and virtual machines.
+- [imgs](/imgs): list of screenshot images.
 
 ## 📦 List of apps
 
@@ -78,9 +78,8 @@ sudo nix-channel --add https://github.com/nix-community/home-manager/archive/rel
 sudo nix-channel --update
 ```
 
-If using a different version, please replace `stateVersion` variables from:
-* nixos = `nixos/system/system/default.nix`.
-* home-manager = `home/default.nix`.
+If using a different version, please replace `stateVersion` variables from
+[nixos](nixos/system/system/default.nix) and [home](home/default.nix)
 
 ### Change variable
 
@@ -115,7 +114,7 @@ doas nixos-rebuild switch
 ```
 
 Or using `nrs` from fish abbreviation.
-More info: `home/programs/fish.nix`
+More info: [home/programs/fish.nix](/home/programs/fish.nix)
 
 ```sh
 nrs
