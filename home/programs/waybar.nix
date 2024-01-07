@@ -140,6 +140,7 @@ in {
                   warning = 30;
                   critical = 15;
                 };
+                interval = 2;
                 format = "{capacity}% {icon}";
                 format-charging = "{capacity}% ";
                 format-plugged = "{capacity}% ";
