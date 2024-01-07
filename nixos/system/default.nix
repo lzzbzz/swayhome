@@ -1,4 +1,10 @@
-{...}: {
+{
+  config,
+  pkgs,
+  ...
+}: let
+  ver = "23.11";
+in {
   imports = [
     ./bluetooth.nix
     ./boot.nix
@@ -12,11 +18,14 @@
     ./power.nix
     ./security.nix
     ./sound.nix
-    ./system.nix
     ./systemd.nix
     ./timezone.nix
+    ./upgrade.nix
     ./users.nix
     ./xdg.nix
     ./zram.nix
   ];
+  system = {
+    stateVersion = "${ver}";
+  };
 }
