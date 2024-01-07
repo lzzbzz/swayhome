@@ -13,18 +13,18 @@ Minimalist Waybar.
 
 ![image](image/grim_3.png)
 
-## 📖 Content
+## 📖 File structure
 
-- `home`: configuration of home-manager for user.
-  - `packages`: list of packages user without declaration.
-  - `programs`: list of packages and user configuration sets.
+- `home`: home-manager configuration.
+  - `packages`: list of user packages without configuration.
+  - `programs`: list of user packages with configuration.
   - `services`: list of user services.
-  - `theme`: themes of GTK and QT.
-  - `wayland`: window manager.
+  - `theme`: list of user themes (gtk and qt).
+  - `wayland`: window manager configuration (sway).
 - `nixos`: system configuration.
   - `hardware`: list of hardware configuration.
   - `programs`: list of programs installed through the system.
-  - `systems`: operating system settings.
+  - `systems`: list of system settings.
   - `virtual`: isolation environments and virtual machines.
 - `image`: list of screenshot images.
 
@@ -54,21 +54,21 @@ GTK & QT Theme | `breeze-dark` | kde plasma theme.
 
 ## 💻 Installation
 
-### Cloning
+### Cloning repository
 
 ```sh
 git clone git@github.com:hervyqa/swayhome.git
 cd swayhome
 ```
 
-### Configuration
+### Symlink configuration
 
 ```sh
 sudo mv /etc/configuration.nix /etc/configuration.nix.backup
 sudo ln -s $PWD/configuration.nix /etc/nixos/
 ```
 
-### Home manager
+### Install home manager
 
 I am using stable release version `23.11`, home-manager is also using the same
 version. Make sure the system and home-manager also use the same version.
