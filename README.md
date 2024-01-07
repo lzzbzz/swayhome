@@ -1,5 +1,9 @@
 # ❄️ NixOS + Sway + Home Manager
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hervyqa/swayhome/main/imgs/logo.png" width="500px" alt="swayhome logo"/>
+</p>
+
 Configuration of Nixos operating system with Sway DE (disk
 encrypted).
 
