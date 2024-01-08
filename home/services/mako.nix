@@ -5,13 +5,28 @@
 }:
 let
   name = "hervyqa";
+
   # colors
-  bg-color = "#3daee9";
-  inactive-bg-color = "#232629";
-  text-color = "#fcfcfc";
-  inactive-text-color = "#7f8c8d";
-  urgent-bg-color = "#3daee9";
-  indicator = "#3daee9";
+  abyss-blue = "#2980b9";
+  alternate-gray = "#bdc3c7";
+  beware-orange = "#f67400";
+  cardboard-gray = "#eff0f1";
+  charcoal-gray = "#31363b";
+  coastal-fog = "#7f8c8d";
+  hover-blue = "#93cee9";
+  hyper-blue = "#3daee6";
+  icon-blue = "#1d99f3";
+  icon-gray = "#4d4d4d";
+  icon-red = "#da4453";
+  icon-yellow = "#fdbc4b";
+  lazy-gray = "#afb0b3";
+  noble-fir = "#27ae60";
+  paper-white = "#fcfcfc";
+  pimpinella= "#e74c3c";
+  plasma-blue = "#3daee9";
+  shade-black = "#232629";
+  sunbeam-yellow = "#c9ce3b";
+
 in {
   home-manager = {
     users.${name} = {
@@ -23,9 +38,9 @@ in {
           margin = "30";
           padding = "5";
           borderSize = 5;
-          borderColor = bg-color;
-          backgroundColor = inactive-bg-color;
-          textColor = text-color;
+          borderColor = plasma-blue;
+          backgroundColor = shade-black;
+          textColor = paper-white;
         };
       };
     };
