@@ -52,7 +52,7 @@ Text editor | `helix` `neovim` `micro` | A post-modern modal text editor.
 Video player | `mpv` | general-purpose media player.
 Backlight | `swayosd` `light` | screen display for keyboard shortcuts.
 Volume control | `swayosd` `pamixer` | screen display for keyboard shortcuts.
-Fonts | `monospace 8` | minimalist monospaced font.
+Fonts | `monospace:8` | minimalist monospaced font.
 Icons | `papirus-icon` | pixel perfect icon theme for linux.
 GTK & QT Theme | `breeze-dark` | kde plasma theme.
 
