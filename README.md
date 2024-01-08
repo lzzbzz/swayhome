@@ -87,17 +87,98 @@ If using a different version, please replace `stateVersion` variables from
 
 ### Change variable
 
-```plain
-name = "hervyqa";
-fullname = "Hervy Qurrotul Ainur Rozi";
-email = "hervyqa@proton.me";
-timezone = "Asia/Jakarta";
-defaultlocale = "en_US.UTF-8";
-extralocale = "id_ID.UTF-8";
-layout = "us";
-gpgkey = "C10684E03E228DC0";
-hostname = "nixos";
-version = "23.11";
+Some variables were found in the `.nix` files. You need to replace it with
+another name and value. For example:
+
+```nix
+...
+}: let
+  name = "hervyqa";
+  fullname = "Hervy Qurrotul Ainur Rozi";
+  email = "hervyqa@proton.me";
+  timezone = "Asia/Jakarta";
+  defaultlocale = "en_US.UTF-8";
+  extralocale = "id_ID.UTF-8";
+  layout = "us";
+  gpgkey = "C10684E03E228DC0";
+  hostname = "nixos";
+  version = "23.11";
+in {
+...
+```
+
+### 🛠 Hardware
+
+If you are installing NixOS for the first time, there is a
+`hardware-configuration.nix` file, you can change variables and include each
+existing module in dotfile settings. You don't need to take all the settings
+like these dotfiles, just take the part you need.
+
+#### Processor
+
+My machine uses `intel` machine. You can change it if you use another processor
+like `amd`.
+
+Nix file: [nixos/hardware/processor.nix](.nixos/hardware/processor.nix).
+
+```nix
+  hardware = {
+    cpu = {
+      # amd or intel
+      intel = {
+        updateMicrocode =
+         lib.mkDefault config.hardware.enableRedistributableFirmware;
+      };
+    };
+  };
+```
+
+#### File systems
+
+The disk partition used uses LUKS encryption. You can change the UUID value
+currently used.
+
+Nix file: [nixos/hardware/boot.nix](.nixos/hardware/boot.nix).
+
+```nix
+  boot = {
+    initrd = {
+      luks.devices = {
+        "nixos" = {
+          device = "/dev/disk/by-uuid/832b5bb1-889c-407d-972a-db398eab8c59";
+        };
+      };
+    };
+```
+
+Change UUID of root (`/`) and efi (`/boot/efi`) partition.
+
+Nix file: [nixos/hardware/filesystem.nix](.nixos/hardware/filesystem.nix).
+
+```nix
+  fileSystems = {
+    "/" = {
+      device = "/dev/disk/by-uuid/9395a257-5640-493e-acf9-dcb11761f052";
+      fsType = "ext4";
+      options = [
+        "noatime"
+        "nodiratime"
+        "discard"
+      ];
+    };
+    "/boot/efi" = {
+      device = "/dev/disk/by-uuid/686D-6983";
+      fsType = "vfat";
+    };
+  };
+```
+
+If you have a swap linux partition.
+
+Nix file: [nixos/hardware/swapdevices.nix](.nixos/hardware/swapdevices.nix).
+
+```nix
+  swapDevices = [];
 ```
 
 ## 🍵 How to build
@@ -118,7 +199,8 @@ doas nixos-rebuild switch
 ```
 
 Or using `nrs` from fish abbreviation.
-More info: [home/programs/fish.nix](./home/programs/fish.nix).
+
+Nix file: [home/programs/fish.nix](./home/programs/fish.nix).
 
 ```sh
 nrs
