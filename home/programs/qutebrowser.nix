@@ -69,6 +69,33 @@ in {
                   };
                 };
               };
+              statusbar = {
+                caret= {
+                  bg = shade-black;
+                };
+                command = {
+                  bg = shade-black;
+                };
+                insert = {
+                  bg = shade-black;
+                };
+                normal = {
+                  bg = shade-black;
+                };
+                passthrough = {
+                  bg = shade-black;
+                };
+                progress = {
+                  bg = plasma-blue;
+                };
+                url = {
+                  success = {
+                    https = {
+                      fg = spring-grass;
+                    };
+                  };
+                };
+              };
               webpage = {
                 darkmode = {
                   enabled = true;
