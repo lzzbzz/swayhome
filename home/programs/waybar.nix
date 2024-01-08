@@ -287,7 +287,7 @@ in {
             }
 
             #workspaces button.urgent {
-              background-color: ${plasma-blue};
+              background-color: ${beware-orange};
             }
 
             #mode {
