@@ -4,6 +4,28 @@
   ...
 }: let
   name = "hervyqa";
+
+  # colors
+  abyss-blue = "#2980b9";
+  alternate-gray = "#bdc3c7";
+  beware-orange = "#f67400";
+  cardboard-gray = "#eff0f1";
+  charcoal-gray = "#31363b";
+  coastal-fog = "#7f8c8d";
+  hover-blue = "#93cee9";
+  hyper-blue = "#3daee6";
+  icon-blue = "#1d99f3";
+  icon-gray = "#4d4d4d";
+  icon-red = "#da4453";
+  icon-yellow = "#fdbc4b";
+  lazy-gray = "#afb0b3";
+  noble-fir = "#27ae60";
+  paper-white = "#fcfcfc";
+  pimpinella= "#e74c3c";
+  plasma-blue = "#3daee9";
+  shade-black = "#232629";
+  sunbeam-yellow = "#c9ce3b";
+
 in {
   home-manager = {
     users.${name} = {
@@ -205,9 +227,9 @@ in {
             }
 
             window#waybar {
-              background-color: rgba(49, 54, 59, 1);
-              border-bottom: 3px solid rgba(61, 174, 230, 1);
-              color: #fcfcfc;
+              background-color: ${shade-black};
+              border-bottom: 3px solid ${plasma-blue};
+              color: ${paper-white};
               transition-property: background-color;
               transition-duration: .5s;
             }
@@ -221,16 +243,16 @@ in {
               background-color: transparent;
             }
             window#waybar.solo {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
             */
 
             window#waybar.termite {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             window#waybar.chromium {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
               border: none;
             }
 
@@ -242,7 +264,7 @@ in {
 
             button:hover {
               background: inherit;
-              box-shadow: inset 0 -3px #ffffff;
+              box-shadow: inset 0 -3px ${paper-white};
             }
 
             #workspaces button {
@@ -255,17 +277,17 @@ in {
             }
 
             #workspaces button.focused {
-              background-color: #3daee9;
-              box-shadow: inset 0 -3px #ffffff;
+              background-color: ${plasma-blue};
+              box-shadow: inset 0 -3px ${paper-white};
             }
 
             #workspaces button.urgent {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #mode {
-              background-color: #3daee9;
-              border-bottom: 3px solid #ffffff;
+              background-color: ${plasma-blue};
+              border-bottom: 3px solid ${paper-white};
             }
 
             #clock,
@@ -314,12 +336,12 @@ in {
 
             @keyframes blink {
               to {
-                background-color: #3daee9;
+                background-color: ${plasma-blue};
               }
             }
 
             #battery.critical:not(.charging) {
-              background-color: #3daee9;
+              background-color: ${beware-orange};
               animation-name: blink;
               animation-duration: 0.5s;
               animation-timing-function: linear;
@@ -328,7 +350,7 @@ in {
             }
 
             label:focus {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #cpu {
@@ -340,7 +362,7 @@ in {
             }
 
             #disk {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #backlight {
@@ -372,28 +394,28 @@ in {
             }
 
             #custom-media {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
               min-width: 100px;
             }
 
             #custom-media.custom-spotify {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #custom-media.custom-vlc {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #temperature {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #temperature.critical {
-              background-color: #3daee9;
+              background-color: ${beware-orange};
             }
 
             #tray {
-              background-color: #232629;
+              background-color: ${shade-black};
             }
 
             #tray > .passive {
@@ -402,15 +424,15 @@ in {
 
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #idle_inhibitor {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #idle_inhibitor.activated {
-              background-color: #3daee9;
+              background-color: ${plasma-blue};
             }
 
             #mpd {
