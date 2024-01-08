@@ -20,7 +20,7 @@ let
   charcoal-gray = "#31363b";
   citrus-yellow = "#fcd116";
   coastal-fog = "#7f8c8d";
-  hot-purple = "#cb00f5";
+  hot-purple = "#af69ef";
   hover-blue = "#93cee9";
   hyper-blue = "#3daee6";
   icon-blue = "#1d99f3";
