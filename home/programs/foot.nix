@@ -9,8 +9,11 @@
   abyss-blue = "2980b9";
   alternate-gray = "bdc3c7";
   beware-orange = "f67400";
+  bright-navy-blue = "1974d2";
+  cadmium-orange = "ed872d";
   cardboard-gray = "eff0f1";
   charcoal-gray = "31363b";
+  citrus-yellow = "fcd116";
   coastal-fog = "7f8c8d";
   hover-blue = "93cee9";
   hyper-blue = "3daee6";
@@ -19,11 +22,14 @@
   icon-red = "da4453";
   icon-yellow = "fdbc4b";
   lazy-gray = "afb0b3";
+  lightsaber-blue = "15f2fd";
   noble-fir = "27ae60";
   paper-white = "fcfcfc";
   pimpinella= "e74c3c";
   plasma-blue = "3daee9";
+  red-pink = "fa2a55";
   shade-black = "232629";
+  spring-grass ="00ff7c";
   sunbeam-yellow = "c9ce3b";
 
 in {
@@ -53,13 +59,13 @@ in {
               regular5 = beware-orange; # magenta
               regular6 = hyper-blue; # cyan
               regular7 = paper-white; # white
-              bright0 = alternate-gray;  # bright black
-              bright1 = icon-red; # bright red
-              bright2 = noble-fir; # bright green
+              bright0 = coastal-fog;  # bright black
+              bright1 = red-pink; # bright red
+              bright2 = spring-grass; # bright green
               bright3 = sunbeam-yellow; # bright yellow
-              bright4 = hyper-blue; # bright blue
-              bright5 = beware-orange; # bright magenta
-              bright6 = hover-blue; # bright cyan
+              bright4 = bright-navy-blue; # bright blue
+              bright5 = cadmium-orange; # bright magenta
+              bright6 = lightsaber-blue; # bright cyan
               bright7 = paper-white; # bright white
             };
           };
