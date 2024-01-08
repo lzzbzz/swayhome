@@ -9,7 +9,6 @@
   abyss-blue = "2980b9";
   alternate-gray = "bdc3c7";
   beware-orange = "f67400";
-  bright-navy-blue = "1974d2";
   cadmium-orange = "ed872d";
   cardboard-gray = "eff0f1";
   charcoal-gray = "31363b";
@@ -63,7 +62,7 @@ in {
               bright1 = red-pink; # bright red
               bright2 = spring-grass; # bright green
               bright3 = sunbeam-yellow; # bright yellow
-              bright4 = bright-navy-blue; # bright blue
+              bright4 = plasma-blue; # bright blue
               bright5 = cadmium-orange; # bright magenta
               bright6 = lightsaber-blue; # bright cyan
               bright7 = paper-white; # bright white
