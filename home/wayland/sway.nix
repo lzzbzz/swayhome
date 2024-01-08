@@ -12,12 +12,26 @@ let
   mod = "Mod4";
 
   # colors
-  bg-color = "#3daee9";
-  inactive-bg-color = "#232629";
-  text-color = "#fcfcfc";
-  inactive-text-color = "#7f8c8d";
-  urgent-bg-color = "#3daee9";
-  indicator = "#3daee9";
+  abyss-blue = "#2980b9";
+  alternate-gray = "#bdc3c7";
+  beware-orange = "#f67400";
+  cardboard-gray = "#eff0f1";
+  charcoal-gray = "#31363b";
+  coastal-fog = "#7f8c8d";
+  hover-blue = "#93cee9";
+  hyper-blue = "#3daee6";
+  icon-blue = "#1d99f3";
+  icon-gray = "#4d4d4d";
+  icon-red = "#da4453";
+  icon-yellow = "#fdbc4b";
+  lazy-gray = "#afb0b3";
+  noble-fir = "#27ae60";
+  paper-white = "#fcfcfc";
+  pimpinella= "#e74c3c";
+  plasma-blue = "#3daee9";
+  shade-black = "#232629";
+  sunbeam-yellow = "#c9ce3b";
+
 in {
   home-manager = {
     users.${name} = {
@@ -31,8 +45,7 @@ in {
               };
               modifier = "${mod}";
               window = {
-                border = 5;
-                titlebar = false;
+                border = 5; titlebar = false;
               };
               bars = [{
                 command = "${waybar}/bin/waybar";
@@ -70,7 +83,7 @@ in {
                 modifier = config.wayland.windowManager.sway.config.modifier;
               in mkOptionDefault {
                 # menu
-                "${mod}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${text-color}' -nb '${inactive-bg-color}' -sf '${text-color}' -sb '${bg-color}' | ${findutils}/bin/xargs swaymsg exec --";
+                "${mod}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${paper-white}' -nb '${shade-black}' -sf '${paper-white}' -sb '${plasma-blue}' | ${findutils}/bin/xargs swaymsg exec --";
                 # audio control
                 "XF86AudioRaiseVolume" = "exec ${swayosd}/bin/swayosd --output-volume 2";
                 "XF86AudioLowerVolume" = "exec ${swayosd}/bin/swayosd --output-volume -2";
@@ -87,41 +100,41 @@ in {
                 "Print+Shift+${mod}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
               };
               colors = {
-                background = inactive-bg-color;
+                background = shade-black;
                 focused = {
-                  border = bg-color;
-                  background = bg-color;
-                  text = text-color;
-                  indicator = indicator;
-                  childBorder = bg-color;
+                  border = plasma-blue;
+                  background = plasma-blue;
+                  text = paper-white;
+                  indicator = plasma-blue;
+                  childBorder = plasma-blue;
                 };
                 focusedInactive = {
-                  border = inactive-bg-color;
-                  background = inactive-bg-color;
-                  text = inactive-text-color;
-                  indicator = inactive-bg-color;
-                  childBorder = inactive-bg-color;
+                  border = charcoal-gray;
+                  background = charcoal-gray;
+                  text = paper-white;
+                  indicator = charcoal-gray;
+                  childBorder = charcoal-gray;
                 };
                 unfocused = {
-                  border = inactive-bg-color;
-                  background = inactive-bg-color;
-                  text = inactive-text-color;
-                  indicator = inactive-bg-color;
-                  childBorder = inactive-bg-color;
+                  border = charcoal-gray;
+                  background = charcoal-gray;
+                  text = paper-white;
+                  indicator = charcoal-gray;
+                  childBorder = charcoal-gray;
                 };
                 urgent = {
-                  border = urgent-bg-color;
-                  background = urgent-bg-color;
-                  text = text-color;
-                  indicator = indicator;
-                  childBorder = urgent-bg-color;
+                  border = beware-orange;
+                  background = beware-orange;
+                  text = paper-white;
+                  indicator = beware-orange;
+                  childBorder = beware-orange;
                 };
                 placeholder = {
-                  border = urgent-bg-color;
-                  background = urgent-bg-color;
-                  text = text-color;
-                  indicator = indicator;
-                  childBorder = urgent-bg-color;
+                  border = charcoal-gray;
+                  background = charcoal-gray;
+                  text = paper-white;
+                  indicator = charcoal-gray;
+                  childBorder = charcoal-gray;
                 };
               };
               modes = {
