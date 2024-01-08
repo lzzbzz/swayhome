@@ -24,6 +24,7 @@
     ./ncmpcpp.nix
     ./qutebrowser.nix
     ./swaylock.nix
+    ./vscode.nix
     ./waybar.nix
     ./wofi.nix
     ./zathura.nix
