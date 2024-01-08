@@ -12,20 +12,12 @@ in {
           enable = true;
           shellAbbrs = {
             b = "bat";
-            c = "chezmoi";
             d = "doas";
             g = "git";
             h = "hx";
             j = "joshuto";
             n = "nvim";
-            r = "ranger";
             z = "zellij";
-
-            cma = "chezmoi add";
-            cmd = "chezmoi diff";
-            cmp = "chezmoi apply";
-            cms = "chezmoi status";
-            cmc = "chezmoi cd";
 
             cp = "cp -rv";
             ll = "ls -lha";
