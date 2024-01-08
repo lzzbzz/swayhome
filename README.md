@@ -7,7 +7,7 @@ Personal [NixOS](https://nixos.org/),
 [Home Manager](https://nix-community.github.io/home-manager/) configuration.
 
 ![images](./imgs/wallpaper.png)
-![images](./imgs/zellij.png)
+![images](./imgs/terminal.png)
 
 Uniform look for Qt and GTK applications (breeze-dark or other themes).
 
