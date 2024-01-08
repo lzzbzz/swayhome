@@ -28,7 +28,7 @@ Minimalist Waybar.
 - [nixos](./nixos): system configuration.
   - [hardware](./nixos/hardware): list of hardware configuration.
   - [programs](./nixos/programs): list of programs installed through the system.
-  - [systems](./nixos/systems): list of system settings.
+  - [system](./nixos/system): list of system settings.
   - [virtual](./nixos/virtual): isolation environments and virtual machines.
 - [imgs](./imgs): list of screenshot images.
 
