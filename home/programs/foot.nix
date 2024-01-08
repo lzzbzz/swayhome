@@ -14,6 +14,7 @@
   charcoal-gray = "31363b";
   citrus-yellow = "fcd116";
   coastal-fog = "7f8c8d";
+  hot-purple = "cb00f5";
   hover-blue = "93cee9";
   hyper-blue = "3daee6";
   icon-blue = "1d99f3";
@@ -25,6 +26,7 @@
   noble-fir = "27ae60";
   paper-white = "fcfcfc";
   pimpinella= "e74c3c";
+  pinkish-purple = "d648d7";
   plasma-blue = "3daee9";
   red-pink = "fa2a55";
   shade-black = "232629";
@@ -55,7 +57,7 @@ in {
               regular2 = noble-fir; # green
               regular3 = icon-yellow; # yellow
               regular4 = plasma-blue; # blue
-              regular5 = beware-orange; # magenta
+              regular5 = hot-purple; # magenta
               regular6 = hyper-blue; # cyan
               regular7 = paper-white; # white
               bright0 = coastal-fog;  # bright black
@@ -63,7 +65,7 @@ in {
               bright2 = spring-grass; # bright green
               bright3 = sunbeam-yellow; # bright yellow
               bright4 = plasma-blue; # bright blue
-              bright5 = cadmium-orange; # bright magenta
+              bright5 = pinkish-purple; # bright magenta
               bright6 = lightsaber-blue; # bright cyan
               bright7 = paper-white; # bright white
             };

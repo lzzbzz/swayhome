@@ -30,7 +30,7 @@
   plasma-blue = "#3daee9";
   red-pink = "#fa2a55";
   shade-black = "#232629";
-  spring-grass ="#00ff7c";
+  spring-grass ="#32e17c";
   sunbeam-yellow = "#c9ce3b";
 
 in {
@@ -58,9 +58,9 @@ in {
                 bg = shade-black;
                 black = charcoal-gray;
                 red = icon-red;
-                green = noble-fir;
+                blue = noble-fir;
                 yellow = icon-yellow;
-                blue = plasma-blue;
+                green = plasma-blue;
                 magenta = hot-purple;
                 cyan = hyper-blue;
                 white = paper-white;

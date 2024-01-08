@@ -15,6 +15,7 @@ let
   charcoal-gray = "#31363b";
   citrus-yellow = "#fcd116";
   coastal-fog = "#7f8c8d";
+  hot-purple = "#cb00f5";
   hover-blue = "#93cee9";
   hyper-blue = "#3daee6";
   icon-blue = "#1d99f3";
@@ -26,6 +27,7 @@ let
   noble-fir = "#27ae60";
   paper-white = "#fcfcfc";
   pimpinella= "#e74c3c";
+  pinkish-purple = "#d648d7";
   plasma-blue = "#3daee9";
   red-pink = "#fa2a55";
   shade-black = "#232629";
