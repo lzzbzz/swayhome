@@ -119,7 +119,7 @@ like these dotfiles, just take the part you need.
 My machine uses `intel` machine. You can change it if you use another processor
 like `amd`.
 
-Nix file: [nixos/hardware/processor.nix](.nixos/hardware/processor.nix).
+Nix file: [nixos/hardware/processor.nix](./nixos/hardware/processor.nix).
 
 ```nix
   hardware = {
@@ -138,7 +138,7 @@ Nix file: [nixos/hardware/processor.nix](.nixos/hardware/processor.nix).
 The disk partition used uses LUKS encryption. You can change the UUID value
 currently used.
 
-Nix file: [nixos/hardware/boot.nix](.nixos/hardware/boot.nix).
+Nix file: [nixos/hardware/boot.nix](./nixos/hardware/boot.nix).
 
 ```nix
   boot = {
@@ -153,7 +153,7 @@ Nix file: [nixos/hardware/boot.nix](.nixos/hardware/boot.nix).
 
 Change UUID of root (`/`) and efi (`/boot/efi`) partition.
 
-Nix file: [nixos/hardware/filesystem.nix](.nixos/hardware/filesystem.nix).
+Nix file: [nixos/hardware/filesystem.nix](./nixos/hardware/filesystem.nix).
 
 ```nix
   fileSystems = {
@@ -175,7 +175,7 @@ Nix file: [nixos/hardware/filesystem.nix](.nixos/hardware/filesystem.nix).
 
 If you have a swap linux partition.
 
-Nix file: [nixos/hardware/swapdevices.nix](.nixos/hardware/swapdevices.nix).
+Nix file: [nixos/hardware/swapdevices.nix](./nixos/hardware/swapdevices.nix).
 
 ```nix
   swapDevices = [];
