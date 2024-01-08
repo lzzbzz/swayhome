@@ -51,9 +51,9 @@ in {
                 rounded_corners = true;
               };
             };
-            theme = "default";
+            theme = "${name}";
             themes = {
-              default = {
+              ${name} = {
                 fg = paper-white;
                 bg = shade-black;
                 black = charcoal-gray;
