@@ -39,19 +39,20 @@ Category | Name | Description
 Window manager | `sway` | i3-compatible tiling wayland compositor.
 Bar | `waybar` | customizable wayland bar for sway.
 Terminal session | `zellij` | terminal workspace with batteries included.
-Audio player | `ncmpcpp` `mpd` | ncurses based mpd client.
+System monitor | `bottom`, `htop` | graphical process/system monitor.
+Audio player | `ncmpcpp`, `mpd` | ncurses based mpd client.
 Browser | `qutebrowser` | keyboard-focused browser.
-File manager | `joshuto` `pcmanfm` | ranger-like terminal file manager.
-Image viewer | `imv` `qimqv` | command line image viewer.
+File manager | `joshuto`, `pcmanfm` | ranger-like terminal file manager.
+Image viewer | `imv`, `qimqv` | command line image viewer.
 Menu | `dmenu` | an efficient dynamic menu.
 Notification | `mako` | lightweight wayland notification daemon.
 PDF viewer | `zathura` | highly customizable and functional pdf viewer.
-Shell | `fish` `bash` | smart and user-friendly command line shell.
+Shell | `fish`, `bash` | smart and user-friendly command line shell.
 Terminal | `foot` | minimalistic Wayland terminal emulator.
-Text editor | `helix` `neovim` `micro` | A post-modern modal text editor.
+Text editor | `helix`, `neovim`, `micro` | A post-modern modal text editor.
 Video player | `mpv` | general-purpose media player.
-Backlight | `swayosd` `light` | screen display for keyboard shortcuts.
-Volume control | `swayosd` `pamixer` | screen display for keyboard shortcuts.
+Backlight | `swayosd`, `light` | screen display for keyboard shortcuts.
+Volume control | `swayosd`, `pamixer` | screen display for keyboard shortcuts.
 Fonts | `monospace:8` | minimalist monospaced font.
 Icons | `papirus-icon` | pixel perfect icon theme for linux.
 GTK & QT Theme | `breeze-dark` | kde plasma theme.
