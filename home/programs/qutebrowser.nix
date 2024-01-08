@@ -60,11 +60,11 @@ in {
                 };
                 selected = {
                   even = {
-                    bg = charcoal-gray;
+                    bg = plasma-blue;
                     fg = paper-white;
                   };
                   odd = {
-                    bg = charcoal-gray;
+                    bg = plasma-blue;
                     fg = paper-white;
                   };
                 };
