@@ -118,41 +118,40 @@ like these dotfiles, just take the part you need.
 
 My machine uses `intel` machine. You can change it if you use another processor
 like `amd`.
-
 Nix file: [nixos/hardware/processor.nix](./nixos/hardware/processor.nix).
 
 ```nix
-  hardware = {
-    cpu = {
-      # amd or intel
-      intel = {
-        updateMicrocode =
-         lib.mkDefault config.hardware.enableRedistributableFirmware;
-      };
+hardware = {
+  cpu = {
+    # amd or intel
+    intel = {
+      updateMicrocode =
+       lib.mkDefault config.hardware.enableRedistributableFirmware;
     };
   };
+};
 ```
 
 #### File systems
 
 The disk partition used uses LUKS encryption. You can change the UUID value
 currently used.
-
 Nix file: [nixos/hardware/boot.nix](./nixos/hardware/boot.nix).
 
 ```nix
-  boot = {
-    initrd = {
-      luks.devices = {
-        "nixos" = {
-          device = "/dev/disk/by-uuid/832b5bb1-889c-407d-972a-db398eab8c59";
-        };
+boot = {
+  initrd = {
+    luks.devices = {
+      "nixos" = {
+        device = "/dev/disk/by-uuid/832b5bb1-889c-407d-972a-db398eab8c59";
       };
     };
+  };
 ```
 
-Change UUID of root (`/`) and efi (`/boot/efi`) partition.
+##### Mount point
 
+Change UUID of root (`/`) and efi (`/boot/efi`) partition.
 Nix file: [nixos/hardware/filesystem.nix](./nixos/hardware/filesystem.nix).
 
 ```nix
@@ -173,8 +172,9 @@ Nix file: [nixos/hardware/filesystem.nix](./nixos/hardware/filesystem.nix).
   };
 ```
 
-If you have a swap linux partition.
+##### Swap partition
 
+If you have a swap linux partition (optional).
 Nix file: [nixos/hardware/swapdevices.nix](./nixos/hardware/swapdevices.nix).
 
 ```nix
@@ -195,7 +195,6 @@ For next build, i prefer using `doas` as an alternative to `sudo`.
 
 ```sh
 doas nixos-rebuild switch
-
 ```
 
 Or using `nrs` from fish abbreviation.
