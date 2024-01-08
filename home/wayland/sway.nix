@@ -146,10 +146,10 @@ in {
                 in {
                   Escape = "mode default";
                   Return = "mode default";
-                  "${down}" = "resize grow height 10 px or 10 ppt";
-                  "${left}" = "resize shrink width 10 px or 10 ppt";
-                  "${right}" = "resize grow width 10 px or 10 ppt";
-                  "${up}" = "resize shrink height 10 px or 10 ppt";
+                  "${down}" = "resize grow height 5 px or 5 ppt";
+                  "${left}" = "resize shrink width 5 px or 5 ppt";
+                  "${right}" = "resize grow width 5 px or 5 ppt";
+                  "${up}" = "resize shrink height 5 px or 5 ppt";
                 };
               };
             };
