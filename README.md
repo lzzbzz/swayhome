@@ -149,8 +149,6 @@ boot = {
   };
 ```
 
-##### Mount point
-
 Change UUID of root (`/`) and efi (`/boot/efi`) partition.
 Nix file: [nixos/hardware/filesystem.nix](./nixos/hardware/filesystem.nix).
 
