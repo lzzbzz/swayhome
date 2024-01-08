@@ -155,21 +155,21 @@ Change UUID of root (`/`) and efi (`/boot/efi`) partition.
 Nix file: [nixos/hardware/filesystem.nix](./nixos/hardware/filesystem.nix).
 
 ```nix
-  fileSystems = {
-    "/" = {
-      device = "/dev/disk/by-uuid/9395a257-5640-493e-acf9-dcb11761f052";
-      fsType = "ext4";
-      options = [
-        "noatime"
-        "nodiratime"
-        "discard"
-      ];
-    };
-    "/boot/efi" = {
-      device = "/dev/disk/by-uuid/686D-6983";
-      fsType = "vfat";
-    };
+fileSystems = {
+  "/" = {
+    device = "/dev/disk/by-uuid/9395a257-5640-493e-acf9-dcb11761f052";
+    fsType = "ext4";
+    options = [
+      "noatime"
+      "nodiratime"
+      "discard"
+    ];
   };
+  "/boot/efi" = {
+    device = "/dev/disk/by-uuid/686D-6983";
+    fsType = "vfat";
+  };
+};
 ```
 
 ##### Swap partition
@@ -178,7 +178,7 @@ If you have a swap linux partition (optional).
 Nix file: [nixos/hardware/swapdevices.nix](./nixos/hardware/swapdevices.nix).
 
 ```nix
-  swapDevices = [];
+swapDevices = [];
 ```
 
 ## 🍵 How to build
