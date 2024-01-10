@@ -7,6 +7,7 @@
     <home-manager/nixos>
     ./bat.nix
     ./cava.nix
+    ./firefox.nix
     ./fish.nix
     ./foot.nix
     ./gh.nix
