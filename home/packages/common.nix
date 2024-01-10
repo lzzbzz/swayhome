@@ -53,6 +53,7 @@ in {
           wf-recorder # screen recording
           wget # cli downloader
           wl-clipboard # copy for wayland
+          wl-mirror # mirrors an output onto a wayland surface
           wmctrl # interact netwm x wm
           wvkbd # on-screen keyboard for wlroots
           xdg-utils # for opening default programs when clicking links
