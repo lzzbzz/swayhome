@@ -26,8 +26,8 @@ in {
             "editor.codeActionsOnSave" = { "source.fixAll" = true; };
             "editor.codeLens" = false;
             "editor.find.cursorMoveOnType" = false;
-            "editor.fontSize" = 12;
             "editor.fontFamily" = "'monospace', monospace";
+            "editor.fontSize" = 12;
             "editor.formatOnSave" = true;
             "editor.minimap.enabled" = false;
             "editor.multiCursorModifier" = "ctrlCmd";
