@@ -88,12 +88,8 @@ in {
           mpi
           quarto
 
-          # julia
-          julia
-
           # scala
           ammonite
-          metals
           sbt
           scala
           scala-cli
@@ -109,16 +105,12 @@ in {
           gnumake
 
           # lua
-          lua-language-server
           luaformatter
           luajit
           z-lua
 
           # nix
           nixpkgs-fmt
-
-          # markdown
-          marksman
 
           # root
           root
