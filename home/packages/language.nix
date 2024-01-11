@@ -21,6 +21,7 @@ in {
           crystalline # cairo
           cuelsp # cue
           dhall-lsp-server # dhall
+          dockerfile-language-server-nodejs # docker
           dot-language-server # dot
           elixir-ls # elixir
           elm-language-server # elm
@@ -41,6 +42,7 @@ in {
           nil # nix
           nimlsp # nim
           nls # nickel
+          ols # odin
           openscad-lsp # openscad
           perlnavigator # perl
           protobuf # protobuf
