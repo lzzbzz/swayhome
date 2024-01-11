@@ -74,6 +74,7 @@ in {
             coc-yaml
             coc-yank
             nvim-autopairs
+            nvim-jdtls
             nvim-lastplace
             nvim-metals
             nvim-web-devicons
