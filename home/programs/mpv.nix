@@ -11,7 +11,6 @@ in {
         mpv = {
           enable = true;
           config = {
-            cache-default = 4000000;
             force-window = true;
             fullscreen = "yes";
             profile = "gpu-hq";
