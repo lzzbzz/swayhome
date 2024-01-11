@@ -13,7 +13,9 @@ in {
           package = pkgs.vscode;
           extensions = with pkgs.vscode-extensions; [
             bbenoist.nix
+            elixir-lsp.vscode-elixir-ls
             esbenp.prettier-vscode
+            llvm-vs-code-extensions.vscode-clangd
             ms-pyright.pyright
             ms-python.isort
             ms-python.python
@@ -25,11 +27,13 @@ in {
             ms-vscode-remote.remote-ssh
             ms-vsliveshare.vsliveshare
             naumovs.color-highlight
+            rust-lang.rust-analyzer
             scala-lang.scala
             scalameta.metals
             shardulm94.trailing-spaces
             sumneko.lua
             vscodevim.vim
+            xaver.clang-format
           ];
           userSettings = {
             "editor.codeActionsOnSave" = { "source.fixAll" = true; };
