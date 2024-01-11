@@ -13,7 +13,6 @@ in {
             python3.withPackages (
               ps:
                 with ps; [
-                  python-lsp-black
                   appdirs
                   astroid
                   beautifulsoup4
@@ -38,10 +37,10 @@ in {
                   jedi
                   jupyter-lsp
                   jupyterlab
-                  jupyterlab-widgets
-                  jupyterlab-pygments
-                  jupyterlab-lsp
                   jupyterlab-git
+                  jupyterlab-lsp
+                  jupyterlab-pygments
+                  jupyterlab-widgets
                   kaggle
                   keras
                   mahotas
@@ -64,14 +63,16 @@ in {
                   pip
                   pipenv
                   plotly
-                  pytorch
                   pydot
                   pygobject3
                   pymongo
                   pyspark
                   pytest
+                  python-lsp-black
+                  pytorch
                   redis
                   requests
+                  robotframework
                   scikit-learn
                   scikitimage
                   scipy
