@@ -16,9 +16,6 @@ in {
           withNodeJs = true;
           withPython3 = true;
           withRuby = true;
-          coc = {
-            enable = true;
-          };
           plugins = with pkgs.vimPlugins; [
             coc-clangd
             coc-clap
@@ -156,29 +153,33 @@ in {
             vnoremap <leader>y "qygv<ESC>
             vnoremap <leader>x "+ygvd<ESC>
             nnoremap <silent> <Leader>t :terminal<CR>
-
-            nnoremap <silent> <leader>e :CocCommand explorer
-              \ --sources=buffer+,file+<CR>
-
-            function! CheckBackspace() abort
-              let col = col('.') - 1
-              return !col || getline('.')[col - 1]  =~# '\s'
-            endfunction
-
-            inoremap <silent><expr> <Tab>
-              \ coc#pum#visible() ? coc#pum#next(1) :
-              \ CheckBackspace() ? "\<Tab>" :
-              \ coc#refresh()
-
-            inoremap <expr> <Tab>
-              \ coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-
-            inoremap <expr> <S-Tab>
-              \ coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
-
-            inoremap <silent><expr> <CR>
-              \ coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
           '';
+          coc = {
+            enable = true;
+            pluginConfig = ''
+              nnoremap <silent> <leader>e :CocCommand explorer
+                \ --sources=buffer+,file+<CR>
+
+              function! CheckBackspace() abort
+                let col = col('.') - 1
+                return !col || getline('.')[col - 1]  =~# '\s'
+              endfunction
+
+              inoremap <silent><expr> <Tab>
+                \ coc#pum#visible() ? coc#pum#next(1) :
+                \ CheckBackspace() ? "\<Tab>" :
+                \ coc#refresh()
+
+              inoremap <expr> <Tab>
+                \ coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+
+              inoremap <expr> <S-Tab>
+                \ coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+              inoremap <silent><expr> <CR>
+                \ coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+            '';
+          };
         };
       };
     };
