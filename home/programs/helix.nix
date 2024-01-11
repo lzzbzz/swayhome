@@ -59,32 +59,136 @@ in {
 
           languages = {
             language-server = {
-              typescript-language-server = with pkgs.nodePackages; {
-                command = "${typescript-language-server}/bin/typescript-language-server";
-                args = [ "--stdio" "--tsserver-path=''${typescript}/lib/node_modules/typescript/lib" ];
+              ansible-language-server = with pkgs; {
+                command = "${ansible-language-server}/bin/ansible-language-server";
               };
-
               bash-language-server = with pkgs.nodePackages; {
                 command = "${bash-language-server}/bin/bash-language-server";
                 args = [ "start" ];
+              };
+              clangd = with pkgs; {
+                command = "${clang}/bin/clang";
+              };
+              cmake-language-server = with pkgs; {
+                command = "${cmake-language-server}/bin/cmake-language-server";
+              };
+              clojure-lsp = with pkgs; {
+                command = "${clojure-lsp}/bin/clojure-lsp";
+              };
+              cuelsp = with pkgs; {
+                command = "${cuelsp}/bin/cuelsp";
+              };
+              dhall-lsp-server = with pkgs; {
+                command = "${dhall-lsp-server}/bin/dhall-lsp-server";
+              };
+              dot-language-server = with pkgs; {
+                command = "${dot-language-server}/bin/dot-language-server";
+              };
+              elixir-ls = with pkgs; {
+                command = "${elixir-ls}/bin/elixir-ls";
+              };
+              elvish = with pkgs; {
+                command = "${elvish}/bin/elvish";
+              };
+              gleam = with pkgs; {
+                command = "${gleam}/bin/gleam";
+              };
+              gopls = with pkgs; {
+                command = "${gopls}/bin/gopls";
+              };
+              intelephense = with pkgs.nodePackages; {
+                command = "${intelephense}/bin/intelephense";
+              };
+              jsonnet-language-server = with pkgs; {
+                command = "${jsonnet-language-server}/bin/jsonnet-language-server";
+              };
+              julia = with pkgs; {
+                command = "${julia}/bin/julia";
+              };
+              lean = with pkgs; {
+                command = "${lean}/bin/lean";
+              };
+              lua-language-server = with pkgs; {
+                command = "${lua-language-server}/bin/lua-language-server";
+              };
+              marksman = with pkgs; {
+                command = "${marksman}/bin/marksman";
+              };
+              metals = with pkgs; {
+                command = "${metals}/bin/metals";
+              };
+              mint = with pkgs; {
+                command = "${mint}/bin/mint";
+              };
+              nil = with pkgs; {
+                command = "${nil}/bin/nil";
+              };
+              nimlsp = with pkgs; {
+                command = "${nimlsp}/bin/nimlsp";
+              };
+              nls = with pkgs; {
+                command = "${nls}/bin/nls";
+              };
+              perlnavigator = with pkgs; {
+                command = "${perlnavigator}/bin/perlnavigator";
+              };
+              purescript-language-server = with pkgs.nodePackages; {
+                command = "${purescript-language-server}/bin/purescript-language-server";
+              };
+              pylsp = with pkgs.python3Packages; {
+                command = "${python}/bin/pylsp";
+              };
+              R = with pkgs; {
+                command = "${R}/bin/R";
+              };
+              racket = with pkgs; {
+                command = "${racket}/bin/racket";
+              };
+              regols = with pkgs; {
+                command = "${regols}/bin/regols";
+              };
+              ruff-lsp = with pkgs; {
+                command = "${ruff-lsp}/bin/ruff-lsp";
+              };
+              rust-analyzer = with pkgs; {
+                command = "${rust-analyzer}/bin/rust-analyzer";
+              };
+              slint-lsp = with pkgs; {
+                command = "${slint-lsp}/bin/slint-lsp";
+              };
+              solc = with pkgs; {
+                command = "${solc}/bin/solc";
+              };
+              svelte-language-server = with pkgs.nodePackages; {
+                command = "${svelte-language-server}/bin/svelteserver";
+              };
+              taplo = with pkgs; {
+                command = "${taplo}/bin/taplo";
+              };
+              terraform-ls = with pkgs; {
+                command = "${terraform-ls}/bin/terraform-ls";
+              };
+              texlab = with pkgs; {
+                command = "${texlab}/bin/texlab";
+              };
+              typescript-language-server = with pkgs.nodePackages; {
+                command = "${typescript-language-server}/bin/typescript-language-server";
+                args = [ "--stdio" "--tsserver-path=${typescript}/lib/node_modules/typescript/lib" ];
+              };
+              vala-language-server = with pkgs; {
+                command = "${vala-language-server}/bin/vala-language-server";
+              };
+              yaml-language-server = with pkgs; {
+                command = "${yaml-language-server}/bin/yaml-language-server";
+              };
+              zls = with pkgs; {
+                command = "${zls}/bin/zls";
               };
             };
             language = [
               {
                 name = "rust";
                 auto-format = false;
-              }
-              {
-                name = "markdown";
-                language-servers = [ "marksman" ];
-              }
-              {
-                name = "nix";
-                formatter = { command = "nixpkgs-fmt"; };
-              }
-              {
-                name = "python";
-                language-servers = [ "pyright" ];
               }
             ];
           };
