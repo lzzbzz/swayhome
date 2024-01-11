@@ -109,9 +109,16 @@ in {
           gnumake
 
           # lua
-          luajit
+          lua-language-server
           luaformatter
+          luajit
           z-lua
+
+          # nix
+          nixpkgs-fmt
+
+          # markdown
+          marksman
 
           # root
           root
