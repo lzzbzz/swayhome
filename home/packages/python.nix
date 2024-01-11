@@ -13,6 +13,7 @@ in {
             python3.withPackages (
               ps:
                 with ps; [
+                  python-lsp-black
                   appdirs
                   astroid
                   beautifulsoup4
@@ -35,6 +36,7 @@ in {
                   imbalanced-learn
                   ipython
                   jedi
+                  jupyter-lsp
                   jupyterlab
                   jupyterlab-widgets
                   jupyterlab-pygments
