@@ -60,12 +60,32 @@ in {
           languages = {
             language-server = {
               typescript-language-server = with pkgs.nodePackages; {
-                command = "''${typescript-language-server}/bin/typescript-language-server";
+                command = "${typescript-language-server}/bin/typescript-language-server";
                 args = [ "--stdio" "--tsserver-path=''${typescript}/lib/node_modules/typescript/lib" ];
+              };
+
+              bash-language-server = with pkgs.nodePackages; {
+                command = "${bash-language-server}/bin/bash-language-server";
+                args = [ "start" ];
               };
             };
             language = [
-              { name = "rust"; auto-format = false; }
+              {
+                name = "rust";
+                auto-format = false;
+              }
+              {
+                name = "markdown";
+                language-servers = [ "marksman" ];
+              }
+              {
+                name = "nix";
+                formatter = { command = "nixpkgs-fmt"; };
+              }
+              {
+                name = "python";
+                language-servers = [ "pyright" ];
+              }
             ];
           };
 
