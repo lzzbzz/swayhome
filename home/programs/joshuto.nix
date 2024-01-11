@@ -105,6 +105,14 @@ in {
                 }
               ];
 
+              blender_default = [
+                {
+                  command = "blender";
+                  fork = true;
+                  silent = true;
+                }
+              ];
+
               reader_default = [
                 {
                   command = "zathura";
@@ -376,6 +384,13 @@ in {
               pptx."inherit" = "libreoffice_default";
 
               pdf."inherit" = "reader_default";
+
+              blend."inherit" = "blender_default";
+              fbx."inherit" = "blender_default";
+              glb."inherit" = "blender_default";
+              gltf."inherit" = "blender_default";
+              obj."inherit" = "blender_default";
+              stl."inherit" = "blender_default";
 
               kra.app_list = [
                 {
