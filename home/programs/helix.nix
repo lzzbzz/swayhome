@@ -12,7 +12,7 @@ in {
           enable = true;
           defaultEditor = true;
           settings = {
-            theme = "dotfire";
+            theme = "${name}";
 
             editor = {
               bufferline = "always";
@@ -58,7 +58,7 @@ in {
           };
 
           themes = {
-            dotfire = {
+            ${name} = {
               "ui.background" = {fg = "white";};
               "ui.background.separator" = {fg = "gray";};
               "ui.menu" = {fg = "white";};
