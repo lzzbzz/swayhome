@@ -33,6 +33,7 @@ in {
           gleam # gleam
           gopls # golang
           intelephense # php
+          jdt-language-server # java
           jsonnet-language-server # jsonnet
           julia # julia
           lean # lean
