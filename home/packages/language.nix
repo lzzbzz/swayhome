@@ -10,7 +10,8 @@ in {
         packages = with pkgs;
         with pkgs.elmPackages;
         with pkgs.nodePackages;
-        with pkgs.solargraph; [
+        with pkgs.ocamlPackages;
+        with pkgs.rubyPackages; [
           # haskell-language-server # haskell # too much storage
           # sourcekit-lsp # swift & objective-c # too much storage
           ansible-language-server # ansible
@@ -35,6 +36,7 @@ in {
           jsonnet-language-server # jsonnet
           julia # julia
           lean # lean
+          lsp # ocaml
           lua-language-server # lua
           marksman # markdodwn
           metals # scala
