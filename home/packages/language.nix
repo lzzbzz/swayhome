@@ -49,6 +49,7 @@ in {
           perlnavigator # perl
           protobuf # protobuf
           purescript-language-server # purescript
+          pyright # python
           racket # racket
           regols # rego
           ruff-lsp # python
