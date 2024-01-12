@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{ ... }: let
   name = "hervyqa";
   ver = "23.11";
 in {

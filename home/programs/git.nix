@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{ ... }: let
   name = "hervyqa";
   email = "hervyqa@proton.me";
   fullname = "Hervy Qurrotul Ainur Rozi";

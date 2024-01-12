@@ -1,8 +1,4 @@
-{
-  config,
-  lib,
-  ...
-}: {
+{ ... }: {
   hardware = {
     sane = {
       enable = false;

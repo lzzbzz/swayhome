@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{ ... }: let
   name = "hervyqa";
 in {
   home-manager = {

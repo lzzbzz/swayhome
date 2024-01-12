@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{ ... }: let
   ver = "23.11";
 in {
   imports = [

@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: let
+{ ... }: let
   name = "hervyqa";
 in {
   services = {

@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: let
+{ ... }: let
   hostname = "nixos";
 in {
   networking = {

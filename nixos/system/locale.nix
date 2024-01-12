@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: let
+{ ... }: let
   defaultlocale = "en_US.UTF-8";
   extralocale = "id_ID.UTF-8";
 in {

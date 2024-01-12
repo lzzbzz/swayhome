@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: {
+{ ... }: {
   virtualisation = {
     docker = {
       enable = false;

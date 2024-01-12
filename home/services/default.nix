@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{ ... }: {
   imports = [
     <home-manager/nixos>
     ./gpg-agent.nix

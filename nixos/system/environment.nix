@@ -1,11 +1,7 @@
 {
-  config,
   pkgs,
-  lib,
   ...
-}: let
-  name = "hervyqa";
-in {
+}: {
   security.polkit.enable = true;
   environment = {
     etc = {

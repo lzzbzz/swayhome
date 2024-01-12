@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}:
-let
+{ ... }: let
   name = "hervyqa";
 
   # colors
