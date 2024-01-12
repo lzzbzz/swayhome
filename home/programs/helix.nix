@@ -57,6 +57,39 @@ in {
             };
           };
 
+          languages = {
+            language = [
+              {
+                name = "python";
+                language-servers = [ "pyright" "ruff" "pylsp" ];
+                auto-format = true;
+                formatter = {
+                  command = "black";
+                  args = [ "--line-length"  "88"  "--quiet"  "-"];
+                };
+              }
+            ];
+            language-server = {
+              ruff = {
+                command = "ruff-lsp";
+                config = {
+                  settings = {
+                    args = ["--ignore" "E501"];
+                  };
+                };
+              };
+              pyright = {
+                config = {
+                  python = {
+                    analysis = {
+                      typeCheckingMode = "basic";
+                    };
+                  };
+                };
+              };
+            };
+          };
+
           themes = {
             ${name} = {
               "ui.background" = {fg = "white";};
