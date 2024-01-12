@@ -10,6 +10,7 @@ in {
         packages = with pkgs; [
           gdtoolkit
           godot3
+          lmms
         ];
       };
     };
