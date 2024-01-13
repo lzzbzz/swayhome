@@ -6,7 +6,7 @@ in {
       services = {
         mpd = {
           enable = true;
-          musicDirectory = "~/Music";
+          musicDirectory = "~/music";
         };
       };
     };
