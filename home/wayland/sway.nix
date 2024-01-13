@@ -50,13 +50,8 @@ in {
           sway = {
             enable = true;
             config = {
-              gaps = {
-                inner = 10;
-              };
               modifier = "${modifier}";
-              window = {
-                border = 5; titlebar = false;
-              };
+              defaultWorkspace = "workspace number 1";
               bars = [{
                 command = "${waybar}/bin/waybar";
               }];
@@ -73,6 +68,9 @@ in {
                 names = ["monospace"];
                 size = 8.0;
               };
+              gaps = {
+                inner = 10;
+              };
               input = {
                 "type:touchpad" = {
                   dwt = "enabled";
@@ -80,6 +78,9 @@ in {
                   natural_scroll = "enabled";
                   middle_emulation = "enabled";
                 };
+              };
+              window = {
+                border = 5; titlebar = false;
               };
               output = {
                 "*" = {
@@ -143,6 +144,7 @@ in {
                 # modes
                 "${modifier}+r" = "mode resize";
                 "${modifier}+b" = "mode browser";
+                "${modifier}+i" = "mode recording";
                 "${modifier}+Delete" = "mode session";
                 "Print" = "mode printscreen";
               };
@@ -209,10 +211,23 @@ in {
                   # printscreen = "launch: [1]save-area [2]save-all [3]copy-area [4]copy-all";
                   Escape = "mode default";
                   Return = "mode default";
-                  "1" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "2" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "3" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "4" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "1" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" ~/Pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "2" = ''exec ${grim}/bin/grim ~/Pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "3" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" ~/Pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "4" = ''exec ${grim}/bin/grim ~/Pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                };
+                recording = {
+                  # printscreen = "launch:
+                  # [1]area-without-audio [2]area-with-audio;
+                  # [3]full-without-audio [4]full-with-audio;
+                  # [0]stop-record";
+                  Escape = "mode default";
+                  Return = "mode default";
+                  "1" = ''exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file=$HOME/Videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
+                  "2" = ''exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --audio=0 --file=$HOME/Videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
+                  "3" = ''exec ${wf-recorder}/bin/wf-recorder --file=$HOME/Videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
+                  "4" = ''exec ${wf-recorder}/bin/wf-recorder --audio=0 --file=$HOME/Videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
+                  "0" = ''exec pkill wf-recorder, mode default'';
                 };
                 session = {
                   # session = launch:
