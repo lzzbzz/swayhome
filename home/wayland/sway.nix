@@ -9,11 +9,6 @@ let
   name = "hervyqa";
   modifier = "Mod4";
 
-  left = "h";
-  down = "j";
-  up = "k";
-  right = "l";
-
   # colors
   abyss-blue = "#2980b9";
   alternate-gray = "#bdc3c7";
