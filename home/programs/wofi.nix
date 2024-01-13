@@ -9,7 +9,8 @@ in {
           settings = {
             location = "bottom-right";
             allow_markup = true;
-            width = 250;
+            width = 400;
+            height = 200;
           };
         };
       };
