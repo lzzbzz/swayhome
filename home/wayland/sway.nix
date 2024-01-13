@@ -143,6 +143,7 @@ in {
                 # modes
                 "${modifier}+r" = "mode resize";
                 "${modifier}+b" = "mode browser";
+                "${modifier}+Delete" = "mode session";
                 "Print" = "mode printscreen";
               };
               colors = {
@@ -212,6 +213,16 @@ in {
                   "2" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                   "3" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                   "4" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                };
+                session = {
+                  # session = "session |p:poweroff|r:reboot|s:suspend|h:hibernate|l:logout|";
+                  Escape = "mode default";
+                  Return = "mode default";
+                  "h" = "exec systemctl hibernate, mode default";
+                  "p" = "exec systemctl poweroff, mode default";
+                  "r" = "exec systemctl reboot, mode default";
+                  "s" = "exec systemctl suspend, mode default";
+                  "l" = "exec swaymsg exit, mode default";
                 };
               };
             };
