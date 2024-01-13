@@ -9,6 +9,7 @@ in {
     ./services
     ./theme
     ./wayland
+    ./xdg
   ];
 
   home-manager = {
