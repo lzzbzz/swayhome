@@ -215,14 +215,17 @@ in {
                   "4" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                 };
                 session = {
-                  # session = "launch: [h]ibernate [p]oweroff [r]eboot [s]uspend [l]ogout";
+                  # session = launch:
+                  # [h]ibernate [p]oweroff [r]eboot
+                  # [s]uspend [l]ockscreen log[o]ut
                   Escape = "mode default";
                   Return = "mode default";
                   "h" = "exec systemctl hibernate, mode default";
                   "p" = "exec systemctl poweroff, mode default";
                   "r" = "exec systemctl reboot, mode default";
                   "s" = "exec systemctl suspend, mode default";
-                  "l" = "exec swaymsg exit, mode default";
+                  "l" = "exec swaylock, mode default";
+                  "o" = "exec swaymsg exit, mode default";
                 };
               };
             };
