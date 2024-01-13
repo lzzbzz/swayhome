@@ -1,5 +1,4 @@
 {
-  config,
   lib,
   pkgs,
   ...
@@ -8,7 +7,12 @@ with lib;
 with pkgs;
 let
   name = "hervyqa";
-  mod = "Mod4";
+  modifier = "Mod4";
+
+  left = "h";
+  down = "j";
+  up = "k";
+  right = "l";
 
   # colors
   abyss-blue = "#2980b9";
@@ -46,10 +50,14 @@ in {
           sway = {
             enable = true;
             config = {
+              left = "h";
+              down = "j";
+              up = "k";
+              right = "l";
               gaps = {
                 inner = 10;
               };
-              modifier = "${mod}";
+              modifier = "${modifier}";
               window = {
                 border = 5; titlebar = false;
               };
@@ -57,7 +65,7 @@ in {
                 command = "${waybar}/bin/waybar";
               }];
               floating = {
-                modifier = "${mod}";
+                modifier = "${modifier}";
                 border = 5;
                 titlebar = false;
               };
@@ -85,25 +93,31 @@ in {
               startup = [
                 { command = "${autotiling}/bin/autotiling"; }
               ];
-              keybindings = let
-                modifier = config.wayland.windowManager.sway.config.modifier;
-              in mkOptionDefault {
+              keybindings = mkOptionDefault {
                 # menu
-                "${mod}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${paper-white}' -nb '${shade-black}' -sf '${paper-white}' -sb '${plasma-blue}' | ${findutils}/bin/xargs swaymsg exec --";
+                "${modifier}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${paper-white}' -nb '${shade-black}' -sf '${paper-white}' -sb '${plasma-blue}' | ${findutils}/bin/xargs swaymsg exec --";
+
                 # audio control
                 "XF86AudioRaiseVolume" = "exec ${swayosd}/bin/swayosd --output-volume 2";
                 "XF86AudioLowerVolume" = "exec ${swayosd}/bin/swayosd --output-volume -2";
                 "XF86AudioMute" = "exec ${swayosd}/bin/swayosd --output-volume mute-toggle";
                 "XF86AudioMicMute" = "exec ${swayosd}/bin/swayosd --input-volume mute-toggle";
+
                 # brightness
                 "XF86MonBrightnessUp" = "exec ${swayosd}/bin/swayosd --brightness 2";
                 "XF86MonBrightnessDown" = "exec ${swayosd}/bin/swayosd --brightness -2";
+
                 # print+copy
                 "Print" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png'';
                 "Print+Shift" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png'';
+
                 # print+save
-                "Print+${mod}" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
-                "Print+Shift+${mod}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+${modifier}" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
+                "Print+Shift+${modifier}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
+
+                # modes
+                "${modifier}+r" = "mode resize";
+                "${modifier}+b" = "mode browser";
               };
               colors = {
                 background = shade-black;
@@ -156,6 +170,12 @@ in {
                   "${left}" = "resize shrink width 5 px or 5 ppt";
                   "${right}" = "resize grow width 5 px or 5 ppt";
                   "${up}" = "resize shrink height 5 px or 5 ppt";
+                };
+                browser = {
+                  Escape = "mode default";
+                  Return = "mode default";
+                  "1" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
+                  "2" = "exec ${qutebrowser}/bin/qutebrowser --target private-window, mode default";
                 };
               };
             };
