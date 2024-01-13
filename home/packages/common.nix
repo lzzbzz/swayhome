@@ -136,7 +136,6 @@ in {
           synfigstudio
 
           # media
-          obs-studio
           tenacity
 
           # internet
