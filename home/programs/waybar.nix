@@ -175,6 +175,9 @@ in {
                 format-icons = [
                   ""
                   ""
+                  ""
+                  ""
+                  ""
                 ];
               };
               "battery#bat2" = {
