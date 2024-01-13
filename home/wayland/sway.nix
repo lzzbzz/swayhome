@@ -107,17 +107,10 @@ in {
                 "XF86MonBrightnessUp" = "exec ${swayosd}/bin/swayosd --brightness 2";
                 "XF86MonBrightnessDown" = "exec ${swayosd}/bin/swayosd --brightness -2";
 
-                # print+copy
-                "Print" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png'';
-                "Print+Shift" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png'';
-
-                # print+save
-                "Print+${modifier}" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png'';
-                "Print+Shift+${modifier}" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png'';
-
                 # modes
                 "${modifier}+r" = "mode resize";
                 "${modifier}+b" = "mode browser";
+                "Print" = "mode printscreen";
               };
               colors = {
                 background = shade-black;
@@ -172,19 +165,20 @@ in {
                   "${up}" = "resize shrink height 5 px or 5 ppt";
                 };
                 browser = {
+                  # browser = "browser 1-2 |1:qutebrowser|2:private|";
                   Escape = "mode default";
                   Return = "mode default";
                   "1" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
                   "2" = "exec ${qutebrowser}/bin/qutebrowser --target private-window, mode default";
                 };
-              };
-            };
-            swaynag = {
-              enable = true;
-              settings = {
-                "<config>" = {
-                  edge = "top";
-                  font = "Monospace 8";
+                printscreen = {
+                  # printscreen = "printscreen 1-4 |1:save-area|2:save-all|3:copy-area|4:copy-all|";
+                  Escape = "mode default";
+                  Return = "mode default";
+                  "1" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "2" = ''exec ${grim}/bin/grim | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "3" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "4" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                 };
               };
             };
