@@ -38,6 +38,15 @@ in {
           settings = {
             color = shade-black;
             line-color = plasma-blue;
+            bs-hl-color = plasma-blue;
+            font = "Monospace";
+            font-size = 12;
+            disable-caps-lock-text = true;
+            ignore-empty-password = true;
+            indicator = true;
+            indicator-caps-lock = true;
+            indicator-radius = 50;
+            indicator-thickness = 10;
           };
         };
       };
