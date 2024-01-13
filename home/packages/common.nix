@@ -45,7 +45,6 @@ in {
           translate-shell # translate via google api
           upterm # remote console
           ventoy # cerate usb bootable
-          vhs # generating terminal gifs with code
           vulkan-tools # khronos official vulkan tools and utilities
           w3m # image viewer
           wayland-utils # wayland utilities (wayland-info)
