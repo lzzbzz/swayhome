@@ -187,12 +187,7 @@ in {
                 };
               };
               modes = {
-                resize = let
-                  left = "h";
-                  down = "j";
-                  up = "k";
-                  right = "l";
-                in {
+                resize = {
                   Escape = "mode default";
                   Return = "mode default";
                   "${down}" = "resize grow height 5 px or 5 ppt";
