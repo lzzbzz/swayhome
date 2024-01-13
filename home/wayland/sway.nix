@@ -199,14 +199,14 @@ in {
                   "${up}" = "resize shrink height 5 px or 5 ppt";
                 };
                 browser = {
-                  # browser = "browser 1-2 |1:qutebrowser|2:private|";
+                  # browser = "launch: [q]utebrowser [p]rivate";
                   Escape = "mode default";
                   Return = "mode default";
-                  "1" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
-                  "2" = "exec ${qutebrowser}/bin/qutebrowser --target private-window, mode default";
+                  "q" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
+                  "p" = "exec ${qutebrowser}/bin/qutebrowser --target private-window, mode default";
                 };
                 printscreen = {
-                  # printscreen = "printscreen 1-4 |1:save-area|2:save-all|3:copy-area|4:copy-all|";
+                  # printscreen = "launch: [1]save-area [2]save-all [3]copy-area [4]copy-all";
                   Escape = "mode default";
                   Return = "mode default";
                   "1" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
@@ -215,7 +215,7 @@ in {
                   "4" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                 };
                 session = {
-                  # session = "session |p:poweroff|r:reboot|s:suspend|h:hibernate|l:logout|";
+                  # session = "launch: [h]ibernate [p]oweroff [r]eboot [s]uspend [l]ogout";
                   Escape = "mode default";
                   Return = "mode default";
                   "h" = "exec systemctl hibernate, mode default";
