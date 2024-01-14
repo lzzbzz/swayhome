@@ -199,8 +199,8 @@ in {
                   # browser = "launch: [q]utebrowser [p]rivate";
                   Escape = "mode default";
                   Return = "mode default";
-                  "q" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
-                  "p" = "exec ${qutebrowser}/bin/qutebrowser --target private-window, mode default";
+                  "1" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
+                  "2" = "exec ${qutebrowser}/bin/qutebrowser --target private-window, mode default";
                 };
                 printscreen = {
                   # printscreen = "launch: [1]save-area [2]save-all [3]copy-area [4]copy-all";
