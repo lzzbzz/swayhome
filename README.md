@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/hervyqa/swayhome/main/imgs/logo.png" width="500px" alt="swayhome logo"/>
-</p>
-
 Personal [NixOS](https://nixos.org/),
 [Sway WM](https://swaywm.org) and
 [Home Manager](https://nix-community.github.io/home-manager/) configuration.
@@ -17,48 +13,48 @@ Minimalist Waybar.
 
 ![images](./imgs/waybar.png)
 
-## 📖 File structure
+## 💠 File structure
 
-- [home](./home): home-manager configuration.
-  - [packages](./home/packages): list of user packages without configuration.
-  - [programs](./home/programs): list of user packages with configuration.
-  - [services](./home/services): list of user services.
-  - [theme](./home/theme): list of user themes (gtk and qt).
-  - [wayland](./home/wayland): window manager configuration (sway).
-- [nixos](./nixos): system configuration.
-  - [hardware](./nixos/hardware): list of hardware configuration.
-  - [programs](./nixos/programs): list of programs installed through the system.
-  - [system](./nixos/system): list of system settings.
-  - [virtual](./nixos/virtual): isolation environments and virtual machines.
-- [imgs](./imgs): list of screenshot images.
+- [home](./home): Home-manager configuration.
+  - [packages](./home/packages): List of user packages without configuration.
+  - [programs](./home/programs): List of user packages with configuration.
+  - [services](./home/services): List of user services.
+  - [theme](./home/theme): List of user themes (gtk and qt).
+  - [wayland](./home/wayland): Window manager configuration (sway).
+- [nixos](./nixos): System configuration.
+  - [hardware](./nixos/hardware): List of hardware configuration.
+  - [programs](./nixos/programs): List of programs installed through the system.
+  - [system](./nixos/system): List of system settings.
+  - [virtual](./nixos/virtual): Isolation environments and virtual machines.
+- [imgs](./imgs): List of screenshot images.
 
-## 📦 List of apps
+## 💎 List of apps
 
 Category | Name | Description
 :--- | :--- | :---
-Window manager | `sway` | i3-compatible tiling wayland compositor.
-Bar | `waybar` | customizable wayland bar for sway.
-Terminal session | `zellij` | terminal workspace with batteries included.
-System monitor | `bottom`, `htop` | graphical process/system monitor.
-Audio player | `ncmpcpp`, `mpd` | ncurses based mpd client.
-Browser | `qutebrowser`, `firefox` | keyboard-focused browser.
-File manager | `joshuto`, `pcmanfm` | ranger-like terminal file manager.
-Image viewer | `imv`, `krita` | command line image viewer.
-Menu | `wofi` | menu/launcher for wayland.
-Notification | `mako` | lightweight wayland notification daemon.
-PDF viewer | `zathura` | highly customizable and functional pdf viewer.
-Recorder | `wf-recorder`, `obs-studio` | screen recording of wlroots-based.
-Shell | `fish`, `bash` | smart and user-friendly command line shell.
-Terminal | `foot` | minimalistic Wayland terminal emulator.
-Text editor | `helix`, `neovim`, `micro` | A post-modern modal text editor.
-Video player | `mpv` | general-purpose media player.
-Backlight | `swayosd`, `light` | screen display for keyboard shortcuts.
-Volume control | `swayosd`, `pamixer` | screen display for keyboard shortcuts.
-Fonts | `monospace:8` | minimalist monospaced font.
-Icons | `papirus-icon` | pixel perfect icon theme for linux.
-GTK & QT Theme | `breeze-dark` | kde plasma theme.
+Window manager | `sway` | Tiling wayland compositor.
+Bar | `waybar` | Customizable wayland bar for sway.
+Terminal session | `zellij` | Terminal workspace with batteries included.
+System monitor | `bottom`, `htop` | Graphical process/system monitor.
+Audio player | `ncmpcpp`, `mpd` | Ncurses based mpd client.
+Browser | `qutebrowser`, `firefox` | Keyboard-focused browser.
+File manager | `joshuto`, `pcmanfm` | Ranger-like terminal file manager.
+Image viewer | `imv`, `krita` | Command line image viewer.
+Menu | `wofi` | Menu/launcher for wayland.
+Notification | `mako` | Lightweight wayland notification daemon.
+PDF viewer | `zathura` | Highly customizable and functional pdf viewer.
+Recorder | `wf-recorder`, `obs-studio` | Screen recording of wlroots-based.
+Shell | `fish`, `bash` | Smart and user-friendly command line shell.
+Terminal | `foot` | Minimalistic Wayland terminal emulator.
+Text editor | `helix`, `neovim`, `micro` | Post-modern modal text editor.
+Video player | `mpv` | General-purpose media player.
+Backlight | `swayosd`, `light` | Screen display for keyboard shortcuts.
+Volume control | `swayosd`, `pamixer` | Screen display for keyboard shortcuts.
+Fonts | `monospace:8` | Minimalist monospaced font.
+Icons | `papirus-icon` | Pixel perfect icon theme for linux.
+GTK & QT Theme | `breeze-dark` | KDE plasma theme.
 
-## 🕹 Sway usage
+## 🐳 Sway usage
 
 Keybinding | Optional | Description
 :--- | :--- | :---
@@ -74,7 +70,7 @@ Keybinding | Optional | Description
 `Print` | `1`/`2`/`3`/`4` | Printscreen area, all, area (copy) & all (copy).
 `Print`+`Shift` | `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record.
 
-## 💻 Installation
+## 🫐 Installation
 
 ### Cloning repository
 
@@ -103,7 +99,7 @@ sudo nix-channel --update
 If using a different version, please replace `stateVersion` variables from
 [nixos](./nixos/system/default.nix) and [home](./home/default.nix).
 
-### Change variable
+## 🧢 User variable
 
 Some variables were found in the `.nix` files. You need to replace it with
 another name and value. For example:
@@ -125,14 +121,14 @@ in {
 ...
 ```
 
-### 🛠 Hardware
+## 💙 Configure hardware
 
 If you are installing NixOS for the first time, there is a
 `hardware-configuration.nix` file, you can change variables and include each
 existing module in dotfile settings. You don't need to take all the settings
 like these dotfiles, just take the part you need.
 
-#### Processor
+### Processor
 
 My machine uses `intel` machine. You can change it if you use another processor
 like `amd`.
@@ -150,7 +146,7 @@ hardware = {
 };
 ```
 
-#### File systems
+### File systems
 
 The disk partition used uses LUKS encryption. You can change the UUID value
 currently used.
@@ -188,7 +184,7 @@ fileSystems = {
 };
 ```
 
-##### Swap partition
+### Swap partition
 
 If you have a swap linux partition (optional).
 Nix file: [nixos/hardware/swapdevices.nix](./nixos/hardware/swapdevices.nix).
@@ -197,7 +193,7 @@ Nix file: [nixos/hardware/swapdevices.nix](./nixos/hardware/swapdevices.nix).
 swapDevices = [];
 ```
 
-## 🍵 How to build
+## 🗳 How to build
 
 This dotfile is installed with the nixos module.
 There is no need to run `home-manager switch`
@@ -221,7 +217,7 @@ Nix file: [home/programs/fish.nix](./home/programs/fish.nix).
 nrs
 ```
 
-## 🌤 Check system
+## ❄️ Check system
 
 ```sh
 nix-shell -p nix-info --run 'nix-info -m'
@@ -238,7 +234,7 @@ Sample output.
 - channels(root): `"home-manager-23.11.tar.gz, nixos-23.11"`
 - nixpkgs: `/nix/var/nix/profiles/per-user/root/channels/nixos`
 
-## 🌱 License
+## 📘 License
 
 [MIT License](./LICENSE.md)
 
