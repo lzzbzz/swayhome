@@ -1,6 +1,5 @@
 { ... }: {
   imports = [
-    <home-manager/nixos>
     ./gpg-agent.nix
     ./kanshi.nix
     ./mako.nix

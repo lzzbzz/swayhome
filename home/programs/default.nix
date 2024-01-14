@@ -1,6 +1,5 @@
 { ... }: {
   imports = [
-    <home-manager/nixos>
     ./bat.nix
     ./cava.nix
     ./firefox.nix
