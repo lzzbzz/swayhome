@@ -43,7 +43,7 @@ System monitor | `bottom`, `htop` | graphical process/system monitor.
 Audio player | `ncmpcpp`, `mpd` | ncurses based mpd client.
 Browser | `qutebrowser`, `firefox` | keyboard-focused browser.
 File manager | `joshuto`, `pcmanfm` | ranger-like terminal file manager.
-Image viewer | `imv`, `qimqv` | command line image viewer.
+Image viewer | `imv`, `krita` | command line image viewer.
 Menu | `dmenu` | an efficient dynamic menu.
 Notification | `mako` | lightweight wayland notification daemon.
 PDF viewer | `zathura` | highly customizable and functional pdf viewer.
