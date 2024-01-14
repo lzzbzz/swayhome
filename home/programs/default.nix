@@ -21,6 +21,7 @@
     ./ncmpcpp.nix
     ./obs.nix
     ./password.nix
+    ./pistol.nix
     ./qutebrowser.nix
     ./swaylock.nix
     ./vscode.nix
