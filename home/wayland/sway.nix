@@ -208,8 +208,8 @@ in {
                   Return = "mode default";
                   "1" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" ~/pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                   "2" = ''exec ${grim}/bin/grim ~/pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "3" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" ~/pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "4" = ''exec ${grim}/bin/grim ~/pictures/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.png") - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "3" = ''exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "4" = ''exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                 };
                 recording = {
                   # printscreen = "launch:
