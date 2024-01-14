@@ -40,14 +40,14 @@ in {
               ];
               image_default = [
                 {
-                  command = "imv";
+                  command = "qimgv";
                   args = [ "--" ];
                   fork = true;
                   silent = true;
                 }
                 {
-                  command = "qimgv";
-                  args = [ "--" ];
+                  command = "imv";
+                  args = [ "-r" "--" ];
                   fork = true;
                   silent = true;
                 }
@@ -63,8 +63,8 @@ in {
                 }
                 {
                   command = "swappy";
-                  args = [ "
-                  f" ]; fork = true;
+                  args = [ " f" ];
+                  fork = true;
                 }
               ];
               video_default = [
