@@ -8,8 +8,7 @@ in {
           enable = true;
           settings = {
             options = {
-              fullscreen = true;
-              recursively = true;
+              fullscreen = false;
             };
           };
         };
