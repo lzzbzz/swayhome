@@ -1,3 +1,11 @@
+```plain
+                         _
+ _____      ____ _ _   _| |__   ___  _ __ ___   ___
+/ __\ \ /\ / / _` | | | | '_ \ / _ \| '_ ` _ \ / _ \
+\__ \\ V  V | (_| | |_| | | | | (_) | | | | | |  __/
+|___/ \_/\_/ \__,_|\__, |_| |_|\___/|_| |_| |_|\___|
+                   |___/
+```
 This is the [NixOS](https://nixos.org/) configuration repository for my machines.
 Include [Sway WM](https://swaywm.org) and
 [Home Manager](https://nix-community.github.io/home-manager/) configuration.
