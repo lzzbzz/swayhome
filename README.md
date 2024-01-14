@@ -44,7 +44,7 @@ Audio player | `ncmpcpp`, `mpd` | ncurses based mpd client.
 Browser | `qutebrowser`, `firefox` | keyboard-focused browser.
 File manager | `joshuto`, `pcmanfm` | ranger-like terminal file manager.
 Image viewer | `imv`, `krita` | command line image viewer.
-Menu | `dmenu` | an efficient dynamic menu.
+Menu | `wofi` | menu/launcher for wayland.
 Notification | `mako` | lightweight wayland notification daemon.
 PDF viewer | `zathura` | highly customizable and functional pdf viewer.
 Recorder | `wf-recorder`, `obs-studio` | screen recording of wlroots-based.
@@ -63,7 +63,7 @@ GTK & QT Theme | `breeze-dark` | kde plasma theme.
 Keybinding | Optional | Description
 :--- | :--- | :---
 `Mod` | | Meta key with logo (mod4).
-`Mod`+`d` | | Menu or launcher (dmenu).
+`Mod`+`d` | | Menu or launcher (wofi).
 `Mod`+`num` | | Move to workspace (num=1-10).
 `Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
 `Mod`+`Enter` | | Terminal (foot).
