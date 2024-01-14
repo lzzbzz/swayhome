@@ -116,7 +116,6 @@ in {
           root
 
           # theme
-          qt5ct
           themechanger
 
           # database
