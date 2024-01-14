@@ -14,7 +14,9 @@ in {
           imv = "imv.desktop";
           inkscape = "org.inkscape.Inkscape.desktop";
           krita = "krita_psd.desktop";
+          micro = "micro.desktop";
           mpv = "mpv.desktop";
+          neovim = "nvim.desktop";
           pcmanfm = "pcmanfm.desktop";
           qutebrowser = "org.qutebrowser.qutebrowser.desktop";
           zathura = "org.pwmt.zathura.desktop";
@@ -22,14 +24,14 @@ in {
           enable = true;
           associations.added = {
             "application/pdf" = [ zathura ];
-            "application/vnd.ms-publisher" = [ helix ];
+            "application/vnd.ms-publisher" = [ helix neovim micro ];
             "application/x-extension-htm" = [ qutebrowser ];
             "application/x-extension-html" = [ qutebrowser ];
             "application/x-extension-shtml" = [ qutebrowser ];
             "application/x-extension-xht" = [ qutebrowser ];
             "application/x-extension-xhtml" = [ qutebrowser ];
             "application/xhtml+xml" = [ qutebrowser ];
-            "application/xml" = [ helix ];
+            "application/xml" = [ helix neovim micro ];
             "audio/aac" = [ mpv ];
             "audio/flac" = [ mpv ];
             "audio/mp4" = [ mpv ];
@@ -46,8 +48,8 @@ in {
             "image/x-xcf" = [ gimp ];
             "inode/directory" = [ pcmanfm ];
             "text/html" = [ qutebrowser ];
-            "text/markdown" = [ helix ];
-            "text/plain" = [ helix ];
+            "text/markdown" = [ helix neovim micro ];
+            "text/plain" = [ helix neovim micro ];
             "text/uri-list" = [ qutebrowser ];
             "video/mp4" = [ mpv ];
             "video/ogg" = [ mpv ];
@@ -67,14 +69,14 @@ in {
           };
           defaultApplications = {
             "application/pdf" = [ zathura ];
-            "application/vnd.ms-publisher" = [ helix ];
+            "application/vnd.ms-publisher" = [ helix neovim micro ];
             "application/x-extension-htm" = [ qutebrowser ];
             "application/x-extension-html" = [ qutebrowser ];
             "application/x-extension-shtml" = [ qutebrowser ];
             "application/x-extension-xht" = [ qutebrowser ];
             "application/x-extension-xhtml" = [ qutebrowser ];
             "application/xhtml+xml" = [ qutebrowser ];
-            "application/xml" = [ helix ];
+            "application/xml" = [ helix neovim micro ];
             "audio/aac" = [ mpv ];
             "audio/flac" = [ mpv ];
             "audio/mp4" = [ mpv ];
@@ -91,8 +93,8 @@ in {
             "image/x-xcf" = [ gimp ];
             "inode/directory" = [ pcmanfm ];
             "text/html" = [ qutebrowser ];
-            "text/markdown" = [ helix ];
-            "text/plain" = [ helix ];
+            "text/markdown" = [ helix neovim micro ];
+            "text/plain" = [ helix neovim micro ];
             "text/uri-list" = [ qutebrowser ];
             "video/mp4" = [ mpv ];
             "video/ogg" = [ mpv ];
