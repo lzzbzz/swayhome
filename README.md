@@ -1,6 +1,8 @@
-Personal [NixOS](https://nixos.org/),
-[Sway WM](https://swaywm.org) and
+This is the [NixOS](https://nixos.org/) configuration repository for my machines.
+Include [Sway WM](https://swaywm.org) and
 [Home Manager](https://nix-community.github.io/home-manager/) configuration.
+
+## 🐬 Gallery
 
 ![images](./imgs/wallpaper.png)
 ![images](./imgs/terminal.png)
@@ -217,7 +219,7 @@ Nix file: [home/programs/fish.nix](./home/programs/fish.nix).
 nrs
 ```
 
-## ❄️ Check system
+## 🌊 Check system
 
 ```sh
 nix-shell -p nix-info --run 'nix-info -m'
