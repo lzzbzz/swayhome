@@ -47,6 +47,7 @@ Image viewer | `imv`, `qimqv` | command line image viewer.
 Menu | `dmenu` | an efficient dynamic menu.
 Notification | `mako` | lightweight wayland notification daemon.
 PDF viewer | `zathura` | highly customizable and functional pdf viewer.
+Recorder | `wf-recorder`, `obs-studio` | screen recording of wlroots-based.
 Shell | `fish`, `bash` | smart and user-friendly command line shell.
 Terminal | `foot` | minimalistic Wayland terminal emulator.
 Text editor | `helix`, `neovim`, `micro` | A post-modern modal text editor.
@@ -203,6 +204,17 @@ Nix file: [home/programs/fish.nix](./home/programs/fish.nix).
 ```sh
 nrs
 ```
+
+## 🕹 Sway modes usage
+
+Keybinding | Next | Description
+:--- | :--- | :---
+`Mod4` | | Meta key with logo.
+`Mod4+r` | `h`, `j`, `k`, `l` | Resize window.
+`Mod4+b` | `q`, `p` | Qutebrowser, private qutebrowser.
+`Mod4+Delete` | `h`, `p`, `r`, `s`, `l`, `o` | Hibernate, poweroff, reboot, suspend, lockscreen and logout.
+`Print` | `1`, `2`, `3`, `4` | Printscreen area, all, area (copy) and all (copy).
+`Print+Shift` | `1`, `2`, `3`, `4`, `0` | Recording area, all, area (no audio), all (no audio), stop record.
 
 ## 🌤 Check system
 
