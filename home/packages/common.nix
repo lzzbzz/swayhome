@@ -38,7 +38,6 @@ in {
           pandoc # convert document
           pcmanfm # file manager gtk
           pfetch # pretty system information tool
-          qimgv # qt image viewer
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality

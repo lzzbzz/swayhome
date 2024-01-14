@@ -40,14 +40,8 @@ in {
               ];
               image_default = [
                 {
-                  command = "qimgv";
-                  args = [ "--" ];
-                  fork = true;
-                  silent = true;
-                }
-                {
                   command = "imv";
-                  args = [ "-r" "--" ];
+                  args = [ "--" ];
                   fork = true;
                   silent = true;
                 }
@@ -367,6 +361,7 @@ in {
                 }
               ];
 
+              # document
               odt."inherit" = "libreoffice_default";
               odf."inherit" = "libreoffice_default";
               ods."inherit" = "libreoffice_default";
@@ -381,6 +376,7 @@ in {
 
               pdf."inherit" = "reader_default";
 
+              # 3d files
               blend."inherit" = "blender_default";
               fbx."inherit" = "blender_default";
               glb."inherit" = "blender_default";
