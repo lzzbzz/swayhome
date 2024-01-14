@@ -27,6 +27,7 @@ in {
           glow # markdown renderer
           glxinfo # test utilities for opengl
           grim # screenshot functionality
+          hexyl # command-line hex viewer
           imagemagick # convert image
           inxi # info for device specification
           jq # command-line json processor
