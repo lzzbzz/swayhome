@@ -213,14 +213,14 @@ in {
                 };
                 recording = {
                   # printscreen = "launch:
-                  # [1]area-with-audio [2]area-without-audio;
-                  # [3]full-with-audio [4]full-without-audio;
+                  # [1]area-with-audio [2]full-with-audio;
+                  # [3]area-without-audio [4]full-without-audio;
                   # [0]stop-record";
                   Escape = "mode default";
                   Return = "mode default";
                   "1" = ''exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --audio=0 --file=~/videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
-                  "2" = ''exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file=~/videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
-                  "3" = ''exec ${wf-recorder}/bin/wf-recorder --audio=0 --file=~/videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
+                  "2" = ''exec ${wf-recorder}/bin/wf-recorder --audio=0 --file=~/videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
+                  "3" = ''exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file=~/videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
                   "4" = ''exec ${wf-recorder}/bin/wf-recorder --file=~/videos/$(date +"%Y%m%d_%Hh%Mm%Ss_@${name}.mp4"), mode default'';
                   "0" = ''exec pkill wf-recorder, mode default'';
                 };
