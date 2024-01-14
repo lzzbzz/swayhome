@@ -23,6 +23,7 @@ Minimalist Waybar.
   - [services](./home/services): List of user services.
   - [theme](./home/theme): List of user themes (gtk and qt).
   - [wayland](./home/wayland): Window manager configuration (sway).
+  - [xdg](./home/xdg): Manage mimeapps and user-dirs.
 - [nixos](./nixos): System configuration.
   - [hardware](./nixos/hardware): List of hardware configuration.
   - [programs](./nixos/programs): List of programs installed through the system.
