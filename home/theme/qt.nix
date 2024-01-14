@@ -9,7 +9,7 @@ in {
       qt = {
         enable = true;
         style = {
-          name = "Breeze Dark";
+          name = "Breeze";
           package = pkgs.libsForQt5.breeze-qt5;
         };
       };
