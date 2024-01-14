@@ -41,6 +41,7 @@ in {
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
+          swappy # snapshot editing tool
           swaykbdd # per-window keyboard layout for sway
           translate-shell # translate via google api
           upterm # remote console
