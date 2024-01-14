@@ -9,6 +9,7 @@ in {
       home = {
         packages = with pkgs.libsForQt5; [
           qt5ct
+          kdenlive
           qt5.qtwayland
         ];
       };
