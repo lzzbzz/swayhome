@@ -206,10 +206,10 @@ in {
                   # printscreen = "launch: [1]save-area [2]save-all [3]copy-area [4]copy-all";
                   Escape = "mode default";
                   Return = "mode default";
-                  "1" = ''exec sleep 0.5; exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" "$(xdg-user-dir PICTURES)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.png)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "2" = ''exec sleep 0.5; exec ${grim}/bin/grim "$(xdg-user-dir PICTURES)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.png)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "3" = ''exec sleep 0.5; exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
-                  "4" = ''exec sleep 0.5; exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "1" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" "$(xdg-user-dir PICTURES)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.png)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "2" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${grim}/bin/grim "$(xdg-user-dir PICTURES)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.png)" | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${grim}/bin/grim -g "$(${slurp}/bin/slurp -d)" - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
+                  "4" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${grim}/bin/grim - | ${wl-clipboard}/bin/wl-copy -t image/png, mode default'';
                 };
                 recording = {
                   # printscreen = "launch:
@@ -218,11 +218,11 @@ in {
                   # [0]stop-record";
                   Escape = "mode default";
                   Return = "mode default";
-                  "1" = ''exec sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --audio=0 --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "2" = ''exec sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --audio=0 --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "3" = ''exec sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "4" = ''exec sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "0" = ''exec sleep 0.5; exec pkill wf-recorder, mode default'';
+                  "1" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --audio=0 --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "2" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --audio=0 --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "4" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "0" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${procps}/bin/pkill wf-recorder, mode default'';
                 };
                 session = {
                   # session = launch:
