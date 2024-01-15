@@ -7,7 +7,7 @@ in {
         mpv = {
           enable = true;
           config = {
-            force-window = true;
+            force-window = "yes";
             fullscreen = "yes";
             profile = "gpu-hq";
             ytdl-format = "bestvideo+bestaudio";
