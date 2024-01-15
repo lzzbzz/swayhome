@@ -44,9 +44,9 @@ handle_extension() {
             exit 1 ;;
 
         build|c|cmake|conf|cpp|css|csv|cu|ebuild|eex|\
-        env|ex|exs|go|h|hpp|hs|ini|java|js|kt|lua|log|\
-        micro|ninja|nix|norg|org|py|qmd|rkt|rs|scss|sh|\
-        srt|svelte|toml|tsx|txt|vim|xml|yaml|yml)
+        env|ex|exs|go|h|hpp|hs|ini|java|jl|js|kt|lua|lock|\
+        log|micro|ninja|nix|norg|org|py|qmd|rkt|rs|scss|sh|\
+        srt|svelte|svg|toml|tsx|txt|vim|xml|yaml|yml|Rproj)
             bat --color=always --paging=never \
                 --style=plain \
                 --terminal-width="${PREVIEW_WIDTH}" \
