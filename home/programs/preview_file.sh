@@ -76,7 +76,7 @@ handle_extension() {
             transmission-show -- "${FILE_PATH}" && exit 0
             exit 1 ;;
 
-        odt|sxw)
+        odt|sxw|docx)
             odt2txt "${FILE_PATH}" && exit 0
             pandoc -s -t markdown -- "${FILE_PATH}" && exit 0
             exit 1 ;;
