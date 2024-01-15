@@ -7,7 +7,7 @@ in {
     ./packages
     ./programs
     ./services
-    ./theme
+    ./themes
     ./wayland
     ./xdg
   ];
