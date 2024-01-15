@@ -58,6 +58,7 @@ in {
           wmctrl # interact netwm x wm
           wvkbd # on-screen keyboard for wlroots
           xdg-utils # for opening default programs when clicking links
+          xdg-user-dirs # manage well known user directories
           xlsx2csv # convert xlsx to csv
 
           # archiver
