@@ -31,8 +31,8 @@ done
 
 handle_extension() {
     case "${FILE_EXTENSION_LOWER}" in
-            a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
-            rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)
+        a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
+        rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)
             atool --list -- "${FILE_PATH}" && exit 0
             bsdtar --list --file "${FILE_PATH}" && exit 0
             exit 1 ;;
@@ -46,13 +46,23 @@ handle_extension() {
         build|c|cmake|conf|cpp|css|csv|cu|ebuild|eex|\
         env|ex|exs|go|h|hpp|hs|ini|java|jl|js|kt|lua|lock|\
         log|micro|ninja|nix|norg|org|py|qmd|rkt|rs|scss|sh|\
-        srt|svelte|svg|toml|tsx|txt|vim|xml|yaml|yml|Rproj)
+        sql|srt|svelte|svg|toml|tsx|txt|vim|xml|yaml|yml|rproj)
             bat --color=always --paging=never \
                 --style=plain \
                 --terminal-width="${PREVIEW_WIDTH}" \
                 "${FILE_PATH}" && exit 0
             cat "${FILE_PATH}" && exit 0
-            ;;
+            exit 1 ;;
+
+        md)
+            glow --width="${PREVIEW_WIDTH}" \
+                --local "${FILE_PATH}" && exit 0
+            bat --color=always --paging=never \
+                --style=plain \
+                --terminal-width="${PREVIEW_WIDTH}" \
+                "${FILE_PATH}" && exit 0
+            cat "${FILE_PATH}" && exit 0
+            exit 1 ;;
 
         pdf)
             pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | \
@@ -83,27 +93,27 @@ handle_extension() {
             lynx -dump -- "${FILE_PATH}" && exit 0
             elinks -dump "${FILE_PATH}" && exit 0
             pandoc -s -t markdown -- "${FILE_PATH}" && exit 0
-            ;;
+            exit 1 ;;
 
         json|ipynb)
             jq --color-output . "${FILE_PATH}" && exit 0
             python -m json.tool -- "${FILE_PATH}" && exit 0
-            ;;
+            exit 1 ;;
 
         dff|dsf|wv|wvc)
             mediainfo "${FILE_PATH}" && exit 0
             exiftool "${FILE_PATH}" && exit 0
-            ;;
+            exit 1 ;;
 
-        md)
-            glow --width="${PREVIEW_WIDTH}" \
-                --local "${FILE_PATH}" && exit 0
-            bat --color=always --paging=never \
-                --style=plain \
-                --terminal-width="${PREVIEW_WIDTH}" \
-                "${FILE_PATH}" && exit 0
-            cat "${FILE_PATH}" && exit 0
-            ;;
+        avif|bmp|gif|heic|jpeg|jpe|jpg|jxl|kra|pgm|png|ppm|\
+        psd|tiff|webp|xcf)
+            exiftool "${FILE_PATH}" && exit 0
+            exit 1 ;;
+
+        aac|ac3|aiff|ape|av1|avi|dts|flac|flv|m4a|m4v|mkv|mov|\
+        mp3|mp4|oga|ogg|opus|ts|wav|webm|wmv|wv)
+            mediainfo "${FILE_PATH}" && exit 0
+            exit 1 ;;
 
     esac
 }
