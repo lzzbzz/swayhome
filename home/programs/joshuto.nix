@@ -208,6 +208,7 @@ in {
               hs."inherit" = "text_default";
               html."inherit" = "text_default";
               ini."inherit" = "text_default";
+              ipynb."inherit" = "text_default";
               java."inherit" = "text_default";
               js."inherit" = "text_default";
               json."inherit" = "text_default";
