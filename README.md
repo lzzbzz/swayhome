@@ -79,8 +79,19 @@ Keybinding | Optional | Description
 
 ### Cloning repository
 
+* Read-only:
+
 ```sh
-git clone git@github.com:hervyqa/swayhome.git
+https://git.sr.ht/~hervyqa/swayhome
+```
+
+* Read/write (Recommended):
+
+```sh
+git@git.sr.ht:~hervyqa/swayhome
+```
+
+```sh
 cd swayhome
 ```
 
