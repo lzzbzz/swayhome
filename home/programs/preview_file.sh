@@ -43,6 +43,17 @@ handle_extension() {
             7z l -p -- "${FILE_PATH}" && exit 0
             exit 1 ;;
 
+        build|c|cmake|conf|cpp|css|csv|cu|ebuild|eex|\
+        env|ex|exs|go|h|hpp|hs|ini|java|js|kt|lua|log|\
+        micro|ninja|nix|norg|org|py|qmd|rkt|rs|scss|sh|\
+        srt|svelte|toml|tsx|txt|vim|xml|yaml|yml)
+            bat --color=always --paging=never \
+                --style=plain \
+                --terminal-width="${PREVIEW_WIDTH}" \
+                "${FILE_PATH}" && exit 0
+            cat "${FILE_PATH}" && exit 0
+            ;;
+
         pdf)
             pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | \
                 fmt -w "${PREVIEW_WIDTH}" && exit 0
@@ -82,7 +93,18 @@ handle_extension() {
         dff|dsf|wv|wvc)
             mediainfo "${FILE_PATH}" && exit 0
             exiftool "${FILE_PATH}" && exit 0
-            ;; # Continue with next handler on failure
+            ;;
+
+        md)
+            glow --width="${PREVIEW_WIDTH}" \
+                --local "${FILE_PATH}" && exit 0
+            bat --color=always --paging=never \
+                --style=plain \
+                --terminal-width="${PREVIEW_WIDTH}" \
+                "${FILE_PATH}" && exit 0
+            cat "${FILE_PATH}" && exit 0
+            ;;
+
     esac
 }
 
