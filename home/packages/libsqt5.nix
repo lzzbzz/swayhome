@@ -7,10 +7,12 @@ in {
   home-manager = {
     users.${name} = {
       home = {
-        packages = with pkgs.libsForQt5; [
-          qt5ct
+        packages = with pkgs;
+        with pkgs.libsForQt5;
+        with pkgs.libsForQt5.qt5; [
           kdenlive
-          qt5.qtwayland
+          qt5ct
+          qtwayland
         ];
       };
     };
