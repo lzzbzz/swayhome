@@ -50,6 +50,7 @@ in {
           swappy # snapshot editing tool
           swaykbdd # per-window keyboard layout for sway
           translate-shell # translate via google api
+          tree # produce a depth indented directory listing
           upterm # remote console
           ventoy # cerate usb bootable
           vulkan-tools # khronos official vulkan tools and utilities
