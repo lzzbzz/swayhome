@@ -9,6 +9,7 @@ in {
       home = {
         packages = with pkgs; [
           # base
+          axel # console downloading program
           babelfish # convert bash to fish shell
           bat # alternative of cat
           bottom # process/system monitor
@@ -42,6 +43,7 @@ in {
           pfetch # pretty system information tool
           poppler_utils # pdf rendering library
           ripgrep-all # more ripgrep
+          rnm # bulk rename
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
