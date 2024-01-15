@@ -6,7 +6,6 @@ in {
       programs = {
         ncmpcpp = {
           enable = true;
-          mpdMusicDir = "~/Music";
           settings = {
           };
         };
