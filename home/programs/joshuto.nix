@@ -57,8 +57,9 @@ in {
                 }
                 {
                   command = "swappy";
-                  args = [ " f" ];
+                  args = [ "-f" ];
                   fork = true;
+                  silent = true;
                 }
               ];
               video_default = [
