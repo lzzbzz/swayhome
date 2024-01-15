@@ -12,6 +12,7 @@ in {
           babelfish # convert bash to fish shell
           bat # alternative of cat
           bottom # process/system monitor
+          catdoc # microsoft office to text converter
           clinfo # information about opencl platforms
           cpufetch # cpu fetching architecture tool
           direnv # shell extension that manages environment
@@ -22,6 +23,7 @@ in {
           exiftool # exif meta information
           fastfetch # show your current hardware
           ffmpeg # convert video
+          fzf # command-line fuzzy finder
           ghostscript # convert pdf document
           glib # gsettings
           glow # markdown renderer
@@ -38,6 +40,8 @@ in {
           pandoc # convert document
           pcmanfm # file manager gtk
           pfetch # pretty system information tool
+          poppler_utils # pdf rendering library
+          ripgrep-all # more ripgrep
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
@@ -57,10 +61,9 @@ in {
           wlprop # xprop clone for wlroots based compositors
           wmctrl # interact netwm x wm
           wvkbd # on-screen keyboard for wlroots
-          xdg-utils # for opening default programs when clicking links
           xdg-user-dirs # manage well known user directories
+          xdg-utils # for opening default programs when clicking links
           xlsx2csv # convert xlsx to csv
-          poppler_utils # pdf rendering library
 
           # archiver
           atool
