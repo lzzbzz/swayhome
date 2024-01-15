@@ -102,6 +102,11 @@ in {
                 };
               };
             };
+            content = {
+              notifications = {
+                enabled = true;
+              };
+            };
             fonts = {
               completion.entry = "8.0pt Monospace";
               debug_console = "8.0pt Monospace";
