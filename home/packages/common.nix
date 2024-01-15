@@ -60,6 +60,7 @@ in {
           xdg-utils # for opening default programs when clicking links
           xdg-user-dirs # manage well known user directories
           xlsx2csv # convert xlsx to csv
+          poppler_utils # pdf rendering library
 
           # archiver
           atool
