@@ -6,7 +6,7 @@ in {
       enable = true;
       user = "${name}";
       group = "users";
-      dataDir = "/home/${name}/Documents";
+      dataDir = "/home/${name}/documents";
       overrideDevices = true;
       overrideFolders = true;
       settings = {
@@ -23,13 +23,13 @@ in {
           };
         };
         folders = {
-          "Sync" = {
+          "sync" = {
             devices = [ "vivo1724" ];
-            path = "/home/${name}/Sync";
+            path = "/home/${name}/sync";
           };
-          "Camera" = {
+          "camera" = {
             devices = [ "vivo1724" ];
-            path = "/home/${name}/Camera";
+            path = "/home/${name}/camera";
           };
         };
       };
