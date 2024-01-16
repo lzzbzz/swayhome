@@ -45,6 +45,7 @@ Audio player | `ncmpcpp`, `mpd` | Ncurses based mpd client.
 Browser | `qutebrowser`, `firefox` | Keyboard-focused browser.
 File manager | `joshuto`, `pcmanfm` | Ranger-like terminal file manager.
 Image viewer | `imv`, `krita` | Command line image viewer.
+Screen lock | `swaylock` | Screen locker for wayland.
 Menu | `wofi` | Menu/launcher for wayland.
 Notification | `mako` | Lightweight wayland notification daemon.
 PDF viewer | `zathura` | Highly customizable and functional pdf viewer.
