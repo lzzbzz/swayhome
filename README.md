@@ -65,7 +65,7 @@ Keybinding | Optional | Description
 :--- | :--- | :---
 `Mod` | | Meta key with logo (mod4).
 `Mod`+`d` | | Menu or launcher (wofi).
-`Mod`+`num` | | Move to workspace (num=1-10).
+`Mod`+`num` | | Move to workspace (num=1-9).
 `Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
 `Mod`+`Enter` | | Terminal (foot).
 `Mod`+`f` | | Fullscreen window.
