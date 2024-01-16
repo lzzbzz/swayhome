@@ -31,11 +31,13 @@ in {
           glxinfo # test utilities for opengl
           grim # screenshot functionality
           hexyl # command-line hex viewer
+          hut # cli tool for sourcehut
           imagemagick # convert image
           inxi # info for device specification
           jq # command-line json processor
           lshw # show your current hardware
           mediainfo # info for image file
+          netlify-cli # cli tool for netlify
           odt2txt # convert odt to txt
           pamixer # audio volume
           pandoc # convert document
