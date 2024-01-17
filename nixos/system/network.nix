@@ -9,10 +9,6 @@ in {
     wireless = {
       enable = false;
       iwd = {
-        ## connect with iwd.
-        # iwctl device list
-        # iwctl station DEVICE get-networks
-        # iwctl station DEVICE connect <SSID>
         enable = true;
         settings = {
           Network = {
