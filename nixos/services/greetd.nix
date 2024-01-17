@@ -6,12 +6,13 @@
 in {
   services = {
    greetd = {
-      enable = false;
-      settings =  {
-        default_session = {
-          command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
+      enable = true;
+      settings = rec {
+        initial_session = {
+          command = "${pkgs.sway}/bin/sway";
           user = "${name}";
         };
+        default_session = initial_session;
       };
     };
   };
