@@ -6,6 +6,7 @@
     ./earlyoom.nix
     ./fstrim.nix
     ./grafana.nix
+    ./greetd.nix
     ./hdapsd.nix
     ./metabase.nix
     ./mongodb.nix
