@@ -21,10 +21,15 @@ in {
             rm = "rm -rfv";
             lsf = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";
 
-            scs = "doas systemctl start";
-            sct = "doas systemctl stop";
-            scr = "doas systemctl restart";
-            scu = "doas systemctl status";
+            sa = "systemctl --user start";
+            so = "systemctl --user stop";
+            sr = "systemctl --user restart";
+            st = "systemctl --user status";
+
+            dsa = "doas systemctl start";
+            dso = "doas systemctl stop";
+            dsr = "doas systemctl restart";
+            dst = "doas systemctl status";
 
             qup = "quarto publish netlify --no-browser";
             quv = "quarto preview";
