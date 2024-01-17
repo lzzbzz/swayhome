@@ -16,7 +16,7 @@ in {
       displayManager = {
         sessionPackages = [ pkgs.sway ];
         lightdm = {
-          enable = true;
+          enable = false;
           greeter = {
             enable = false;
           };
