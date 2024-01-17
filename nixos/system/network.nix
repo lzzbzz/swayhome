@@ -4,12 +4,15 @@ in {
   networking = {
     hostName = "${hostname}";
     networkmanager = {
-      enable = true;
+      enable = false;
     };
     wireless = {
-      # via wpa_supplicant.
       enable = false;
       iwd = {
+        ## connect with iwd.
+        # iwctl device list
+        # iwctl station DEVICE get-networks
+        # iwctl station DEVICE connect <SSID>
         enable = true;
         settings = {
           Network = {
