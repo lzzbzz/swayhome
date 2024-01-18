@@ -56,7 +56,6 @@ in {
               ];
               modules-right = [
                 "network"
-                "mpd"
                 "pulseaudio"
                 "cpu"
                 "memory"
@@ -376,7 +375,7 @@ in {
             }
 
             #network {
-              background-color: #28404d;
+              background-color: #2d5b74;
             }
 
             #network.disconnected {
