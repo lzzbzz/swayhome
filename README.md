@@ -244,7 +244,7 @@ nix-shell -p nix-info --run 'nix-info -m'
 Sample output.
 
 - system: `"x86_64-linux"`
-- host os: `Linux 6.6.8, NixOS, 23.11 (Tapir), 23.11.2451.2d2ea8eab9e4`
+- host os: `Linux 6.1.67-rt20, NixOS, 23.11 (Tapir), 23.11.2451.2d2ea8eab9e4`
 - multi-user?: `yes`
 - sandbox: `yes`
 - version: `nix-env (Nix) 2.18.1`
