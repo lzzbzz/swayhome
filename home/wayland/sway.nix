@@ -130,14 +130,18 @@ in {
                 "${modifier}+Shift+${right}" = "move right";
 
                 # audio control
-                "XF86AudioRaiseVolume" = "exec ${swayosd}/bin/swayosd --output-volume 2";
-                "XF86AudioLowerVolume" = "exec ${swayosd}/bin/swayosd --output-volume -2";
-                "XF86AudioMute" = "exec ${swayosd}/bin/swayosd --output-volume mute-toggle";
-                "XF86AudioMicMute" = "exec ${swayosd}/bin/swayosd --input-volume mute-toggle";
+                "XF86AudioRaiseVolume" = "exec ${pamixer}/bin/pamixer --increase 2";
+                "XF86AudioLowerVolume" = "exec ${pamixer}/bin/pamixer --decrease 2";
+                "XF86AudioMute" = "exec ${pamixer}/bin/pamixer --toggle-mute";
+
+                # mic control
+                "${modifier}+XF86AudioRaiseVolume" = "exec ${pamixer}/bin/pamixer --default-source --increase 2";
+                "${modifier}+XF86AudioLowerVolume" = "exec ${pamixer}/bin/pamixer --default-source --decrease 2";
+                "XF86AudioMicMute" = "exec ${pamixer}/bin/pamixer --default-source -t";
 
                 # brightness
-                "XF86MonBrightnessUp" = "exec ${swayosd}/bin/swayosd --brightness 2";
-                "XF86MonBrightnessDown" = "exec ${swayosd}/bin/swayosd --brightness -2";
+                "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 2";
+                "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 2";
 
                 # modes
                 "${modifier}+r" = "mode resize";
