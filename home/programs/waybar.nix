@@ -88,6 +88,9 @@ in {
                 tooltip = true;
                 tooltip-format = "{app}: {title}";
               };
+              "sway/window" = {
+                max-length = 40;
+              };
               "mpd" = {
                 format = "{stateIcon} ({elapsedTime:%M:%S}/{totalTime:%M:%S})";
                 format-disconnected = "Disconnected ";
@@ -184,12 +187,12 @@ in {
               };
               "network" = {
                 # "interface" = "wlp2*"; # (Optional) To force the use of this interface
-                format-wifi = "{essid} ({signalStrength}%) ";
+                format-wifi = "{signalStrength}% ";
                 format-ethernet = "{ipaddr}/{cidr} ";
                 tooltip-format = "{ifname} via {gwaddr} ";
                 format-linked = "{ifname} (No IP) ";
                 format-disconnected = "Disconnected ";
-                format-alt = "{ifname} = {ipaddr}/{cidr}";
+                format-alt = "{ifname} = {ipaddr}/{cidr} ";
               };
               "pulseaudio" = {
                 # "scroll-step" = 1; # %; can be a float
