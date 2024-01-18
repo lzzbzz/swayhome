@@ -39,26 +39,27 @@ Category | Name | Description
 :--- | :--- | :---
 Window manager | `sway` | Tiling wayland compositor.
 Bar | `waybar` | Customizable wayland bar for sway.
-Terminal session | `zellij` | Terminal workspace with batteries included.
-System monitor | `bottom`, `htop` | Graphical process/system monitor.
+Terminal | `foot` | Minimalistic Wayland terminal emulator.
 Audio player | `ncmpcpp`, `mpd` | Ncurses based mpd client.
+Backlight | `swayosd`, `light` | Screen display for keyboard shortcuts.
 Browser | `qutebrowser`, `firefox` | Keyboard-focused browser.
 File manager | `joshuto`, `pcmanfm` | Ranger-like terminal file manager.
+Fonts | `monospace:8` | Minimalist monospace font.
+GTK & QT Theme | `breeze-dark` | KDE plasma theme.
+Icons | `papirus-icon` | Pixel perfect icon theme for linux.
 Image viewer | `imv`, `krita` | Command line image viewer.
-Screen lock | `swaylock` | Screen locker for wayland.
+Login manager | `greetd` | Minimal and flexible login manager daemon (autologin)
 Menu | `wofi` | Menu/launcher for wayland.
 Notification | `mako` | Lightweight wayland notification daemon.
 PDF viewer | `zathura` | Highly customizable and functional pdf viewer.
 Recorder | `wf-recorder`, `obs-studio` | Screen recording of wlroots-based.
+Screen lock | `swaylock` | Screen locker for wayland.
 Shell | `fish`, `bash` | Smart and user-friendly command line shell.
-Terminal | `foot` | Minimalistic Wayland terminal emulator.
+System monitor | `bottom`, `htop` | Graphical process/system monitor.
+Terminal session | `zellij` | Terminal workspace with batteries included.
 Text editor | `helix`, `neovim`, `micro` | Post-modern modal text editor.
 Video player | `mpv` | General-purpose media player.
-Backlight | `swayosd`, `light` | Screen display for keyboard shortcuts.
 Volume control | `swayosd`, `pamixer` | Screen display for keyboard shortcuts.
-Fonts | `monospace:8` | Minimalist monospace font.
-Icons | `papirus-icon` | Pixel perfect icon theme for linux.
-GTK & QT Theme | `breeze-dark` | KDE plasma theme.
 
 ## 🐳 Sway usage
 
