@@ -41,7 +41,7 @@ Window manager | `sway` | Tiling wayland compositor.
 Bar | `waybar` | Customizable wayland bar for sway.
 Terminal | `foot` | Minimalistic Wayland terminal emulator.
 Audio player | `ncmpcpp`, `mpd` | Ncurses based mpd client.
-Backlight | `swayosd`, `light` | Screen display for keyboard shortcuts.
+Backlight | `light`, `swayosd`  | Application to control backlights.
 Browser | `qutebrowser`, `firefox` | Keyboard-focused browser.
 File manager | `joshuto`, `pcmanfm` | Ranger-like terminal file manager.
 Fonts | `monospace:8` | Minimalist monospace font.
@@ -59,7 +59,7 @@ System monitor | `bottom`, `htop` | Graphical process/system monitor.
 Terminal session | `zellij` | Terminal workspace with batteries included.
 Text editor | `helix`, `neovim`, `micro` | Post-modern modal text editor.
 Video player | `mpv` | General-purpose media player.
-Volume control | `swayosd`, `pamixer` | Screen display for keyboard shortcuts.
+Volume control | `pamixer`, `swayosd` | Command line mixer.
 
 ## 🐳 Sway usage
 
