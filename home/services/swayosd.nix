@@ -5,7 +5,7 @@ in {
     users.${name} = {
       services = {
         swayosd = {
-          enable = true;
+          enable = false;
           maxVolume = 120;
         };
       };
