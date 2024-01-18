@@ -84,7 +84,7 @@ in {
             gls = "git log --stat";
             glsp = "git log --stat -p";
             glg = "git log --graph";
-            glo = "git log --oneline --decorate";
+            glo = "git log --decorate --oneline";
 
             gm = "git merge";
             gmsm = "git merge sh/main";
