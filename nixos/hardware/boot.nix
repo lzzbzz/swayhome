@@ -27,9 +27,10 @@
     kernelModules = [
       "kvm-amd"
       "kvm-intel"
+      "snd-aloop"
+      "v4l2loopback"
     ];
-    # kernelPackages = pkgs.linuxPackages-rt_latest;
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages-rt_latest;
     kernelParams = [
       "mitigations=off"
     ];
@@ -37,6 +38,10 @@
       enable = false;
     };
     extraModulePackages = with config.boot.kernelPackages; [
+      v4l2loopback.out
     ];
+    extraModprobeConfig = ''
+      options v4l2loopback exclusive_caps=1 card_label="Virtual Camera"
+    '';
   };
 }
