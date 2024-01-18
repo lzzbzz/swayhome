@@ -84,13 +84,13 @@ Keybinding | Optional | Description
 * Read-only:
 
 ```sh
-https://git.sr.ht/~hervyqa/swayhome
+git clone https://git.sr.ht/~hervyqa/swayhome
 ```
 
 * Read/write (Recommended):
 
 ```sh
-git@git.sr.ht:~hervyqa/swayhome
+git clone git@git.sr.ht:~hervyqa/swayhome
 ```
 
 ```sh
