@@ -26,6 +26,9 @@ in {
             sr = "systemctl --user restart";
             st = "systemctl --user status";
 
+            yt = "yt-dlp -f bestvideo+bestaudio --embed-thumbnail";
+            ytm = "yt-dlp -f bestaudio -x --audio-format vorbis --embed-thumbnail";
+
             dsa = "doas systemctl start";
             dso = "doas systemctl stop";
             dsr = "doas systemctl restart";
