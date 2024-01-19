@@ -3,7 +3,7 @@
 in {
   services = {
     syncthing = {
-      enable = true;
+      enable = false;
       user = "${name}";
       group = "users";
       dataDir = "/home/${name}/documents";
