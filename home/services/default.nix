@@ -7,5 +7,6 @@
     ./ssh-agent.nix
     ./swayidle.nix
     ./swayosd.nix
+    ./syncthing.nix
   ];
 }
