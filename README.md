@@ -49,7 +49,7 @@ GTK & QT Theme | `breeze-dark` | KDE plasma theme.
 Icons | `papirus-icon` | Pixel perfect icon theme for linux.
 Image viewer | `imv`, `krita` | Command line image viewer.
 Login manager | `greetd` | Minimal and flexible login manager daemon (autologin)
-Menu | `wofi` | Menu/launcher for wayland.
+Menu | `dmenu` | an efficient dynamic menu.
 Notification | `mako` | Lightweight wayland notification daemon.
 PDF viewer | `zathura` | Highly customizable and functional pdf viewer.
 Recorder | `wf-recorder`, `obs-studio` | Screen recording of wlroots-based.
@@ -66,7 +66,7 @@ Volume control | `pamixer`, `swayosd` | Command line mixer.
 Keybinding | Optional | Description
 :--- | :--- | :---
 `Mod` | | Meta key with logo (mod4).
-`Mod`+`d` | | Menu or launcher (wofi).
+`Mod`+`d` | | Menu or launcher (dmenu).
 `Mod`+`num` | | Move to workspace (num=1-9).
 `Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
 `Mod`+`Enter` | | Terminal (foot).
