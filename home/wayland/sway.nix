@@ -146,9 +146,9 @@ in {
                 # modes
                 "${modifier}+r" = "mode resize";
                 "${modifier}+b" = "mode browser";
-                "${modifier}+Delete" = "mode session";
-                "Print" = "mode printscreen";
-                "Print+Shift" = "mode recording";
+                "${modifier}+x" = "mode session";
+                "${modifier}+p" = "mode printscreen";
+                "${modifier}+c" = "mode recording";
               };
               colors = {
                 background = shade-black;

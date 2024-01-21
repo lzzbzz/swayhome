@@ -73,9 +73,9 @@ Keybinding | Optional | Description
 `Mod`+`f` | | Fullscreen window.
 `Mod`+`r` | `h`/`j`/`k`/`l` | Resize window.
 `Mod`+`b` | `1`/`2` | Browser & private browser (qutebrowser).
-`Mod`+`Delete` | `h`/`p`/`r`/`s`/`l`/`o` | Hibernate, poweroff, reboot, suspend, lockscreen & logout.
-`Print` | `1`/`2`/`3`/`4` | Printscreen area, all, area (copy) & all (copy).
-`Print`+`Shift` | `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record.
+`Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` | Hibernate, poweroff, reboot, suspend, lockscreen & logout.
+`Mod`+`p` | `1`/`2`/`3`/`4` | Printscreen area, all, area (copy) & all (copy).
+`Mod`+`c` | `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record.
 
 ## 🫐 Installation
 
