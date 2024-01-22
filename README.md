@@ -66,10 +66,11 @@ Volume control | `pamixer`, `swayosd` | Command line mixer.
 Keybinding | Optional | Description
 :--- | :--- | :---
 `Mod` | | Meta key with logo (mod4).
-`Mod`+`d` | | Menu or launcher (dmenu).
 `Mod`+`num` | | Move to workspace (num=1-9).
-`Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
 `Mod`+`Enter` | | Terminal (foot).
+`Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
+`Mod`+`d` | | Menu or launcher (rofi).
+`Mod`+`y` | | Password store (rofi).
 `Mod`+`f` | | Fullscreen window.
 `Mod`+`r` | `h`/`j`/`k`/`l` | Resize window.
 `Mod`+`b` | `1`/`2` | Browser & private browser (qutebrowser).

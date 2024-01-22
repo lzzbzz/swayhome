@@ -93,7 +93,7 @@ in {
               keybindings = mkOptionDefault {
                 # menu
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
-                "${modifier}+Shift+d" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
+                "${modifier}+y" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
 
                 "${modifier}+1" = "workspace number 1";
                 "${modifier}+2" = "workspace number 2";
