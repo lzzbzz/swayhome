@@ -127,9 +127,6 @@ in {
           # root
           root
 
-          # theme
-          themechanger
-
           # database
           dbeaver
           sqlitebrowser
