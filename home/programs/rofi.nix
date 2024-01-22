@@ -84,6 +84,7 @@ in {
                 children = mkLiteral "[ prompt, entry ]";
                 background-color = mkLiteral "@bg";
                 text-color = mkLiteral "@fg";
+                padding = mkLiteral "5px";
               };
 
               "#listview" = {
