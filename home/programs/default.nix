@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
     ./bat.nix
+    ./rofi.nix
     ./cava.nix
     ./firefox.nix
     ./fish.nix
