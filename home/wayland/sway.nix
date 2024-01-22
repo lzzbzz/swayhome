@@ -92,7 +92,8 @@ in {
               ];
               keybindings = mkOptionDefault {
                 # menu
-                "${modifier}+d" = "exec ${dmenu}/bin/dmenu_path | ${dmenu}/bin/dmenu -fn 'Monospace:size=10' -nf '${paper-white}' -nb '${shade-black}' -sf '${paper-white}' -sb '${plasma-blue}' | ${findutils}/bin/xargs swaymsg exec --";
+                "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
+                "${modifier}+Shift+d" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
 
                 "${modifier}+1" = "workspace number 1";
                 "${modifier}+2" = "workspace number 2";
