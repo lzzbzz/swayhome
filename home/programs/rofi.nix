@@ -122,7 +122,7 @@ in {
               };
 
               "#element selected" = {
-                border = mkLiteral "5px";
+                border = mkLiteral "3px";
                 border-color = mkLiteral "@ac";
               };
             }
