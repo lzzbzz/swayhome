@@ -5,7 +5,7 @@ in {
     users.${name} = {
       programs = {
         lazygit = {
-          enable = true;
+          enable = false;
         };
       };
     };
