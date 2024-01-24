@@ -70,7 +70,7 @@ Keybinding | Optional | Description
 `Mod`+`Enter` | | Terminal (foot).
 `Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
 `Mod`+`d` | | Menu or launcher (rofi).
-`Mod`+`y` | | Password store (rofi).
+`Mod`+`e` | | Password store (rofi).
 `Mod`+`f` | | Fullscreen window.
 `Mod`+`r` | `h`/`j`/`k`/`l` | Resize window.
 `Mod`+`b` | `1`/`2` | Browser & private browser (qutebrowser).

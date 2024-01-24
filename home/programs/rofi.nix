@@ -55,7 +55,7 @@ in {
           theme = let mkLiteral = config.lib.formats.rasi.mkLiteral;
             in {
               "*" = {
-                bg = mkLiteral "${charcoal-gray}";
+                bg = mkLiteral "${shade-black}";
                 fg = mkLiteral "${paper-white}";
                 ac = mkLiteral "${plasma-blue}";
               };
