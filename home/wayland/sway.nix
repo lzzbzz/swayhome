@@ -199,7 +199,7 @@ in {
                   "${up}" = "resize shrink height 5 px or 5 ppt";
                 };
                 browser = {
-                  # browser = "launch: [q]utebrowser [p]rivate";
+                  # browser = "launch: [1]qutebrowser [2]private";
                   Escape = "mode default";
                   Return = "mode default";
                   "1" = "exec ${qutebrowser}/bin/qutebrowser, mode default";
