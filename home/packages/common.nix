@@ -41,7 +41,6 @@ in {
           odt2txt # convert odt to txt
           pamixer # audio volume
           pandoc # convert document
-          pcmanfm # file manager gtk
           pulsemixer # curses mixer
           pfetch # pretty system information tool
           poppler_utils # pdf rendering library
