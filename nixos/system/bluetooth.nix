@@ -1,7 +1,7 @@
 { ... }: {
   hardware = {
     bluetooth = {
-      enable = false;
+      enable = true;
     };
   };
 }
