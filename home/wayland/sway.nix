@@ -105,6 +105,11 @@ in {
                 "${modifier}+8" = "workspace number 8";
                 "${modifier}+9" = "workspace number 9";
 
+                "${modifier}+bracketleft" = "workspace prev";
+                "${modifier}+bracketright" = "workspace next";
+                "${modifier}+Tab" = "workspace next";
+                "${modifier}+Shift+Tab" = "workspace prev";
+
                 "${modifier}+Shift+1" = "move container to workspace number 1";
                 "${modifier}+Shift+2" = "move container to workspace number 2";
                 "${modifier}+Shift+3" = "move container to workspace number 3";
@@ -114,9 +119,6 @@ in {
                 "${modifier}+Shift+7" = "move container to workspace number 7";
                 "${modifier}+Shift+8" = "move container to workspace number 8";
                 "${modifier}+Shift+9" = "move container to workspace number 9";
-
-                "${modifier}+Tab" = "workspace next";
-                "${modifier}+Shift+Tab" = "workspace prev";
 
                 "${modifier}+${left}" = "focus left";
                 "${modifier}+${down}" = "focus down";
