@@ -59,6 +59,26 @@ in {
                 modifier = "${modifier}";
                 border = 5;
                 titlebar = false;
+                criteria = [
+                  {
+                    app_id = "imv";
+                  }
+                  {
+                    app_id = "mpv";
+                  }
+                  {
+                    app_id = "org.keepassxc.KeePassXC";
+                  }
+                  {
+                    app_id = "org.pwmt.zathura";
+                  }
+                  {
+                    app_id = "qt5ct";
+                  }
+                  {
+                    app_id = "wdisplays";
+                  }
+                ];
               };
               focus = {
                 forceWrapping = false;
@@ -80,7 +100,18 @@ in {
                 };
               };
               window = {
-                border = 5; titlebar = false;
+                border = 5;
+                titlebar = false;
+                commands = [
+                  {
+                    command = "floating enable, sticky enable";
+                    criteria.title = "Picture-in-Picture";
+                  }
+                  {
+                    command = "floating enable, sticky enable";
+                    criteria.title = ".*Sharing Indicator.*";
+                  }
+                ];
               };
               output = {
                 "*" = {
@@ -95,6 +126,9 @@ in {
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
 
+                "${modifier}+bracketleft" = "workspace prev";
+                "${modifier}+bracketright" = "workspace next";
+
                 "${modifier}+1" = "workspace number 1";
                 "${modifier}+2" = "workspace number 2";
                 "${modifier}+3" = "workspace number 3";
@@ -105,10 +139,8 @@ in {
                 "${modifier}+8" = "workspace number 8";
                 "${modifier}+9" = "workspace number 9";
 
-                "${modifier}+bracketleft" = "workspace prev";
-                "${modifier}+bracketright" = "workspace next";
-                "${modifier}+Tab" = "workspace next";
-                "${modifier}+Shift+Tab" = "workspace prev";
+                "${modifier}+Shift+bracketleft" = "move container to workspace prev; workspace prev";
+                "${modifier}+Shift+bracketright" = "move container to workspace next; workspace next";
 
                 "${modifier}+Shift+1" = "move container to workspace number 1";
                 "${modifier}+Shift+2" = "move container to workspace number 2";
