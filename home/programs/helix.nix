@@ -29,7 +29,7 @@ in {
               };
 
               whitespace.render = {
-                space = "none";
+                space = "all";
                 tab = "all";
                 newline = "none";
               };
