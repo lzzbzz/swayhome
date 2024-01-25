@@ -115,6 +115,9 @@ in {
                 "${modifier}+Shift+8" = "move container to workspace number 8";
                 "${modifier}+Shift+9" = "move container to workspace number 9";
 
+                "${modifier}+Tab" = "workspace next";
+                "${modifier}+Shift+Tab" = "workspace prev";
+
                 "${modifier}+${left}" = "focus left";
                 "${modifier}+${down}" = "focus down";
                 "${modifier}+${up}" = "focus up";
