@@ -61,6 +61,9 @@ in {
                 titlebar = false;
                 criteria = [
                   {
+                    app_id = ".blueman-manager-wrapped";
+                  }
+                  {
                     app_id = "imv";
                   }
                   {

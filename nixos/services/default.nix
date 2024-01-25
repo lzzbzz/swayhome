@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./blueman.nix
     ./clamav.nix
     ./clickhouse.nix
     ./dnscrypt.nix
