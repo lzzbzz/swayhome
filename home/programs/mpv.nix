@@ -8,7 +8,7 @@ in {
           enable = true;
           config = {
             force-window = "yes";
-            fullscreen = "yes";
+            fullscreen = "no";
             profile = "gpu-hq";
             ytdl-format = "bestvideo+bestaudio";
           };
