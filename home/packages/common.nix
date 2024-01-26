@@ -71,7 +71,6 @@ in {
           xlsx2csv # convert xlsx to csv
 
           # compiler
-          clang
           clang-tools
           clazy
           cmake
