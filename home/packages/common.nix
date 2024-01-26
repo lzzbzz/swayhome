@@ -70,11 +70,6 @@ in {
           xdg-utils # for opening default programs when clicking links
           xlsx2csv # convert xlsx to csv
 
-          # ssg
-          hugo
-          mdbook
-          mdbook-linkcheck
-
           # data science
           gnuplot
           iredis
