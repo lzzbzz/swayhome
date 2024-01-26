@@ -36,48 +36,48 @@ Minimalist Waybar.
 
 ## 💎 List of apps
 
-Category | Name | Alternative | Description
-:--- | :--- | :--- | :---
-Window manager | `sway` | | Tiling wayland compositor.
-Bar | `waybar` | | Customizable wayland bar for sway.
-Terminal | `foot` | | Minimalistic Wayland terminal emulator.
-Audio player | `ncmpcpp+mpd` | | Ncurses based mpd client.
-Backlight | `light` | `swayosd` | Application to control backlights.
-Browser | `qutebrowser` | `firefox` | Keyboard-focused browser.
-File manager | `joshuto` | | Ranger-like terminal file manager.
-Fonts | `monospace 8` | | Minimalist monospace font.
-GTK & QT Theme | `breeze-dark` | | KDE plasma theme.
-Icons | `papirus-icon` | | Pixel perfect icon theme for linux.
-Image viewer | `imv` | `krita` | Command line image viewer.
-Login manager | `greetd` | | Minimal and flexible login manager daemon (autologin)
-Menu | `dmenu` | `wofi` | an efficient dynamic menu.
-Notification | `mako` | | Lightweight wayland notification daemon.
-PDF viewer | `zathura` | | Highly customizable and functional pdf viewer.
-Recorder | `wf-recorder` | `obs-studio` | Screen recording of wlroots-based.
-Screen lock | `swaylock` | | Screen locker for wayland.
-Shell | `fish` | | Smart and user-friendly command line shell.
-System monitor | `bottom` | `htop` | Graphical process/system monitor.
-Terminal session | `zellij` | `tmux` | Terminal workspace with batteries included.
-Text editor | `helix` | `neovim` | Post-modern modal text editor.
-Video player | `mpv` | `swayosd` | General-purpose media player.
-Volume control | `pamixer` | `pulsemizer` | Command line mixer.
+|         Category |           Name |  Alternative |                                           Description |
+|             :--- |           :--- |         :--- |                                                  :--- |
+|   Window manager |         `sway` |              |                            Tiling wayland compositor. |
+|              Bar |       `waybar` |              |                    Customizable wayland bar for sway. |
+|         Terminal |         `foot` |              |               Minimalistic Wayland terminal emulator. |
+|     Audio player |  `ncmpcpp+mpd` |              |                             Ncurses based mpd client. |
+|        Backlight |        `light` |    `swayosd` |                    Application to control backlights. |
+|          Browser |  `qutebrowser` |    `firefox` |                             Keyboard-focused browser. |
+|     File manager |      `joshuto` |              |                    Ranger-like terminal file manager. |
+|            Fonts |  `monospace 8` |              |                            Minimalist monospace font. |
+|   GTK & QT Theme |  `breeze-dark` |              |                                     KDE plasma theme. |
+|            Icons | `papirus-icon` |              |                   Pixel perfect icon theme for linux. |
+|     Image viewer |          `imv` |      `krita` |                            Command line image viewer. |
+|    Login manager |       `greetd` |              | Minimal and flexible login manager daemon (autologin) |
+|             Menu |        `dmenu` |       `wofi` |                            an efficient dynamic menu. |
+|     Notification |         `mako` |              |              Lightweight wayland notification daemon. |
+|       PDF viewer |      `zathura` |              |        Highly customizable and functional pdf viewer. |
+|         Recorder |  `wf-recorder` | `obs-studio` |                    Screen recording of wlroots-based. |
+|      Screen lock |     `swaylock` |              |                            Screen locker for wayland. |
+|            Shell |         `fish` |              |           Smart and user-friendly command line shell. |
+|   System monitor |       `bottom` |       `htop` |                     Graphical process/system monitor. |
+| Terminal session |       `zellij` |       `tmux` |           Terminal workspace with batteries included. |
+|      Text editor |        `helix` |     `neovim` |                        Post-modern modal text editor. |
+|     Video player |          `mpv` |    `swayosd` |                         General-purpose media player. |
+|   Volume control |      `pamixer` | `pulsemizer` |                                   Command line mixer. |
 
 ## 🐳 Sway usage
 
-Keybinding | Optional | Description
-:--- | :--- | :---
-`Mod` | | Meta key with logo (mod4).
-`Mod`+`num` | | Move to workspace (num=1-9).
-`Mod`+`Enter` | | Terminal (foot).
-`Mod`+`h`/`j`/`k`/`l` |  | Focus to window.
-`Mod`+`d` | | Menu or launcher (rofi).
-`Mod`+`e` | | Password store (rofi).
-`Mod`+`f` | | Fullscreen window.
-`Mod`+`r` | `h`/`j`/`k`/`l` | Resize window.
-`Mod`+`b` | `1`/`2` | Browser & private browser (qutebrowser).
-`Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` | Hibernate, poweroff, reboot, suspend, lockscreen & logout.
-`Mod`+`p` | `1`/`2`/`3`/`4` | Printscreen area, all, area (copy) & all (copy).
-`Mod`+`c` | `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record.
+|            Keybinding |                Optional |                                                         Description |
+|                  :--- |                    :--- |                                                                :--- |
+|                 `Mod` |                         |                                          Meta key with logo (mod4). |
+|           `Mod`+`num` |                         |                                        Move to workspace (num=1-9). |
+|         `Mod`+`Enter` |                         |                                                    Terminal (foot). |
+| `Mod`+`h`/`j`/`k`/`l` |                         |                                                    Focus to window. |
+|             `Mod`+`d` |                         |                                            Menu or launcher (rofi). |
+|             `Mod`+`e` |                         |                                              Password store (rofi). |
+|             `Mod`+`f` |                         |                                                  Fullscreen window. |
+|             `Mod`+`r` |         `h`/`j`/`k`/`l` |                                                      Resize window. |
+|             `Mod`+`b` |                 `1`/`2` |                            Browser & private browser (qutebrowser). |
+|             `Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
+|             `Mod`+`p` |         `1`/`2`/`3`/`4` |                    Printscreen area, all, area (copy) & all (copy). |
+|             `Mod`+`c` |     `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record. |
 
 ## 🫐 Installation
 
