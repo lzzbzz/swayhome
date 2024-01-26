@@ -77,9 +77,6 @@ in {
           cppcheck
           gdb
           gnumake
-
-          # root
-          root
         ];
       };
     };

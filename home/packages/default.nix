@@ -16,6 +16,7 @@
     ./octave.nix
     ./office.nix
     ./python.nix
+    ./root.nix
     ./rstudio.nix
     ./scala.nix
     ./ssg.nix
