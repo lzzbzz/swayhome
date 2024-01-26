@@ -16,6 +16,7 @@
     ./office.nix
     ./python.nix
     ./rstudio.nix
+    ./scala.nix
     ./ssg.nix
     ./unixodbc.nix
   ];

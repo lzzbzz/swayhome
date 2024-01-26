@@ -78,13 +78,6 @@ in {
           mpi
           quarto
 
-          # scala
-          ammonite
-          sbt
-          scala
-          scala-cli
-          scalafmt
-
           # compiler
           clang
           clang-tools
