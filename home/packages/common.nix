@@ -114,13 +114,6 @@ in {
           dbeaver
           sqlitebrowser
 
-          # graphic
-          blender
-          inkscape
-          krita
-          scribus
-          synfigstudio
-
           # media
           tenacity
 

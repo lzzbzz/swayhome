@@ -2,6 +2,7 @@
   imports = [
     ./common.nix
     ./archive.nix
+    ./design.nix
     ./gamedev.nix
     ./latex.nix
     ./libsqt5.nix
