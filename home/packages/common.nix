@@ -69,14 +69,6 @@ in {
           xdg-user-dirs # manage well known user directories
           xdg-utils # for opening default programs when clicking links
           xlsx2csv # convert xlsx to csv
-
-          # compiler
-          clang-tools
-          clazy
-          cmake
-          cppcheck
-          gdb
-          gnumake
         ];
       };
     };
