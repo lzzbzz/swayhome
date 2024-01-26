@@ -70,22 +70,6 @@ in {
           xdg-utils # for opening default programs when clicking links
           xlsx2csv # convert xlsx to csv
 
-          # archiver
-          atool
-          bzip2
-          gzip
-          libarchive
-          lz4
-          lzip
-          lzo
-          lzop
-          p7zip
-          rzip
-          unzip
-          xz
-          zip
-          zstd
-
           # ssg
           hugo
           mdbook
