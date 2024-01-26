@@ -113,10 +113,6 @@ in {
           # database
           dbeaver
           sqlitebrowser
-
-          # internet
-          tdesktop
-          zulip
         ];
       };
     };

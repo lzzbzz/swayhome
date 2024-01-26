@@ -4,6 +4,7 @@
     ./archive.nix
     ./design.nix
     ./games.nix
+    ./internet.nix
     ./gamedev.nix
     ./latex.nix
     ./libsqt5.nix
