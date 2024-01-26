@@ -44,6 +44,8 @@ in {
           mint # mint
           nil # nix
           nimlsp # nim
+          nixfmt # nix formatter
+          nixpkgs-fmt # nixpkgs formatter
           nls # nickel
           ols # odin
           openscad-lsp # openscad

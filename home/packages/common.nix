@@ -79,9 +79,6 @@ in {
           gdb
           gnumake
 
-          # nix
-          nixpkgs-fmt
-
           # root
           root
         ];
