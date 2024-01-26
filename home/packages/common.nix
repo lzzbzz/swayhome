@@ -109,10 +109,6 @@ in {
 
           # root
           root
-
-          # database
-          dbeaver
-          sqlitebrowser
         ];
       };
     };

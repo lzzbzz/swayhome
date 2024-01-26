@@ -2,6 +2,7 @@
   imports = [
     ./common.nix
     ./archive.nix
+    ./datagui.nix
     ./design.nix
     ./games.nix
     ./internet.nix
