@@ -147,7 +147,6 @@ in {
           tenacity
 
           # internet
-          keepassxc
           tdesktop
           zulip
 
