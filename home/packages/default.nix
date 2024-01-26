@@ -10,7 +10,7 @@
     ./latex.nix
     ./libsqt5.nix
     ./media.nix
-    ./language.nix
+    ./langserver.nix
     ./octave.nix
     ./office.nix
     ./python.nix
