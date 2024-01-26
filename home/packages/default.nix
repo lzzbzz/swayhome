@@ -1,19 +1,19 @@
 { ... }: {
   imports = [
-    ./common.nix
     ./archive.nix
     ./cdev.nix
+    ./common.nix
     ./datacli.nix
     ./datagui.nix
     ./design.nix
+    ./gamedev.nix
     ./games.nix
     ./internet.nix
-    ./gamedev.nix
+    ./langserver.nix
     ./latex.nix
     ./libsqt5.nix
     ./lua.nix
     ./media.nix
-    ./langserver.nix
     ./octave.nix
     ./office.nix
     ./python.nix

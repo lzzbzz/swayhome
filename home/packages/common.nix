@@ -8,7 +8,6 @@ in {
     users.${name} = {
       home = {
         packages = with pkgs; [
-          # base
           axel # console downloading program
           babelfish # convert bash to fish shell
           bat # alternative of cat
@@ -41,9 +40,9 @@ in {
           odt2txt # convert odt to txt
           pamixer # audio volume
           pandoc # convert document
-          pulsemixer # curses mixer
           pfetch # pretty system information tool
           poppler_utils # pdf rendering library
+          pulsemixer # curses mixer
           ripgrep-all # more ripgrep
           rnm # bulk rename
           scour # compress svg
