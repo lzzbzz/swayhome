@@ -70,14 +70,6 @@ in {
           xdg-utils # for opening default programs when clicking links
           xlsx2csv # convert xlsx to csv
 
-          # data science
-          gnuplot
-          iredis
-          litecli
-          luigi
-          mpi
-          quarto
-
           # compiler
           clang
           clang-tools
