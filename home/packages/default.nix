@@ -7,6 +7,7 @@
     ./gamedev.nix
     ./latex.nix
     ./libsqt5.nix
+    ./media.nix
     ./language.nix
     ./octave.nix
     ./office.nix

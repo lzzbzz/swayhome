@@ -114,9 +114,6 @@ in {
           dbeaver
           sqlitebrowser
 
-          # media
-          tenacity
-
           # internet
           tdesktop
           zulip

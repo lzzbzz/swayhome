@@ -8,8 +8,9 @@ in {
     users.${name} = {
       home = {
         packages = with pkgs; [
-          gdtoolkit
-          godot3
+          kdenlive
+          lmms
+          tenacity
         ];
       };
     };
