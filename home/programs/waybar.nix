@@ -125,8 +125,8 @@ in {
                 };
               };
               "tray" = {
-                # icon-size = 21;
-                spacing = 5;
+                icon-size = 13;
+                spacing = 8;
               };
               "clock" = {
                 timezone = "Asia/Jakarta";
