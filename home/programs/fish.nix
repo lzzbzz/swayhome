@@ -16,7 +16,6 @@ in {
             z = "zellij";
 
             cp = "cp -rv";
-            ll = "ls -lha";
             mv = "mv -v";
             rm = "rm -rfv";
             lsf = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";

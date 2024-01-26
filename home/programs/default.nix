@@ -1,8 +1,8 @@
 { ... }: {
   imports = [
     ./bat.nix
-    ./rofi.nix
     ./cava.nix
+    ./eza.nix
     ./firefox.nix
     ./fish.nix
     ./foot.nix
@@ -17,12 +17,13 @@
     ./lazygit.nix
     ./micro.nix
     ./mpv.nix
-    ./neovim.nix
     ./ncmpcpp.nix
+    ./neovim.nix
     ./obs.nix
     ./password.nix
     ./pistol.nix
     ./qutebrowser.nix
+    ./rofi.nix
     ./swaylock.nix
     ./vscode.nix
     ./waybar.nix
