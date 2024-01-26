@@ -120,9 +120,6 @@ in {
           # internet
           tdesktop
           zulip
-
-          # games
-          mindustry-wayland
         ];
       };
     };
