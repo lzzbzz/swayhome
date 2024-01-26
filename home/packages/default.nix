@@ -7,6 +7,7 @@
     ./libsqt5.nix
     ./language.nix
     ./octave.nix
+    ./office.nix
     ./python.nix
     ./rstudio.nix
     ./unixodbc.nix

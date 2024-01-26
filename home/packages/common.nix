@@ -114,12 +114,6 @@ in {
           dbeaver
           sqlitebrowser
 
-          # office
-          libreoffice
-          libreoffice-qt
-          qownnotes
-          zotero
-
           # graphic
           blender
           inkscape
