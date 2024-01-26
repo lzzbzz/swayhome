@@ -99,11 +99,6 @@ in {
           gdb
           gnumake
 
-          # lua
-          luaformatter
-          luajit
-          z-lua
-
           # nix
           nixpkgs-fmt
 

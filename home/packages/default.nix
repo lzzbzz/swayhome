@@ -9,6 +9,7 @@
     ./gamedev.nix
     ./latex.nix
     ./libsqt5.nix
+    ./lua.nix
     ./media.nix
     ./langserver.nix
     ./octave.nix
