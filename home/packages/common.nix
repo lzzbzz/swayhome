@@ -11,6 +11,7 @@ in {
           axel # console downloading program
           babelfish # convert bash to fish shell
           bat # alternative of cat
+          bc # gnu software calculator
           bottom # process/system monitor
           catdoc # microsoft office to text converter
           clinfo # information about opencl platforms
