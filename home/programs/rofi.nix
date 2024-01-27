@@ -40,7 +40,7 @@ in {
       programs = {
         rofi = {
           enable = true;
-          font = "Monospace 11";
+          font = "Monospace 10";
           extraConfig = {
             case-sensitive = false;
             display-drun = "Apps:";
@@ -52,6 +52,10 @@ in {
             package = pkgs.rofi-pass-wayland;
             stores = [ "~/.pass" ];
           };
+          plugins = with pkgs; [
+            rofi-bluetooth
+            rofi-pulse-select
+          ];
           theme = let mkLiteral = config.lib.formats.rasi.mkLiteral;
             in {
               "*" = {
@@ -62,7 +66,7 @@ in {
 
               "#window" = {
                 location = mkLiteral "center";
-                width = mkLiteral "40%";
+                width = mkLiteral "50%";
               };
 
               "#prompt" = {

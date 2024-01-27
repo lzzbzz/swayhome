@@ -125,9 +125,10 @@ in {
                 { command = "${autotiling}/bin/autotiling"; }
               ];
               keybindings = mkOptionDefault {
-                # menu
+                # rofi menu
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
+                "${modifier}+n" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
 
                 "${modifier}+bracketleft" = "workspace prev";
                 "${modifier}+bracketright" = "workspace next";
@@ -190,6 +191,7 @@ in {
                 "${modifier}+x" = "mode session";
                 "${modifier}+p" = "mode printscreen";
                 "${modifier}+c" = "mode recording";
+                "${modifier}+u" = "mode audio";
               };
               colors = {
                 background = shade-black;
@@ -230,13 +232,12 @@ in {
                 };
               };
               modes = {
-                resize = {
+                audio = {
+                  # audio = "launch: [i]input [o]output";
                   Escape = "mode default";
                   Return = "mode default";
-                  "${down}" = "resize grow height 5 px or 5 ppt";
-                  "${left}" = "resize shrink width 5 px or 5 ppt";
-                  "${right}" = "resize grow width 5 px or 5 ppt";
-                  "${up}" = "resize shrink height 5 px or 5 ppt";
+                  "i" = "exec ${rofi-pulse-select}/bin/rofi-pulse-select sink, mode default";
+                  "o" = "exec ${rofi-pulse-select}/bin/rofi-pulse-select source, mode default";
                 };
                 browser = {
                   # browser = "launch: [1]qutebrowser [2]private";
@@ -266,6 +267,14 @@ in {
                   "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
                   "4" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
                   "0" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${procps}/bin/pkill wf-recorder, mode default'';
+                };
+                resize = {
+                  Escape = "mode default";
+                  Return = "mode default";
+                  "${down}" = "resize grow height 5 px or 5 ppt";
+                  "${left}" = "resize shrink width 5 px or 5 ppt";
+                  "${right}" = "resize grow width 5 px or 5 ppt";
+                  "${up}" = "resize shrink height 5 px or 5 ppt";
                 };
                 session = {
                   # session = launch:

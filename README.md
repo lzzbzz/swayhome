@@ -75,6 +75,7 @@ Minimalist Waybar.
 |             `Mod`+`f` |                         |                                                  Fullscreen window. |
 |             `Mod`+`r` |         `h`/`j`/`k`/`l` |                                                      Resize window. |
 |             `Mod`+`b` |                 `1`/`2` |                            Browser & private browser (qutebrowser). |
+|             `Mod`+`n` |                 `i`/`o` |                         Set sink (input) and source (output) audio. |
 |             `Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
 |             `Mod`+`p` |         `1`/`2`/`3`/`4` |                    Printscreen area, all, area (copy) & all (copy). |
 |             `Mod`+`c` |     `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record. |

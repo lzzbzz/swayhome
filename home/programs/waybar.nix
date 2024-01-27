@@ -55,6 +55,7 @@ in {
                 "sway/window"
               ];
               modules-right = [
+                "bluetooth"
                 "network"
                 "pulseaudio"
                 "cpu"
@@ -90,6 +91,14 @@ in {
               };
               "sway/window" = {
                 max-length = 40;
+              };
+              "bluetooth" = {
+                format = "{status} ";
+                format-disabled = "";
+                format-connected = "{num_connections} connected ";
+                tooltip-format = "{controller_alias}\t{controller_address}";
+                tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
+                tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
               };
               "mpd" = {
                 format = "{stateIcon} ({elapsedTime:%M:%S}/{totalTime:%M:%S})";
@@ -300,6 +309,7 @@ in {
 
             #clock,
             #battery,
+            #bluetooth,
             #cpu,
             #memory,
             #disk,
@@ -344,7 +354,7 @@ in {
 
             @keyframes blink {
               to {
-                background-color: ${plasma-blue};
+                background-color: #2e607c;
               }
             }
 
@@ -355,6 +365,10 @@ in {
               animation-timing-function: linear;
               animation-iteration-count: infinite;
               animation-direction: alternate;
+            }
+
+            #bluetooth {
+              background-color: #263741;
             }
 
             label:focus {
@@ -378,7 +392,7 @@ in {
             }
 
             #network {
-              background-color: #2d5b74;
+              background-color: #2e607c;
             }
 
             #network.disconnected {
