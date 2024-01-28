@@ -8,6 +8,7 @@
     ./firefox.nix
     ./fish.nix
     ./foot.nix
+    ./fzf.nix
     ./gh.nix
     ./git.nix
     ./gpg.nix
@@ -16,6 +17,7 @@
     ./imv.nix
     ./java.nix
     ./joshuto.nix
+    ./jq.nix
     ./lazygit.nix
     ./micro.nix
     ./mpv.nix
@@ -23,11 +25,14 @@
     ./neovim.nix
     ./nix-index.nix
     ./obs.nix
+    ./pandoc.nix
     ./password.nix
     ./pistol.nix
     ./qutebrowser.nix
+    ./ripgrep.nix
     ./rofi.nix
     ./swaylock.nix
+    ./translate.nix
     ./vscode.nix
     ./waybar.nix
     ./wofi.nix

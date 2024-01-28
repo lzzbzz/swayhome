@@ -10,12 +10,10 @@ in {
         packages = with pkgs; [
           axel # console downloading program
           babelfish # convert bash to fish shell
-          bat # alternative of cat
           bc # gnu software calculator
           catdoc # microsoft office to text converter
           clinfo # information about opencl platforms
           cpufetch # cpu fetching architecture tool
-          direnv # shell extension that manages environment
           disfetch # distro fetching program
           dmidecode # reads information about system hardware
           duf # alternate du
@@ -23,7 +21,6 @@ in {
           exiftool # exif meta information
           fastfetch # show your current hardware
           ffmpeg # convert video
-          fzf # command-line fuzzy finder
           ghostscript # convert pdf document
           glib # gsettings
           glow # markdown renderer
@@ -33,7 +30,6 @@ in {
           hut # cli tool for sourcehut
           imagemagick # convert image
           inxi # info for device specification
-          jq # command-line json processor
           lshw # show your current hardware
           mediainfo # info for image file
           netlify-cli # cli tool for netlify
@@ -41,18 +37,15 @@ in {
           nix-search-cli # cli for searching package
           odt2txt # convert odt to txt
           pamixer # audio volume
-          pandoc # convert document
           pfetch # pretty system information tool
           poppler_utils # pdf rendering library
           pulsemixer # curses mixer
-          ripgrep-all # more ripgrep
           rnm # bulk rename
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
           swappy # snapshot editing tool
           swaykbdd # per-window keyboard layout for sway
-          translate-shell # translate via google api
           tree # produce a depth indented directory listing
           upterm # remote console
           ventoy # cerate usb bootable
