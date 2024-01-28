@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
     ./bat.nix
+    ./bottom.nix
     ./cava.nix
     ./eza.nix
     ./firefox.nix
