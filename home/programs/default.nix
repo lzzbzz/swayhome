@@ -19,6 +19,7 @@
     ./mpv.nix
     ./ncmpcpp.nix
     ./neovim.nix
+    ./nix-index.nix
     ./obs.nix
     ./password.nix
     ./pistol.nix
