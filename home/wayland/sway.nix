@@ -126,9 +126,17 @@ in {
               ];
               keybindings = mkOptionDefault {
                 # rofi menu
+                "${modifier}+b" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
-                "${modifier}+n" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
+
+                # modes
+                "${modifier}+c" = "mode recording";
+                "${modifier}+p" = "mode printscreen";
+                "${modifier}+q" = "mode browser";
+                "${modifier}+r" = "mode resize";
+                "${modifier}+u" = "mode audio";
+                "${modifier}+x" = "mode session";
 
                 "${modifier}+bracketleft" = "workspace prev";
                 "${modifier}+bracketright" = "workspace next";
@@ -184,14 +192,6 @@ in {
                 # brightness
                 "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 2";
                 "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 2";
-
-                # modes
-                "${modifier}+r" = "mode resize";
-                "${modifier}+b" = "mode browser";
-                "${modifier}+x" = "mode session";
-                "${modifier}+p" = "mode printscreen";
-                "${modifier}+c" = "mode recording";
-                "${modifier}+u" = "mode audio";
               };
               colors = {
                 background = shade-black;

@@ -55,7 +55,7 @@ Minimalist Waybar.
 |       PDF viewer |      `zathura` |              |        Highly customizable and functional pdf viewer. |
 |         Recorder |  `wf-recorder` | `obs-studio` |                    Screen recording of wlroots-based. |
 |      Screen lock |     `swaylock` |              |                            Screen locker for wayland. |
-|            Shell |         `fish` |              |           Smart and user-friendly command line shell. |
+|            Shell |         `fish` |       `bash` |           Smart and user-friendly command line shell. |
 |   System monitor |       `bottom` |       `htop` |                     Graphical process/system monitor. |
 | Terminal session |       `zellij` |       `tmux` |           Terminal workspace with batteries included. |
 |      Text editor |        `helix` |     `neovim` |                        Post-modern modal text editor. |
@@ -64,17 +64,18 @@ Minimalist Waybar.
 
 ## 🐳 Sway usage
 
-|            Keybinding |                Optional |                                                         Description |
+|            Keybinding |                Next key |                                                         Description |
 |                  :--- |                    :--- |                                                                :--- |
 |                 `Mod` |                         |                                          Meta key with logo (mod4). |
 |           `Mod`+`num` |                         |                                        Move to workspace (num=1-9). |
 |         `Mod`+`Enter` |                         |                                                    Terminal (foot). |
 | `Mod`+`h`/`j`/`k`/`l` |                         |                                                    Focus to window. |
-|             `Mod`+`d` |                         |                                            Menu or launcher (rofi). |
+|             `Mod`+`d` |                         |                                        Application launcher (rofi). |
+|             `Mod`+`b` |                         |                                          Bluetooth launcher (rofi). |
 |             `Mod`+`e` |                         |                                              Password store (rofi). |
 |             `Mod`+`f` |                         |                                                  Fullscreen window. |
 |             `Mod`+`r` |         `h`/`j`/`k`/`l` |                                                      Resize window. |
-|             `Mod`+`b` |                 `1`/`2` |                            Browser & private browser (qutebrowser). |
+|             `Mod`+`q` |                 `1`/`2` |                            Browser & private browser (qutebrowser). |
 |             `Mod`+`n` |                 `i`/`o` |                         Set sink (input) and source (output) audio. |
 |             `Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
 |             `Mod`+`p` |         `1`/`2`/`3`/`4` |                    Printscreen area, all, area (copy) & all (copy). |
