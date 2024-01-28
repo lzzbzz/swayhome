@@ -6,7 +6,7 @@ in {
       programs = {
         bottom = {
           enable = true;
-          config = {
+          settings = {
             flags = {
               avg_cpu = true;
               temperature_type = "c";
