@@ -22,7 +22,7 @@ in {
 
             preview = {
               max_preview_size = 50000097152;
-              preview_script = "${./preview_file.sh}";
+              preview_script = "${./preview.sh}";
             };
           };
 
