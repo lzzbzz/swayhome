@@ -6,9 +6,6 @@ in {
       programs = {
         direnv = {
           enable = true;
-          enableFishIntegration = true;
-          config = {
-          };
         };
       };
     };
