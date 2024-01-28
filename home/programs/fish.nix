@@ -21,6 +21,7 @@ in {
             ht = "htop";
             lb = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";
             mv = "mv -v";
+            nc = "ncmpcpp";
             rm = "rm -rfv";
 
             ns = "nix-search -ds";
