@@ -3,6 +3,7 @@
     ./bat.nix
     ./bottom.nix
     ./cava.nix
+    ./direnv.nix
     ./eza.nix
     ./firefox.nix
     ./fish.nix
