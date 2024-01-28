@@ -71,7 +71,7 @@ Minimalist Waybar.
 |         `Mod`+`Enter` |                         |                                                    Terminal (foot). |
 | `Mod`+`h`/`j`/`k`/`l` |                         |                                                    Focus to window. |
 |             `Mod`+`d` |                         |                                        Application launcher (rofi). |
-|             `Mod`+`b` |                         |                                          Bluetooth launcher (rofi). |
+|             `Mod`+`y` |                         |                                          Bluetooth launcher (rofi). |
 |             `Mod`+`c` |                         |                                           Clipboard manager (rofi). |
 |             `Mod`+`e` |                         |                                              Password store (rofi). |
 |             `Mod`+`f` |                         |                                                  Fullscreen window. |

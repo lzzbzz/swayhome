@@ -126,10 +126,10 @@ in {
               ];
               keybindings = mkOptionDefault {
                 # rofi menu
-                "${modifier}+b" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
                 "${modifier}+c" = "exec ${cliphist}/bin/cliphist list | ${rofi}/bin/rofi -dmenu | ${cliphist}/bin/cliphist decode | ${wl-clipboard}/bin/wl-copy ";
+                "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
 
                 # modes
                 "${modifier}+g" = "mode recording";
