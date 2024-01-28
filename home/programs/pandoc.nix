@@ -7,7 +7,7 @@ in {
       programs = {
         pandoc = {
           enable = true;
-          default = {
+          defaults = {
             metadata = {
               author = "${fullname}";
             };
