@@ -18,6 +18,7 @@ in {
 
             bb = "btm -b";
             cp = "cp -rfv";
+            cv = "cava";
             ht = "htop";
             lb = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";
             mv = "mv -v";
