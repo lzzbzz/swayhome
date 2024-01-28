@@ -38,6 +38,8 @@ in {
           lshw # show your current hardware
           mediainfo # info for image file
           netlify-cli # cli tool for netlify
+          nix-health # check the health of your nix setup
+          nix-search-cli # cli for searching package
           odt2txt # convert odt to txt
           pamixer # audio volume
           pandoc # convert document
@@ -56,6 +58,7 @@ in {
           upterm # remote console
           ventoy # cerate usb bootable
           vulkan-tools # khronos official vulkan tools and utilities
+          vulnix #  nixos vulnerability scanner
           w3m # image viewer
           wayland-utils # wayland utilities (wayland-info)
           wdisplays # configuring displays
