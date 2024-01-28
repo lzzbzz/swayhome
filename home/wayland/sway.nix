@@ -129,9 +129,10 @@ in {
                 "${modifier}+b" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
+                "${modifier}+c" = "exec ${cliphist}/bin/cliphist list | ${rofi}/bin/rofi -dmenu | ${cliphist}/bin/cliphist decode | ${wl-clipboard}/bin/wl-copy ";
 
                 # modes
-                "${modifier}+c" = "mode recording";
+                "${modifier}+g" = "mode recording";
                 "${modifier}+p" = "mode printscreen";
                 "${modifier}+q" = "mode browser";
                 "${modifier}+r" = "mode resize";

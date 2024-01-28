@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./cliphist.nix
     ./gpg-agent.nix
     ./kanshi.nix
     ./keyring.nix

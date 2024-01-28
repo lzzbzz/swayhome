@@ -72,6 +72,7 @@ Minimalist Waybar.
 | `Mod`+`h`/`j`/`k`/`l` |                         |                                                    Focus to window. |
 |             `Mod`+`d` |                         |                                        Application launcher (rofi). |
 |             `Mod`+`b` |                         |                                          Bluetooth launcher (rofi). |
+|             `Mod`+`c` |                         |                                           Clipboard manager (rofi). |
 |             `Mod`+`e` |                         |                                              Password store (rofi). |
 |             `Mod`+`f` |                         |                                                  Fullscreen window. |
 |             `Mod`+`r` |         `h`/`j`/`k`/`l` |                                                      Resize window. |
@@ -79,7 +80,7 @@ Minimalist Waybar.
 |             `Mod`+`n` |                 `i`/`o` |                         Set sink (input) and source (output) audio. |
 |             `Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
 |             `Mod`+`p` |         `1`/`2`/`3`/`4` |                    Printscreen area, all, area (copy) & all (copy). |
-|             `Mod`+`c` |     `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record. |
+|             `Mod`+`g` |     `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record. |
 
 ## 🫐 Installation
 
