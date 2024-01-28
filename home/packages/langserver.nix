@@ -13,6 +13,7 @@ in {
         with pkgs.ocamlPackages;
         with pkgs.rubyPackages; [
           # haskell-language-server # haskell # too much storage
+          # intelephense # php # unfree package
           # sourcekit-lsp # swift & objective-c # too much storage
           ansible-language-server # ansible
           bash-language-server # bash
@@ -32,7 +33,6 @@ in {
           fsautocomplete # fsharp
           gleam # gleam
           gopls # golang
-          intelephense # php
           jdt-language-server # java
           jsonnet-language-server # jsonnet
           julia # julia
