@@ -3,7 +3,7 @@
 in {
   nixpkgs = {
     config = {
-      allowUnfree = true;
+      allowUnfree = false;
       firefox = {
         enablePlasmaBrowserIntegration = false;
       };
@@ -20,6 +20,11 @@ in {
     optimise = {
       automatic = true;
     };
+    extraOptions = ''
+      experimental-features = nix-command flakes
+      keep-outputs = true
+      keep-derivations = true
+    '';
     settings = {
       allowed-users = ["@wheel"];
       auto-optimise-store = true;
