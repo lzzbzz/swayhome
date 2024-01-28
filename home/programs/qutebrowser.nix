@@ -93,10 +93,10 @@ in {
                 };
               };
               webpage = {
+                preferred_color_scheme = "dark";
                 darkmode = {
                   enabled = true;
                   policy = {
-                    images = "never";
                     page = "always";
                   };
                 };
