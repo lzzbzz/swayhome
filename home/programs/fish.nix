@@ -7,6 +7,7 @@ in {
         fish = {
           enable = true;
           shellAbbrs = {
+            a = "axel";
             b = "bat";
             d = "doas";
             g = "git";
@@ -15,18 +16,22 @@ in {
             n = "nvim";
             z = "zellij";
 
-            cp = "cp -rv";
+            bb = "btm -b";
+            cp = "cp -rfv";
+            ht = "htop";
+            lb = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";
             mv = "mv -v";
             rm = "rm -rfv";
-            lsf = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";
+
+            ns = "nix-search -ds";
+
+            yt = "yt-dlp -f bestvideo+bestaudio --embed-thumbnail";
+            ym = "yt-dlp -f bestaudio -x --audio-format vorbis --embed-thumbnail";
 
             sa = "systemctl --user start";
             so = "systemctl --user stop";
             sr = "systemctl --user restart";
             st = "systemctl --user status";
-
-            yt = "yt-dlp -f bestvideo+bestaudio --embed-thumbnail";
-            ytm = "yt-dlp -f bestaudio -x --audio-format vorbis --embed-thumbnail";
 
             dsa = "doas systemctl start";
             dso = "doas systemctl stop";
