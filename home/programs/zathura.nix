@@ -21,8 +21,8 @@ in {
             completion-highlight-bg = "${plasma-blue}";
             default-bg = "${shade-black}";
             default-fg = "${paper-white}";
-            hightlight-color = "${plasma-blue}";
-            hightlight-fg = "${shade-black}";
+            highlight-color = "${plasma-blue}";
+            highlight-fg = "${shade-black}";
             inputbar-bg = "${shade-black}";
             inputbar-fg = "${paper-white}";
             notification-bg = "${plasma-blue}";
@@ -31,6 +31,7 @@ in {
             recolor-lightcolor = "${shade-black}";
             statusbar-bg = "${shade-black}";
             statusbar-fg = "${paper-white}";
+            statusbar-home-tilde = true;
             window-title-basename = true;
           };
         };
