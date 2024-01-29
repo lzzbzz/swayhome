@@ -30,6 +30,7 @@ in {
           hut # cli tool for sourcehut
           imagemagick # convert image
           inxi # info for device specification
+          libva-utils # a collection of utilities and examples for va-api
           lshw # show your current hardware
           mediainfo # info for image file
           netlify-cli # cli tool for netlify
@@ -39,8 +40,10 @@ in {
           pamixer # audio volume
           pfetch # pretty system information tool
           poppler_utils # pdf rendering library
+          psmisc # small useful utilities that use the proc filesystem
           pulsemixer # curses mixer
           rnm # bulk rename
+          rtorrent # ncurses client for libtorrent
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
@@ -56,7 +59,9 @@ in {
           wdisplays # configuring displays
           wf-recorder # screen recording
           wget # cli downloader
-          wl-clipboard # copy for wayland
+          wl-clip-persist # keep wayland clipboard even after programs close
+          wl-clipboard # command-line copy/paste utilities
+          wl-gammactl # contrast, brightness, and gamma adjustments
           wl-mirror # mirrors an output onto a wayland surface
           wlprop # xprop clone for wlroots based compositors
           wmctrl # interact netwm x wm
