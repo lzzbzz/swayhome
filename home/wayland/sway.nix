@@ -125,11 +125,16 @@ in {
                 { command = "${autotiling}/bin/autotiling"; }
               ];
               keybindings = mkOptionDefault {
-                # rofi menu
+                # rofi: menu
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
+                # rofi: password store
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
+                # rofi: clipboard manager
                 "${modifier}+c" = "exec ${cliphist}/bin/cliphist list | ${rofi}/bin/rofi -dmenu | ${cliphist}/bin/cliphist decode | ${wl-clipboard}/bin/wl-copy ";
+                # rofi: bluetooth
                 "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
+                # pick color
+                "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
 
                 # modes
                 "${modifier}+g" = "mode recording";
@@ -237,8 +242,8 @@ in {
                   # audio = "launch: [i]input [o]output";
                   Escape = "mode default";
                   Return = "mode default";
-                  "i" = "exec ${rofi-pulse-select}/bin/rofi-pulse-select sink, mode default";
-                  "o" = "exec ${rofi-pulse-select}/bin/rofi-pulse-select source, mode default";
+                  "i" = "exec ${rofi-pulse-select}/bin/rofi-pulse-select source, mode default";
+                  "o" = "exec ${rofi-pulse-select}/bin/rofi-pulse-select sink, mode default";
                 };
                 browser = {
                   # browser = "launch: [1]qutebrowser [2]private";
@@ -263,11 +268,11 @@ in {
                   # [0]stop-record";
                   Escape = "mode default";
                   Return = "mode default";
-                  "1" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --audio=0 --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "2" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --audio=0 --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder -g "$(${slurp}/bin/slurp -d)" --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "4" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wf-recorder}/bin/wf-recorder --file="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "0" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${procps}/bin/pkill wf-recorder, mode default'';
+                  "1" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec -g "$(${slurp}/bin/slurp -d)" --audio --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "2" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --audio --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec -g "$(${slurp}/bin/slurp -d)" --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "4" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "0" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${procps}/bin/pkill --signal INT wl-screenrec, mode default'';
                 };
                 resize = {
                   Escape = "mode default";
