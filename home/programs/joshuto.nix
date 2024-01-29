@@ -10,7 +10,7 @@ in {
             numbered_command = false;
             scroll_offset = 3;
             use_preview_script = true;
-            use_trash = true;
+            use_trash = false;
             watch_files = true;
             xdg_open = true;
             xdg_open_fork = true;
@@ -376,6 +376,7 @@ in {
               ppt."inherit" = "libreoffice_default";
               pptx."inherit" = "libreoffice_default";
 
+              epub."inherit" = "reader_default";
               pdf."inherit" = "reader_default";
 
               # 3d files
