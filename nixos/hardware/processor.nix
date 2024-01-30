@@ -6,7 +6,7 @@
   hardware = {
     cpu = {
       # amd or intel
-      intel = {
+      amd = {
         updateMicrocode =
          lib.mkDefault config.hardware.enableRedistributableFirmware;
       };
