@@ -53,7 +53,7 @@ Minimalist Waybar.
 |             Menu |        `dmenu` |       `wofi` |                            an efficient dynamic menu. |
 |     Notification |         `mako` |              |              Lightweight wayland notification daemon. |
 |       PDF viewer |      `zathura` |              |        Highly customizable and functional pdf viewer. |
-|         Recorder |  `wf-recorder` | `obs-studio` |                    Screen recording of wlroots-based. |
+|         Recorder | `wl-screenrec` | `obs-studio` |                    Screen recording of wlroots-based. |
 |      Screen lock |     `swaylock` |              |                            Screen locker for wayland. |
 |            Shell |         `fish` |       `bash` |           Smart and user-friendly command line shell. |
 |   System monitor |       `bottom` |       `htop` |                     Graphical process/system monitor. |
