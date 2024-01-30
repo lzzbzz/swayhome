@@ -268,9 +268,9 @@ in {
                   # [0]stop-record";
                   Escape = "mode default";
                   Return = "mode default";
-                  "1" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec -g "$(${slurp}/bin/slurp -d)" --audio --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "2" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --audio --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
-                  "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec -g "$(${slurp}/bin/slurp -d)" --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
+                  "1" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)" --geometry "$(${slurp}/bin/slurp -d)" --audio, mode default'';
+                  "2" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)" --audio, mode default'';
+                  "3" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)" --geometry "$(${slurp}/bin/slurp -d)", mode default'';
                   "4" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${wl-screenrec}/bin/wl-screenrec --low-power=off --filename="$(xdg-user-dir VIDEOS)/$(date +%Y%m%d_%Hh%Mm%Ss_@${name}.mp4)", mode default'';
                   "0" = ''exec ${coreutils-full}/bin/sleep 0.5; exec ${procps}/bin/pkill --signal INT wl-screenrec, mode default'';
                 };
