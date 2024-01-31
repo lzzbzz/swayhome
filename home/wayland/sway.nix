@@ -83,13 +83,14 @@ in {
                 };
               };
               workspaceOutputAssign = let
-                second = "DP-1 DP-2 DP-3 DP-4 HDMI-1 HDMI-2 HDMI-A-1 HDMI-A-2";
+                first = "eDP-1";
+                second = "DP-1 DP-2 DP-3 DP-4 HDMI-A-1 HDMI-A-2";
               in [
-                { output = "eDP-1"; workspace = "1"; }
-                { output = "eDP-1"; workspace = "2"; }
-                { output = "eDP-1"; workspace = "3"; }
-                { output = "eDP-1"; workspace = "4"; }
-                { output = "eDP-1"; workspace = "5"; }
+                { output = first; workspace = "1"; }
+                { output = first; workspace = "2"; }
+                { output = first; workspace = "3"; }
+                { output = first; workspace = "4"; }
+                { output = first; workspace = "5"; }
                 { output = second; workspace = "6"; }
                 { output = second; workspace = "7"; }
                 { output = second; workspace = "8"; }
@@ -116,6 +117,9 @@ in {
                 criteria = [
                   {
                     app_id = ".blueman-manager-wrapped";
+                  }
+                  {
+                    app_id = "at.yrlf.wl_mirror";
                   }
                   {
                     app_id = "imv";
