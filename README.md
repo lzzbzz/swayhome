@@ -54,8 +54,8 @@ Minimalist Waybar.
 |    Login manager |              `greetd` |              |  Minimal and flexible login manager daemon (autologin). |
 |             Menu |                `rofi` |       `wofi` |      Window switcher, run dialog and dmenu replacement. |
 |     Notification |                `mako` |              |                Lightweight wayland notification daemon. |
-|   Password Store |         `rofi`+`pass` |              | Stores, retrieves, generates, & synchronizes passwords. |
-|       Pick Color |     `wl-color-picker` |              |        Wayland color picker that also works on wlroots. |
+|   Password store |         `rofi`+`pass` |              | Stores, retrieves, generates, & synchronizes passwords. |
+|       Pick color |     `wl-color-picker` |              |        Wayland color picker that also works on wlroots. |
 |       PDF viewer |             `zathura` |              |          Highly customizable and functional pdf viewer. |
 |      Screen lock |            `swaylock` |              |                              Screen locker for wayland. |
 |  Screen recorder |        `wl-screenrec` | `obs-studio` |                      Screen recording of wlroots-based. |
