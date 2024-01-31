@@ -55,6 +55,60 @@ in {
               bars = [{
                 command = "${waybar}/bin/waybar";
               }];
+              focus = {
+                forceWrapping = false;
+                followMouse = false;
+              };
+              fonts = {
+                names = ["monospace"];
+                size = 8.0;
+              };
+              gaps = {
+                inner = 10;
+              };
+              startup = [
+                { command = "${autotiling}/bin/autotiling"; }
+              ];
+              output = {
+                "*" = {
+                  bg = "${./image/wallpaper.jpg} fill";
+                };
+              };
+              input = {
+                "type:touchpad" = {
+                  dwt = "enabled";
+                  tap = "enabled";
+                  natural_scroll = "enabled";
+                  middle_emulation = "enabled";
+                };
+              };
+              workspaceOutputAssign = let
+                second = "DP-1 DP-2 DP-3 DP-4 HDMI-1 HDMI-2 HDMI-A-1 HDMI-A-2";
+              in [
+                { output = "eDP-1"; workspace = "1"; }
+                { output = "eDP-1"; workspace = "2"; }
+                { output = "eDP-1"; workspace = "3"; }
+                { output = "eDP-1"; workspace = "4"; }
+                { output = "eDP-1"; workspace = "5"; }
+                { output = second; workspace = "6"; }
+                { output = second; workspace = "7"; }
+                { output = second; workspace = "8"; }
+                { output = second; workspace = "9"; }
+              ];
+              window = {
+                border = 5;
+                titlebar = false;
+                commands = [
+                  {
+                    command = "floating enable, sticky enable";
+                    criteria.title = "Picture-in-Picture";
+                  }
+                  {
+                    command = "floating enable, sticky enable";
+                    criteria.title = ".*Sharing Indicator.*";
+                  }
+                ];
+              };
               floating = {
                 modifier = "${modifier}";
                 border = 5;
@@ -83,47 +137,6 @@ in {
                   }
                 ];
               };
-              focus = {
-                forceWrapping = false;
-                followMouse = false;
-              };
-              fonts = {
-                names = ["monospace"];
-                size = 8.0;
-              };
-              gaps = {
-                inner = 10;
-              };
-              input = {
-                "type:touchpad" = {
-                  dwt = "enabled";
-                  tap = "enabled";
-                  natural_scroll = "enabled";
-                  middle_emulation = "enabled";
-                };
-              };
-              window = {
-                border = 5;
-                titlebar = false;
-                commands = [
-                  {
-                    command = "floating enable, sticky enable";
-                    criteria.title = "Picture-in-Picture";
-                  }
-                  {
-                    command = "floating enable, sticky enable";
-                    criteria.title = ".*Sharing Indicator.*";
-                  }
-                ];
-              };
-              output = {
-                "*" = {
-                  bg = "${./image/wallpaper.jpg} fill";
-                };
-              };
-              startup = [
-                { command = "${autotiling}/bin/autotiling"; }
-              ];
               keybindings = mkOptionDefault {
                 # rofi: menu
                 "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
