@@ -136,6 +136,18 @@ in {
               ppm."inherit" = "image_default";
               webp."inherit" = "image_default";
 
+              eps.app_list = [
+                {
+                  command = "inkview";
+                  fork = true;
+                  silent = true;
+                }
+                {
+                  command = "inkscape";
+                  fork = true;
+                  silent = true;
+                }
+              ];
               svg.app_list = [
                 {
                   command = "inkview";
