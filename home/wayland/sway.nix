@@ -97,7 +97,7 @@ in {
                 { output = second; workspace = "9"; }
               ];
               window = {
-                border = 5;
+                border = 3;
                 titlebar = false;
                 commands = [
                   {
@@ -112,7 +112,7 @@ in {
               };
               floating = {
                 modifier = "${modifier}";
-                border = 5;
+                border = 3;
                 titlebar = false;
                 criteria = [
                   {

@@ -39,7 +39,7 @@ in {
           font = "monospace 8";
           margin = "30";
           padding = "5";
-          borderSize = 5;
+          borderSize = 3;
           borderColor = plasma-blue;
           backgroundColor = shade-black;
           textColor = paper-white;

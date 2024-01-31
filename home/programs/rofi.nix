@@ -40,7 +40,7 @@ in {
       programs = {
         rofi = {
           enable = true;
-          font = "Monospace 10";
+          font = "Monospace 8";
           extraConfig = {
             case-sensitive = false;
             display-drun = "Apps:";
@@ -101,7 +101,7 @@ in {
 
               "#mainbox" = {
                 background-color = mkLiteral "@bg";
-                border = mkLiteral "5px";
+                border = mkLiteral "3px";
                 border-color = mkLiteral "@ac";
                 children = mkLiteral "[ inputbar, listview ]";
                 padding = mkLiteral "10px";
