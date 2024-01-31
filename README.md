@@ -68,24 +68,24 @@ Minimalist Waybar.
 
 ## 🐳 Sway usage
 
-|            Keybinding |                Next key |                                                         Description |
-|                  :--- |                    :--- |                                                                :--- |
-|                 `Mod` |                         |                                          Meta key with logo (mod4). |
-|           `Mod`+`num` |                         |                                        Move to workspace (num=1-9). |
-|         `Mod`+`Enter` |                         |                                                    Terminal (foot). |
-| `Mod`+`h`/`j`/`k`/`l` |                         |                                                    Focus to window. |
-|             `Mod`+`d` |                         |                                        Application launcher (rofi). |
-|             `Mod`+`y` |                         |                                          Bluetooth launcher (rofi). |
-|             `Mod`+`c` |                         |                                           Clipboard manager (rofi). |
-|             `Mod`+`e` |                         |                                              Password store (rofi). |
-|             `Mod`+`n` |                         |                                             Pick color for wayland. |
-|             `Mod`+`f` |                         |                                                  Fullscreen window. |
-|             `Mod`+`q` |                 `1`/`2` |                            Browser & private browser (qutebrowser). |
-|             `Mod`+`u` |                 `i`/`o` |                         Set sink (input) and source (output) audio. |
-|             `Mod`+`r` |         `h`/`j`/`k`/`l` |                                                 Resize window apps. |
-|             `Mod`+`x` | `h`/`p`/`r`/`s`/`l`/`o` |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
-|             `Mod`+`p` |         `1`/`2`/`3`/`4` |                    Printscreen area, all, area (copy) & all (copy). |
-|             `Mod`+`g` |     `1`/`2`/`3`/`4`/`0` | Recording area, all, area (no audio), all (no audio) & stop record. |
+|                                                         Keybinding |                                                                      Next key |                                                         Description |
+|                                                               :--- |                                                                          :--- |                                                                :--- |
+|                                                     <kbd>Mod</kbd> |                                                                               |                                          Meta key with logo (mod4). |
+|                                   <kbd>Mod</kbd>+<kbd>Number</kbd> |                                                                               |                                        Move to workspace (num=1-9). |
+|                                    <kbd>Mod</kbd>+<kbd>Enter</kbd> |                                                                               |                                                    Terminal (foot). |
+| <kbd>Mod</kbd>+<kbd>h</kbd>/<kbd>j</kbd>/<kbd>k</kbd>/<kbd>l</kbd> |                                                                               |                                                    Focus to window. |
+|                                        <kbd>Mod</kbd>+<kbd>d</kbd> |                                                                               |                                        Application launcher (rofi). |
+|                                        <kbd>Mod</kbd>+<kbd>y</kbd> |                                                                               |                                          Bluetooth launcher (rofi). |
+|                                        <kbd>Mod</kbd>+<kbd>c</kbd> |                                                                               |                                           Clipboard manager (rofi). |
+|                                        <kbd>Mod</kbd>+<kbd>e</kbd> |                                                                               |                                              Password store (rofi). |
+|                                        <kbd>Mod</kbd>+<kbd>n</kbd> |                                                                               |                                             Pick color for wayland. |
+|                                        <kbd>Mod</kbd>+<kbd>f</kbd> |                                                                               |                                                  Fullscreen window. |
+|                                        <kbd>Mod</kbd>+<kbd>q</kbd> |                                                     <kbd>1</kbd>/<kbd>2</kbd> |                            Browser & private browser (qutebrowser). |
+|                                        <kbd>Mod</kbd>+<kbd>u</kbd> |                                                     <kbd>i</kbd>/<kbd>o</kbd> |                         Set sink (input) and source (output) audio. |
+|                                        <kbd>Mod</kbd>+<kbd>r</kbd> |                           <kbd>h</kbd>/<kbd>j</kbd>/<kbd>k</kbd>/<kbd>l</kbd> |                                                 Resize window apps. |
+|                                        <kbd>Mod</kbd>+<kbd>x</kbd> | <kbd>h</kbd>/<kbd>p</kbd>/<kbd>r</kbd>/<kbd>s</kbd>/<kbd>l</kbd>/<kbd>o</kbd> |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
+|                                        <kbd>Mod</kbd>+<kbd>p</kbd> |                           <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd> |                    Printscreen area, all, area (copy) & all (copy). |
+|                                        <kbd>Mod</kbd>+<kbd>g</kbd> |              <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd>/<kbd>0</kbd> | Recording area, all, area (no audio), all (no audio) & stop record. |
 
 ## 🫐 Installation
 
