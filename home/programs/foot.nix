@@ -45,7 +45,7 @@ in {
               hide-when-typing = "yes";
             };
             colors = {
-              alpha = 0.9;
+              alpha = 1.0;
               background = shade-black;
               foreground = paper-white;
               regular0 = shade-black; # black
