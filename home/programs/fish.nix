@@ -1,4 +1,7 @@
-{ ... }: let
+{
+  pkgs,
+  ...
+}: let
   name = "hervyqa";
 in {
   home-manager = {
@@ -6,6 +9,20 @@ in {
       programs = {
         fish = {
           enable = true;
+          interactiveShellInit = ''
+            set fish_greeting
+          '';
+          plugins = with pkgs.fishPlugins; [
+            { name = "forgit"; src = forgit; }
+            { name = "git"; src = plugin-git; }
+            { name = "grc"; src = grc; }
+            { name = "humantime"; src = humantime-fish; }
+            { name = "hydro"; src = hydro; }
+            { name = "pisces"; src = pisces; }
+            { name = "pure"; src = pure; }
+            { name = "sponge"; src = sponge; }
+            { name = "tide"; src = tide; }
+          ];
           shellAbbrs = {
             a = "axel";
             b = "bat";
