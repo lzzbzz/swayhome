@@ -95,8 +95,14 @@ in {
                   "9" = "IX";
                 };
                 persistent-workspaces = let
-                  first = ["eDP-1" "VGA-1"];
-                  second = ["DP-1" "DP-2" "DP-3" "DP-4" "HDMI-A-1" "HDMI-A-2"];
+                  first = [
+                    "eDP-1"
+                    "VGA-1"
+                  ];
+                  second = [
+                    "DP-1" "DP-2" "DP-3" "DP-4"
+                    "HDMI-A-1" "HDMI-A-2"
+                  ];
                 in {
                   "1" = first;
                   "2" = first;
