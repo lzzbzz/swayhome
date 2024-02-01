@@ -48,8 +48,8 @@ Minimalist Waybar.
 |  Display settings |            `wdisplay` |              |             Configuring displays in Wayland compositor. |
 |      File manager |             `joshuto` |              |                      Ranger-like terminal file manager. |
 |             Fonts |         `monospace:8` |              |                              Minimalist monospace font. |
-|         GTK theme |         `breeze-dark` |              |                                              GTK theme. |
-| QT platform theme |   `gtk` (breeze-dark) |              |            QT Theme from GTK theme with qtstyleplugins. |
+|    GTK{2,3} theme |         `breeze-dark` |              |                                              GTK theme. |
+|     QT{5,6} theme |      `qt5ct` >> `gtk` |              |            QT Theme from GTK theme with qtstyleplugins. |
 |             Icons |        `papirus-icon` |              |                     Pixel perfect icon theme for linux. |
 |      Image viewer |                 `imv` |      `krita` |                              Command line image viewer. |
 |     Login manager |              `greetd` |              |  Minimal and flexible login manager daemon (autologin). |
