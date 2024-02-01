@@ -135,6 +135,8 @@ in {
                 "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
                 # pick color
                 "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
+                # mirror screen
+                "${modifier}+o" = "exec ${wl-mirror}/bin/wl-present mirror";
 
                 # modes
                 "${modifier}+g" = "mode recording";
