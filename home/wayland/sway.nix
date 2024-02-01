@@ -161,8 +161,8 @@ in {
                 "${modifier}+u" = "mode audio";
                 "${modifier}+x" = "mode session";
 
-                "${modifier}+bracketleft" = "workspace prev";
-                "${modifier}+bracketright" = "workspace next";
+                "${modifier}+comma" = "workspace next";
+                "${modifier}+period" = "workspace prev";
 
                 "${modifier}+1" = "workspace number 1";
                 "${modifier}+2" = "workspace number 2";
@@ -174,8 +174,8 @@ in {
                 "${modifier}+8" = "workspace number 8";
                 "${modifier}+9" = "workspace number 9";
 
-                "${modifier}+Shift+bracketleft" = "move container to workspace prev; workspace prev";
-                "${modifier}+Shift+bracketright" = "move container to workspace next; workspace next";
+                "${modifier}+Shift+period" = "move container to workspace next; workspace next";
+                "${modifier}+Shift+comma" = "move container to workspace prev; workspace prev";
 
                 "${modifier}+Shift+1" = "move container to workspace number 1";
                 "${modifier}+Shift+2" = "move container to workspace number 2";
