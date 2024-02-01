@@ -7,10 +7,9 @@ in {
   home-manager = {
     users.${name} = {
       home = {
-        packages = with pkgs.libsForQt5;
-        with pkgs.libsForQt5.qt5; [
-          qt5ct
-          qtstyleplugins
+        packages = with pkgs.qt6Packages; [
+          qt6ct
+          qt6gtk2
           qtwayland
         ];
       };

@@ -4,6 +4,7 @@
     ./programs
     ./services
     ./system
+    ./themes
     ./virtual
   ];
 }

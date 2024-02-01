@@ -12,6 +12,7 @@
     ./langserver.nix
     ./latex.nix
     ./libsqt5.nix
+    ./libsqt6.nix
     ./lua.nix
     ./media.nix
     ./octave.nix

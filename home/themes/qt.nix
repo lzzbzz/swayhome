@@ -5,7 +5,7 @@ in {
     users.${name} = {
       qt = {
         enable = true;
-        platformTheme = "gtk";
+        platformTheme = "qtct";
       };
     };
   };
