@@ -36,35 +36,36 @@ Minimalist Waybar.
 
 ## 💎 List of apps
 
-|         Category |                  Name |  Alternative |                                             Description |
-|             :--- |                  :--- |         :--- |                                                    :--- |
-|   Window manager |                `sway` |              |                              Tiling wayland compositor. |
-|              Bar |              `waybar` |              |                      Customizable wayland bar for sway. |
-|         Terminal |                `foot` |              |                 Minimalistic Wayland terminal emulator. |
-|     Audio player |       `ncmpcpp`+`mpd` |              |                               Ncurses based mpd client. |
-|        Backlight |               `light` |    `swayosd` |                      Application to control backlights. |
-|        Bluetooth | `rofi`+`bluetoothctl` |              |              Interface to connect to bluetooth devices. |
-|          Browser |         `qutebrowser` |    `firefox` |                               Keyboard-focused browser. |
-| Display settings |            `wdisplay` |              |             Configuring displays in Wayland compositor. |
-|     File manager |             `joshuto` |              |                      Ranger-like terminal file manager. |
-|            Fonts |         `monospace:8` |              |                              Minimalist monospace font. |
-|   GTK & QT Theme |         `breeze-dark` |              |                                       KDE plasma theme. |
-|            Icons |        `papirus-icon` |              |                     Pixel perfect icon theme for linux. |
-|     Image viewer |                 `imv` |      `krita` |                              Command line image viewer. |
-|    Login manager |              `greetd` |              |  Minimal and flexible login manager daemon (autologin). |
-|             Menu |                `rofi` |       `wofi` |      Window switcher, run dialog and dmenu replacement. |
-|     Notification |                `mako` |              |                Lightweight wayland notification daemon. |
-|   Password store |         `rofi`+`pass` |              | Stores, retrieves, generates, & synchronizes passwords. |
-|       Pick color |     `wl-color-picker` |              |        Wayland color picker that also works on wlroots. |
-|       PDF viewer |             `zathura` |              |          Highly customizable and functional pdf viewer. |
-|      Screen lock |            `swaylock` |              |                              Screen locker for wayland. |
-|  Screen recorder |        `wl-screenrec` | `obs-studio` |                      Screen recording of wlroots-based. |
-|            Shell |                `fish` |       `bash` |             Smart and user-friendly command line shell. |
-|   System monitor |              `bottom` |       `htop` |                       Graphical process/system monitor. |
-| Terminal session |              `zellij` |       `tmux` |             Terminal workspace with batteries included. |
-|      Text editor |               `helix` |     `neovim` |                          Post-modern modal text editor. |
-|     Video player |                 `mpv` |              |                           General-purpose media player. |
-|   Volume control |             `pamixer` | `pulsemixer` |                                     Command line mixer. |
+|          Category |                  Name |  Alternative |                                             Description |
+|              :--- |                  :--- |         :--- |                                                    :--- |
+|    Window manager |                `sway` |              |                              Tiling wayland compositor. |
+|               Bar |              `waybar` |              |                      Customizable wayland bar for sway. |
+|          Terminal |                `foot` |              |                 Minimalistic Wayland terminal emulator. |
+|      Audio player |       `ncmpcpp`+`mpd` |              |                               Ncurses based mpd client. |
+|         Backlight |               `light` |    `swayosd` |                      Application to control backlights. |
+|         Bluetooth | `rofi`+`bluetoothctl` |              |              Interface to connect to bluetooth devices. |
+|           Browser |         `qutebrowser` |    `firefox` |                               Keyboard-focused browser. |
+|  Display settings |            `wdisplay` |              |             Configuring displays in Wayland compositor. |
+|      File manager |             `joshuto` |              |                      Ranger-like terminal file manager. |
+|             Fonts |         `monospace:8` |              |                              Minimalist monospace font. |
+|         GTK theme |         `breeze-dark` |              |                                              GTK theme. |
+| QT platform theme |   `gtk` (breeze-dark) |              |            QT Theme from GTK theme with qtstyleplugins. |
+|             Icons |        `papirus-icon` |              |                     Pixel perfect icon theme for linux. |
+|      Image viewer |                 `imv` |      `krita` |                              Command line image viewer. |
+|     Login manager |              `greetd` |              |  Minimal and flexible login manager daemon (autologin). |
+|              Menu |                `rofi` |       `wofi` |      Window switcher, run dialog and dmenu replacement. |
+|      Notification |                `mako` |              |                Lightweight wayland notification daemon. |
+|    Password store |         `rofi`+`pass` |              | Stores, retrieves, generates, & synchronizes passwords. |
+|        Pick color |     `wl-color-picker` |              |        Wayland color picker that also works on wlroots. |
+|        PDF viewer |             `zathura` |              |          Highly customizable and functional pdf viewer. |
+|       Screen lock |            `swaylock` |              |                              Screen locker for wayland. |
+|   Screen recorder |        `wl-screenrec` | `obs-studio` |                      Screen recording of wlroots-based. |
+|             Shell |                `fish` |       `bash` |             Smart and user-friendly command line shell. |
+|    System monitor |              `bottom` |       `htop` |                       Graphical process/system monitor. |
+|  Terminal session |              `zellij` |       `tmux` |             Terminal workspace with batteries included. |
+|       Text editor |               `helix` |     `neovim` |                          Post-modern modal text editor. |
+|      Video player |                 `mpv` |              |                           General-purpose media player. |
+|    Volume control |             `pamixer` | `pulsemixer` |                                     Command line mixer. |
 
 ## 🐳 Sway usage
 
