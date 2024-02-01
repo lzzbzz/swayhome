@@ -13,8 +13,8 @@ in {
           options = {
             adjust-open = "width";
             font = "Monospace 8";
+            guioptions = "none";
             pages-per-row = 1;
-            scroll-page-aware = true;
             scroll-step = 50;
             completion-bg = "${charcoal-gray}";
             completion-fg = "${paper-white}";
@@ -32,6 +32,7 @@ in {
             statusbar-bg = "${shade-black}";
             statusbar-fg = "${paper-white}";
             statusbar-home-tilde = true;
+            scroll-page-aware = true;
             window-title-basename = true;
           };
         };
