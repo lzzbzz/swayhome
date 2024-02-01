@@ -146,8 +146,8 @@ in {
                 "${modifier}+u" = "mode audio";
                 "${modifier}+x" = "mode session";
 
-                "${modifier}+comma" = "workspace next";
-                "${modifier}+period" = "workspace prev";
+                "${modifier}+period" = "workspace next";
+                "${modifier}+comma" = "workspace prev";
 
                 "${modifier}+1" = "workspace number 1";
                 "${modifier}+2" = "workspace number 2";
