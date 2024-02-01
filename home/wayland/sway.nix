@@ -115,30 +115,13 @@ in {
                 border = 3;
                 titlebar = false;
                 criteria = [
-                  {
-                    app_id = ".blueman-manager-wrapped";
-                  }
-                  {
-                    app_id = "at.yrlf.wl_mirror";
-                  }
-                  {
-                    app_id = "imv";
-                  }
-                  {
-                    app_id = "mpv";
-                  }
-                  {
-                    app_id = "org.keepassxc.KeePassXC";
-                  }
-                  {
-                    app_id = "org.pwmt.zathura";
-                  }
-                  {
-                    app_id = "qt5ct";
-                  }
-                  {
-                    app_id = "wdisplays";
-                  }
+                  { app_id = "at.yrlf.wl_mirror"; }
+                  { app_id = "imv"; }
+                  { app_id = "mpv"; }
+                  { app_id = "org.pwmt.zathura"; }
+                  { app_id = "qt5ct"; }
+                  { app_id = "qt6ct"; }
+                  { app_id = "wdisplays"; }
                 ];
               };
               keybindings = mkOptionDefault {
