@@ -79,6 +79,36 @@ in {
               "sway/mode" = {
                 format = "<span style=\"italic\">{}</span>";
               };
+              "sway/workspaces" = {
+                on-click = "activate";
+                sort-by-number = true;
+                format = "{icon}";
+                format-icons = {
+                  "1" = "I";
+                  "2" = "II";
+                  "3" = "III";
+                  "4" = "IV";
+                  "5" = "V";
+                  "6" = "VI";
+                  "7" = "VII";
+                  "8" = "VIII";
+                  "9" = "IX";
+                };
+                persistent-workspaces = let
+                  first = ["eDP-1" "VGA-1"];
+                  second = ["DP-1" "DP-2" "DP-3" "DP-4" "HDMI-A-1" "HDMI-A-2"];
+                in {
+                  "1" = first;
+                  "2" = first;
+                  "3" = first;
+                  "4" = first;
+                  "5" = first;
+                  "6" = second;
+                  "7" = second;
+                  "8" = second;
+                  "9" = second;
+                };
+              };
               "sway/scratchpad" = {
                 format = "{icon} {count}";
                 show-empty = false;
