@@ -15,7 +15,7 @@ Uniform look for Qt and GTK applications (breeze-dark or other themes).
 
 Minimalist Waybar.
 
-![images](./imgs/waybar.png)
+![images](./imgs/panelbar.png)
 
 ## 💠 File structure
 
