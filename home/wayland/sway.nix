@@ -15,17 +15,6 @@ let
   up = "k";
   right = "l";
 
-  # workspace
-  ws1 = "1: ";
-  ws2 = "2: ";
-  ws3 = "3: ";
-  ws4 = "4: ";
-  ws5 = "5: ";
-  ws6 = "6: ";
-  ws7 = "7: ";
-  ws8 = "8: ";
-  ws9 = "9: ";
-
   # colors
   abyss-blue = "#2980b9";
   alternate-gray = "#bdc3c7";
@@ -94,7 +83,7 @@ in {
                 };
               };
               workspaceOutputAssign = let
-                first = "eDP-1";
+                first = "eDP-1 VGA-1";
                 second = "DP-1 DP-2 DP-3 DP-4 HDMI-A-1 HDMI-A-2";
               in [
                 { output = first; workspace = "1"; }
@@ -175,28 +164,28 @@ in {
                 "${modifier}+bracketleft" = "workspace prev";
                 "${modifier}+bracketright" = "workspace next";
 
-                "${modifier}+1" = "workspace number ${ws1}";
-                "${modifier}+2" = "workspace number ${ws2}";
-                "${modifier}+3" = "workspace number ${ws3}";
-                "${modifier}+4" = "workspace number ${ws4}";
-                "${modifier}+5" = "workspace number ${ws5}";
-                "${modifier}+6" = "workspace number ${ws6}";
-                "${modifier}+7" = "workspace number ${ws7}";
-                "${modifier}+8" = "workspace number ${ws8}";
-                "${modifier}+9" = "workspace number ${ws9}";
+                "${modifier}+1" = "workspace number 1";
+                "${modifier}+2" = "workspace number 2";
+                "${modifier}+3" = "workspace number 3";
+                "${modifier}+4" = "workspace number 4";
+                "${modifier}+5" = "workspace number 5";
+                "${modifier}+6" = "workspace number 6";
+                "${modifier}+7" = "workspace number 7";
+                "${modifier}+8" = "workspace number 8";
+                "${modifier}+9" = "workspace number 9";
 
                 "${modifier}+Shift+bracketleft" = "move container to workspace prev; workspace prev";
                 "${modifier}+Shift+bracketright" = "move container to workspace next; workspace next";
 
-                "${modifier}+Shift+1" = "move container to workspace number ${ws1}";
-                "${modifier}+Shift+2" = "move container to workspace number ${ws2}";
-                "${modifier}+Shift+3" = "move container to workspace number ${ws3}";
-                "${modifier}+Shift+4" = "move container to workspace number ${ws4}";
-                "${modifier}+Shift+5" = "move container to workspace number ${ws5}";
-                "${modifier}+Shift+6" = "move container to workspace number ${ws6}";
-                "${modifier}+Shift+7" = "move container to workspace number ${ws7}";
-                "${modifier}+Shift+8" = "move container to workspace number ${ws8}";
-                "${modifier}+Shift+9" = "move container to workspace number ${ws9}";
+                "${modifier}+Shift+1" = "move container to workspace number 1";
+                "${modifier}+Shift+2" = "move container to workspace number 2";
+                "${modifier}+Shift+3" = "move container to workspace number 3";
+                "${modifier}+Shift+4" = "move container to workspace number 4";
+                "${modifier}+Shift+5" = "move container to workspace number 5";
+                "${modifier}+Shift+6" = "move container to workspace number 6";
+                "${modifier}+Shift+7" = "move container to workspace number 7";
+                "${modifier}+Shift+8" = "move container to workspace number 8";
+                "${modifier}+Shift+9" = "move container to workspace number 9";
 
                 "${modifier}+${left}" = "focus left";
                 "${modifier}+${down}" = "focus down";
