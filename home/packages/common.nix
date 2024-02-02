@@ -33,6 +33,7 @@ in {
           libva-utils # a collection of utilities and examples for va-api
           lshw # show your current hardware
           mediainfo # info for image file
+          neo # simulates the digital rain from the matrix
           netlify-cli # cli tool for netlify
           nix-health # check the health of your nix setup
           nix-search-cli # cli for searching package
@@ -49,6 +50,7 @@ in {
           slurp # screenshot functionality
           swappy # snapshot editing tool
           swaykbdd # per-window keyboard layout for sway
+          tgpt # chatgpt in terminal without needing api key
           tree # produce a depth indented directory listing
           upterm # remote console
           ventoy # cerate usb bootable
