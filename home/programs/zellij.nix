@@ -50,7 +50,7 @@ in {
             theme = "${name}";
             themes = {
               ${name} = {
-                fg = paper-white;
+                fg = plasma-blue;
                 bg = shade-black;
                 black = charcoal-gray;
                 red = icon-red;
@@ -59,7 +59,7 @@ in {
                 green = plasma-blue;
                 magenta = hot-purple;
                 cyan = hyper-blue;
-                white = paper-white;
+                white = plasma-blue;
                 orange = beware-orange;
               };
             };
