@@ -35,6 +35,7 @@
     ./translate.nix
     ./vscode.nix
     ./waybar.nix
+    ./wpaperd.nix
     ./wofi.nix
     ./zathura.nix
     ./zellij.nix

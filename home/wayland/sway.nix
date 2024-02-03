@@ -47,12 +47,8 @@ in {
               };
               startup = [
                 { command = "${autotiling}/bin/autotiling"; }
+                { command = "${wpaperd}/bin/wpaperd"; }
               ];
-              output = {
-                "*" = {
-                  bg = "${./../../imgs/wallpaper.png} fill";
-                };
-              };
               input = {
                 "type:touchpad" = {
                   dwt = "enabled";
