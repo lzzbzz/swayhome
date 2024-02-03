@@ -34,7 +34,7 @@ in {
               "*" = {
                 bg = mkLiteral  "#303446FF";
                 fg = mkLiteral  "#D9E0EEFF";
-                ac = mkLiteral "#A5ADCEFF"; #sel
+                ac = mkLiteral "#8CAAEEFF";
               };
 
               "#window" = {
