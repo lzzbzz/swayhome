@@ -74,11 +74,6 @@ in {
                   "2" = "II";
                   "3" = "III";
                   "4" = "IV";
-                  "5" = "V";
-                  "6" = "VI";
-                  "7" = "VII";
-                  "8" = "VIII";
-                  "9" = "IX";
                 };
                 persistent-workspaces = let
                   first = [
@@ -93,12 +88,7 @@ in {
                   "1" = first;
                   "2" = first;
                   "3" = first;
-                  "4" = first;
-                  "5" = first;
-                  "6" = second;
-                  "7" = second;
-                  "8" = second;
-                  "9" = second;
+                  "4" = second;
                 };
               };
               "sway/scratchpad" = {
