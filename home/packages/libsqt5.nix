@@ -12,6 +12,7 @@ in {
           qt5ct
           qtstyleplugins
           qtwayland
+          qtstyleplugin-kvantum
         ];
       };
     };

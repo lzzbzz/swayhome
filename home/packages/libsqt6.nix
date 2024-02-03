@@ -11,6 +11,7 @@ in {
           qt6ct
           qt6gtk2
           qtwayland
+          qtstyleplugin-kvantum
         ];
       };
     };
