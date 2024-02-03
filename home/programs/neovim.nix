@@ -72,6 +72,7 @@ in {
             coc-wxml
             coc-yaml
             coc-yank
+            catppuccin-nvim
             nvim-autopairs
             nvim-jdtls
             nvim-lastplace
@@ -122,6 +123,9 @@ in {
             set undolevels=50000
             set updatetime=100
             syntax on
+
+            colorscheme catppuccin-frappe
+            let g:airline_theme = 'catppuccin'
 
             let g:mapleader = "\<Space>"
 
