@@ -6,16 +6,20 @@ Include [Sway WM](https://swaywm.org) and
 
 ## 🐬 Gallery
 
-![images](./imgs/wallpaper.png)
-![images](./imgs/terminal.png)
+![images](./images/assets/20240203_23h17m08s_@hervyqa.png)
 
-Uniform look for Qt and GTK applications (breeze-dark or other themes).
+Uniform look for QT5/6 and GTK2/3/4 applications with
+[Catppuccin Frappe](https://github.com/catppuccin/catppuccin) themes.
 
-![images](./imgs/themes.png)
+![images](./images/assets/20240203_23h20m41s_@hervyqa.png)
 
-Minimalist Waybar.
+Rofi menu launcher.
 
-![images](./imgs/panelbar.png)
+![images](./images/assets/20240203_23h23m44s_@hervyqa.png)
+
+Rofi sink/source audio launcher.
+
+![images](./images/assets/20240203_23h23m01s_@hervyqa.png)
 
 ## 💠 File structure
 
@@ -36,58 +40,58 @@ Minimalist Waybar.
 
 ## 💎 List of apps
 
-|          Category |                  Name |  Alternative |                                             Description |
-|              :--- |                  :--- |         :--- |                                                    :--- |
-|    Window manager |                `sway` |              |                              Tiling wayland compositor. |
-|               Bar |              `waybar` |              |                      Customizable wayland bar for sway. |
-|          Terminal |                `foot` |              |                 Minimalistic Wayland terminal emulator. |
-|      Audio player |       `ncmpcpp`+`mpd` |              |                               Ncurses based mpd client. |
-|         Backlight |               `light` |    `swayosd` |                      Application to control backlights. |
-|         Bluetooth | `rofi`+`bluetoothctl` |              |              Interface to connect to bluetooth devices. |
-|           Browser |         `qutebrowser` |    `firefox` |                               Keyboard-focused browser. |
-|  Display settings |            `wdisplay` |              |             Configuring displays in Wayland compositor. |
-|      File manager |             `joshuto` |              |                      Ranger-like terminal file manager. |
-|             Fonts |         `monospace:8` |              |                              Minimalist monospace font. |
-|    GTK2/3/4 theme |         `breeze-dark` |              |                  GTK Theme built to match KDE's breeze. |
-|       QT5/6 theme |       `qt5ct` > `gtk` |              |  QT Theme from GTK theme with qtstyleplugins & qt6gtk2. |
-|             Icons |        `papirus-icon` |              |                     Pixel perfect icon theme for linux. |
-|      Image viewer |                 `imv` |      `krita` |                              Command line image viewer. |
-|     Login manager |              `greetd` |              |  Minimal and flexible login manager daemon (autologin). |
-|              Menu |                `rofi` |       `wofi` |      Window switcher, run dialog and dmenu replacement. |
-|      Notification |                `mako` |              |                Lightweight wayland notification daemon. |
-|    Password store |         `rofi`+`pass` |              | Stores, retrieves, generates, & synchronizes passwords. |
-|        Pick color |     `wl-color-picker` |              |        Wayland color picker that also works on wlroots. |
-|        PDF viewer |             `zathura` |              |          Highly customizable and functional pdf viewer. |
-|       Screen lock |            `swaylock` |              |                              Screen locker for wayland. |
-|   Screen recorder |        `wl-screenrec` | `obs-studio` |                      Screen recording of wlroots-based. |
-|             Shell |                `fish` |       `bash` |             Smart and user-friendly command line shell. |
-|    System monitor |              `bottom` |       `htop` |                       Graphical process/system monitor. |
-|  Terminal session |              `zellij` |       `tmux` |             Terminal workspace with batteries included. |
-|       Text editor |               `helix` |     `neovim` |                          Post-modern modal text editor. |
-|      Video player |                 `mpv` |              |                           General-purpose media player. |
-|    Volume control |             `pamixer` | `pulsemixer` |                                     Command line mixer. |
+| Category         | Name                  | Alternative  | Description                                             |
+| :--------------- | :-------------------- | :----------- | :------------------------------------------------------ |
+| Window manager   | `sway`                |              | Tiling wayland compositor.                              |
+| Bar              | `waybar`              |              | Customizable wayland bar for sway.                      |
+| Terminal         | `foot`                |              | Minimalistic Wayland terminal emulator.                 |
+| Audio player     | `ncmpcpp`+`mpd`       |              | Ncurses based mpd client.                               |
+| Backlight        | `light`               | `swayosd`    | Application to control backlights.                      |
+| Bluetooth        | `rofi`+`bluetoothctl` |              | Interface to connect to bluetooth devices.              |
+| Browser          | `qutebrowser`         | `firefox`    | Keyboard-focused browser.                               |
+| Display settings | `wdisplay`            |              | Configuring displays in Wayland compositor.             |
+| File manager     | `joshuto`             |              | Ranger-like terminal file manager.                      |
+| Fonts            | `monospace:8`         |              | Minimalist monospace font.                              |
+| GTK2/3/4 theme   | `catpuccin-frappe`    |              | GTK Theme pastel themes.                                |
+| QT5/6 theme      | `qt5ct` > `kvantum`   |              | QT Theme from Kvantum manager.                          |
+| Icons            | `papirus-icon`        |              | Pixel perfect icon theme for linux.                     |
+| Image viewer     | `imv`                 | `krita`      | Command line image viewer.                              |
+| Login manager    | `greetd`              |              | Minimal and flexible login manager daemon (autologin).  |
+| Menu             | `rofi`                | `wofi`       | Window switcher, run dialog and dmenu replacement.      |
+| Notification     | `mako`                |              | Lightweight wayland notification daemon.                |
+| Password store   | `rofi`+`pass`         |              | Stores, retrieves, generates, & synchronizes passwords. |
+| Pick color       | `wl-color-picker`     |              | Wayland color picker that also works on wlroots.        |
+| PDF viewer       | `zathura`             |              | Highly customizable and functional pdf viewer.          |
+| Screen lock      | `swaylock`            |              | Screen locker for wayland.                              |
+| Screen recorder  | `wl-screenrec`        | `obs-studio` | Screen recording of wlroots-based.                      |
+| Shell            | `fish`                | `bash`       | Smart and user-friendly command line shell.             |
+| System monitor   | `bottom`              | `htop`       | Graphical process/system monitor.                       |
+| Terminal session | `zellij`              | `tmux`       | Terminal workspace with batteries included.             |
+| Text editor      | `helix`               | `neovim`     | Post-modern modal text editor.                          |
+| Video player     | `mpv`                 |              | General-purpose media player.                           |
+| Volume control   | `pamixer`             | `pulsemixer` | Command line mixer.                                     |
 
 ## 🐳 Sway usage
 
-|                                                                 Keybinding |                                                                                Next key |                                                         Description |
-|                                                                       :--- |                                                                                    :--- |                                                                :--- |
-|                                                             <kbd>Mod</kbd> |                                                                                         |                                          Meta key with logo (mod4). |
-|                                         <kbd>Mod</kbd> + <kbd>Number</kbd> |                                                                                         |                                        Move to workspace (num=1-9). |
-|                                          <kbd>Mod</kbd> + <kbd>Enter</kbd> |                                                                                         |                                                    Terminal (foot). |
-| <kbd>Mod</kbd> + <kbd>h</kbd> / <kbd>j</kbd> / <kbd>k</kbd> / <kbd>l</kbd> |                                                                                         |                                                    Focus to window. |
-|                                              <kbd>Mod</kbd> + <kbd>d</kbd> |                                                                                         |                                        Application launcher (rofi). |
-|                                              <kbd>Mod</kbd> + <kbd>y</kbd> |                                                                                         |                                          Bluetooth launcher (rofi). |
-|                                              <kbd>Mod</kbd> + <kbd>c</kbd> |                                                                                         |                                           Clipboard manager (rofi). |
-|                                              <kbd>Mod</kbd> + <kbd>e</kbd> |                                                                                         |                                              Password store (rofi). |
-|                                              <kbd>Mod</kbd> + <kbd>n</kbd> |                                                                                         |                                             Pick color for wayland. |
-|                                              <kbd>Mod</kbd> + <kbd>o</kbd> |                                                                                         |                                Simple Wayland output mirror client. |
-|                                              <kbd>Mod</kbd> + <kbd>f</kbd> |                                                                                         |                                                  Fullscreen window. |
-|                                              <kbd>Mod</kbd> + <kbd>q</kbd> |                                                             <kbd>1</kbd> / <kbd>2</kbd> |                            Browser & private browser (qutebrowser). |
-|                                              <kbd>Mod</kbd> + <kbd>u</kbd> |                                                             <kbd>i</kbd> / <kbd>o</kbd> |                         Set sink (input) and source (output) audio. |
-|                                              <kbd>Mod</kbd> + <kbd>r</kbd> |                               <kbd>h</kbd> / <kbd>j</kbd> / <kbd>k</kbd> / <kbd>l</kbd> |                                                 Resize window apps. |
-|                                              <kbd>Mod</kbd> + <kbd>x</kbd> | <kbd>h</kbd> / <kbd>p</kbd> / <kbd>r</kbd> / <kbd>s</kbd> / <kbd>l</kbd> / <kbd>o</kbd> |          Hibernate, poweroff, reboot, suspend, lockscreen & logout. |
-|                                              <kbd>Mod</kbd> + <kbd>p</kbd> |                               <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> |                    Printscreen area, all, area (copy) & all (copy). |
-|                                              <kbd>Mod</kbd> + <kbd>g</kbd> |                <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>0</kbd> | Recording area, all, area (no audio), all (no audio) & stop record. |
+| Keybinding                    | Next key                          | Description                                                         |
+| :---------------------------- | :-------------------------------- | :------------------------------------------------------------------ |
+| `Mod`                         |                                   | Meta key with logo (mod4).                                          |
+| `Mod` + `Number`              |                                   | Move to workspace (num=1-9).                                        |
+| `Mod` + `Enter`               |                                   | Terminal (foot).                                                    |
+| `Mod` + `h` / `j` / `k` / `l` |                                   | Focus to window.                                                    |
+| `Mod` + `d`                   |                                   | Application launcher (rofi).                                        |
+| `Mod` + `y`                   |                                   | Bluetooth launcher (rofi).                                          |
+| `Mod` + `c`                   |                                   | Clipboard manager (rofi).                                           |
+| `Mod` + `e`                   |                                   | Password store (rofi).                                              |
+| `Mod` + `n`                   |                                   | Pick color for wayland.                                             |
+| `Mod` + `o`                   |                                   | Simple Wayland output mirror client.                                |
+| `Mod` + `f`                   |                                   | Fullscreen window.                                                  |
+| `Mod` + `q`                   | `1` / `2`                         | Browser & private browser (qutebrowser).                            |
+| `Mod` + `u`                   | `i` / `o`                         | Set sink (input) and source (output) audio.                         |
+| `Mod` + `r`                   | `h` / `j` / `k` / `l`             | Resize window apps.                                                 |
+| `Mod` + `x`                   | `h` / `p` / `r` / `s` / `l` / `o` | Hibernate, poweroff, reboot, suspend, lockscreen & logout.          |
+| `Mod` + `p`                   | `1` / `2` / `3` / `4`             | Printscreen area, all, area (copy) & all (copy).                    |
+| `Mod` + `g`                   | `1` / `2` / `3` / `4` / `0`       | Recording area, all, area (no audio), all (no audio) & stop record. |
 
 ## 🫐 Installation
 
