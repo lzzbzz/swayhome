@@ -10,12 +10,11 @@ in {
         swayidle = {
           enable = true;
           events = [
-            { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
-            { event = "lock"; command = "lock"; }
+            { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock"; }
+            { event = "lock"; command = "${pkgs.swaylock}/bin/swaylock"; }
           ];
           timeouts = [
             { timeout = 300; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
-            { timeout = 350; command = "${pkgs.systemd}/bin/systemctl suspend"; }
           ];
         };
       };
