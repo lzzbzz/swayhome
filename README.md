@@ -6,20 +6,20 @@ Include [Sway WM](https://swaywm.org) and
 
 ## 🐬 Gallery
 
-![images](./images/assets/20240203_23h17m08s_@hervyqa.png)
+![images](./images/gallery/20240203_23h17m08s_@hervyqa.png)
 
 Uniform look for QT5/6 and GTK2/3/4 applications with
 [Catppuccin Frappe](https://github.com/catppuccin/catppuccin) themes.
 
-![images](./images/assets/20240203_23h20m41s_@hervyqa.png)
+![images](./images/gallery/20240203_23h20m41s_@hervyqa.png)
 
 Rofi menu launcher.
 
-![images](./images/assets/20240203_23h23m44s_@hervyqa.png)
+![images](./images/gallery/20240203_23h23m44s_@hervyqa.png)
 
 Rofi sink/source audio launcher.
 
-![images](./images/assets/20240203_23h23m01s_@hervyqa.png)
+![images](./images/gallery/20240203_23h23m01s_@hervyqa.png)
 
 ## 💠 File structure
 
