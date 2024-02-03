@@ -13,15 +13,16 @@ in {
           size= 8;
         };
         theme = {
-          name = "Breeze-Dark";
-          package = pkgs.libsForQt5.breeze-gtk;
+          name = "Catppuccin-Frappe-Standard-Blue-Dark";
+          package = pkgs.catppuccin-gtk;
         };
         iconTheme = {
           name = "Papirus-Dark";
-          package = pkgs.papirus-icon-theme;
+          package = pkgs.catppuccin-papirus-folders;
         };
         cursorTheme = {
-          name = "breeze_cursor";
+          name = "catpuccin";
+          package = pkgs.catppuccin-cursors;
         };
         gtk3.extraConfig = {
           gtk-application-prefer-dark-theme=true;
