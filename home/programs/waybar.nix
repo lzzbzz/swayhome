@@ -1,19 +1,17 @@
 { ... }: let
   name = "hervyqa";
 
-  # base colors
-  foreground = "#C6D0F5"; # text
-  background = "#303446"; # base
-  regular1 = "#E78284";   # red
-  bright7 = "#A5ADCE";    # subtext 0
-
-  # module color
-  color0 = "#414559";     # surface 0
-  color1 = "#51576D";     # surface 1
-  color2 = "#626880";     # surface 2
-  color3 = "#737994";     # overlay 0
-  color4 = "#838BA7";     # overlay 1
-  color5 = "#949CBB";     # overlay 2
+  # custom colors
+  foreground = "#C6D0F5";    # text
+  background = "#303446";    # base
+  regular0   = "#DFDFDF";    # papirus
+  regular1   = "#E78284";    # red
+  regular2   = "#A6D189";    # green
+  regular3   = "#EF9F76";    # orange
+  regular4   = "#8CAAEE";    # blue
+  regular5   = "#EA999C";    # maroon
+  regular6   = "#81C8BE";    # teal
+  regular7   = "#CA9EE6";    # mauve
 
 in {
   home-manager = {
@@ -44,12 +42,8 @@ in {
                 "bluetooth"
                 "network"
                 "pulseaudio"
-                "cpu"
-                "memory"
-                "temperature"
                 "backlight"
                 "battery"
-                "battery#bat2"
                 "clock"
                 "tray"
               ];
@@ -213,9 +207,6 @@ in {
                   ""
                 ];
               };
-              "battery#bat2" = {
-                bat = "BAT2";
-              };
               "network" = {
                 # "interface" = "wlp2*"; # (Optional) To force the use of this interface
                 format-wifi = "{signalStrength}% ";
@@ -267,7 +258,7 @@ in {
 
             window#waybar {
               background-color: ${background};
-              border-bottom: 3px solid ${bright7};
+              border-bottom: 3px solid ${regular4};
               color: ${foreground};
               transition-property: background-color;
               transition-duration: .5s;
@@ -282,16 +273,16 @@ in {
               background-color: transparent;
             }
             window#waybar.solo {
-              background-color: ${bright7};
+              background-color: ${regular4};
             }
             */
 
             window#waybar.termite {
-              background-color: ${bright7};
+              background-color: ${regular4};
             }
 
             window#waybar.chromium {
-              background-color: ${bright7};
+              background-color: ${regular4};
               border: none;
             }
 
@@ -316,7 +307,7 @@ in {
             }
 
             #workspaces button.focused {
-              background-color: ${bright7};
+              background-color: ${regular4};
               box-shadow: inset 0 -3px ${foreground};
             }
 
@@ -325,7 +316,8 @@ in {
             }
 
             #mode {
-              background-color: ${bright7};
+              color: ${regular0};
+              background-color: ${regular4};
               border-bottom: 3px solid ${foreground};
             }
 
@@ -363,24 +355,29 @@ in {
             }
 
             #clock {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular7};
             }
 
             #battery {
-              background-color: ${color3};
+              color: ${regular0};
+              background-color: ${regular6};
             }
 
             #battery.charging, #battery.plugged {
-              background-color: ${color3};
+              color: ${regular0};
+              background-color: ${regular6};
             }
 
             @keyframes blink {
               to {
-                background-color: ${color3};
+                color: ${regular0};
+                background-color: ${regular6};
               }
             }
 
             #battery.critical:not(.charging) {
+              color: ${regular0};
               background-color: ${regular1};
               animation-name: blink;
               animation-duration: 0.5s;
@@ -390,76 +387,92 @@ in {
             }
 
             #bluetooth {
-              background-color: ${color0};
+              color: ${regular0};
+              background-color: ${regular4};
             }
 
             label:focus {
-              background-color: ${bright7};
+              color: ${regular0};
+              background-color: ${regular4};
             }
 
             #cpu {
-              background-color: ${color3};
+              color: ${regular0};
+              background-color: ${regular4};
             }
 
             #memory {
-              background-color: ${color4};
+              color: ${regular0};
+              background-color: ${regular5};
             }
 
             #disk {
-              background-color: ${color4};
+              color: ${regular0};
+              background-color: ${regular5};
             }
 
             #backlight {
-              background-color: ${color4};
+              color: ${regular0};
+              background-color: ${regular5};
             }
 
             #network {
-              background-color: ${color1};
+              color: ${regular0};
+              background-color: ${regular3};
             }
 
             #network.disconnected {
-              background-color: ${color1};
+              color: ${regular0};
+              background-color: ${regular3};
             }
 
             #pulseaudio {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
             }
 
             #pulseaudio.muted {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
             }
 
             #wireplumber {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
             }
 
             #wireplumber.muted {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
             }
 
             #custom-media {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
               min-width: 100px;
             }
 
             #custom-media.custom-spotify {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
             }
 
             #custom-media.custom-vlc {
-              background-color: ${color2};
+              color: ${regular0};
+              background-color: ${regular2};
             }
 
             #temperature {
-              background-color: ${color5};
+              color: ${regular0};
+              background-color: ${regular6};
             }
 
             #temperature.critical {
-              background-color: ${color5};
+              background-color: ${regular6};
             }
 
             #tray {
-              background-color: ${color1};
+              background-color: ${regular4};
             }
 
             #tray > .passive {
@@ -468,15 +481,15 @@ in {
 
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
-              background-color: ${color5};
+              background-color: ${regular6};
             }
 
             #idle_inhibitor {
-              background-color: ${color5};
+              background-color: ${regular6};
             }
 
             #idle_inhibitor.activated {
-              background-color: ${color5};
+              background-color: ${regular6};
             }
 
             #mpd {
