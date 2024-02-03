@@ -1,34 +1,5 @@
 { ... }: let
   name = "hervyqa";
-
-  # colors without hastag
-  abyss-blue = "2980b9";
-  alternate-gray = "bdc3c7";
-  beware-orange = "f67400";
-  cadmium-orange = "ed872d";
-  cardboard-gray = "eff0f1";
-  charcoal-gray = "31363b";
-  citrus-yellow = "fcd116";
-  coastal-fog = "7f8c8d";
-  hot-purple = "af69ef";
-  hover-blue = "93cee9";
-  hyper-blue = "3daee6";
-  icon-blue = "1d99f3";
-  icon-gray = "4d4d4d";
-  icon-red = "da4453";
-  icon-yellow = "fdbc4b";
-  lazy-gray = "afb0b3";
-  lightsaber-blue = "15f2fd";
-  noble-fir = "27ae60";
-  paper-white = "fcfcfc";
-  pimpinella= "e74c3c";
-  pinkish-purple = "d648d7";
-  plasma-blue = "3daee9";
-  red-pink = "fa2a55";
-  shade-black = "232629";
-  spring-grass ="32e17c";
-  sunbeam-yellow = "c9ce3b";
-
 in {
   home-manager = {
     users.${name} = {
@@ -36,9 +7,35 @@ in {
         swaylock = {
           enable = true;
           settings = {
-            color = shade-black;
-            line-color = plasma-blue;
-            bs-hl-color = plasma-blue;
+            bs-hl-color = "F2D5CF";
+            caps-lock-bs-hl-color = "F2D5CF";
+            caps-lock-key-hl-color = "A6D189";
+            color = "303446";
+            inside-caps-lock-color = "00000000";
+            inside-clear-color = "00000000";
+            inside-color = "00000000";
+            inside-ver-color = "00000000";
+            inside-wrong-color = "00000000";
+            key-hl-color = "A6D189";
+            layout-bg-color = "00000000";
+            layout-border-color = "00000000";
+            layout-text-color = "C6D0F5";
+            line-caps-lock-color = "00000000";
+            line-clear-color = "00000000";
+            line-color = "00000000";
+            line-ver-color = "00000000";
+            line-wrong-color = "00000000";
+            ring-caps-lock-color = "EF9F76";
+            ring-clear-color = "F2D5CF";
+            ring-color = "BABBF1";
+            ring-ver-color = "8CAAEE";
+            ring-wrong-color = "EA999C";
+            separator-color = "00000000";
+            text-caps-lock-color = "EF9F76";
+            text-clear-color = "F2D5CF";
+            text-color = "C6D0F5";
+            text-ver-color = "8CAAEE";
+            text-wrong-color = "EA999C";
             font = "Monospace";
             font-size = 12;
             disable-caps-lock-text = true;
