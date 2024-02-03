@@ -10,7 +10,7 @@ in {
             default = {
               duration = "2m";
               path = "${./../../images/wallpapers}";
-              sorting = "random";
+              sorting = "ascending";
               apply-shadow = false;
             };
           };
