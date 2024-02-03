@@ -376,12 +376,12 @@ in {
 
             @keyframes blink {
               to {
-                background-color: ${color5};
+                background-color: ${color3};
               }
             }
 
             #battery.critical:not(.charging) {
-              background-color: ${color5};
+              background-color: ${regular1};
               animation-name: blink;
               animation-duration: 0.5s;
               animation-timing-function: linear;
