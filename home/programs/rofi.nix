@@ -18,7 +18,7 @@ in {
             case-sensitive = false;
             display-drun = "Apps:";
             modi = [ "drun" "run" ];
-            show-icons = true;
+            show-icons = false;
           };
           pass = {
             enable = true;
