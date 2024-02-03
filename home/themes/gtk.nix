@@ -21,7 +21,7 @@ in {
           package = pkgs.catppuccin-papirus-folders;
         };
         cursorTheme = {
-          name = "catpuccin";
+          name = "Catppuccin-Frappe-Blue";
           package = pkgs.catppuccin-cursors;
         };
         gtk3.extraConfig = {
