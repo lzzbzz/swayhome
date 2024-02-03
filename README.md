@@ -41,7 +41,7 @@ Rofi sink/source audio launcher.
 ## 💎 List of apps
 
 | Category          | Name                       | Alternative  | Description                                             |
-| :---------------  | :------------------------  | :----------- | :------------------------------------------------------ |
+| :---------------- | :------------------------- | :----------- | :------------------------------------------------------ |
 | Window manager    | `sway`                     |              | Tiling wayland compositor.                              |
 | Bar               | `waybar`                   |              | Customizable wayland bar for sway.                      |
 | Terminal          | `foot`                     |              | Minimalistic Wayland terminal emulator.                 |
