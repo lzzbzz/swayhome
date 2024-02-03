@@ -16,10 +16,11 @@ let
   right = "l";
 
   # colors
-  foreground = "#C6D0F5"; # text
-  background = "#303446"; # base
-  regular1 = "#E78284";   # red
-  regular4 = "#8CAAEE";   # blue
+  foreground = "#C6D0F5";   # text
+  background = "#303446";   # base
+  regular0   = "#51576D";   # surface 1
+  regular1   = "#E78284";   # red
+  regular4   = "#8CAAEE";   # blue
 
 in {
   home-manager = {
@@ -185,18 +186,18 @@ in {
                   childBorder = regular4;
                 };
                 focusedInactive = {
-                  border = regular4;
-                  background = regular4;
+                  border = regular0;
+                  background = regular0;
                   text = foreground;
-                  indicator = regular4;
-                  childBorder = regular4;
+                  indicator = regular0;
+                  childBorder = regular0;
                 };
                 unfocused = {
-                  border = regular4;
-                  background = regular4;
+                  border = regular0;
+                  background = regular0;
                   text = foreground;
-                  indicator = regular4;
-                  childBorder = regular4;
+                  indicator = regular0;
+                  childBorder = regular0;
                 };
                 urgent = {
                   border = regular1;
