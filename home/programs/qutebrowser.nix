@@ -2,30 +2,32 @@
   name = "hervyqa";
 
   # colors
-  abyss-blue = "#2980b9";
-  alternate-gray = "#bdc3c7";
-  beware-orange = "#f67400";
-  cadmium-orange = "#ed872d";
-  cardboard-gray = "#eff0f1";
-  charcoal-gray = "#31363b";
-  citrus-yellow = "#fcd116";
-  coastal-fog = "#7f8c8d";
-  hover-blue = "#93cee9";
-  hyper-blue = "#3daee6";
-  icon-blue = "#1d99f3";
-  icon-gray = "#4d4d4d";
-  icon-red = "#da4453";
-  icon-yellow = "#fdbc4b";
-  lazy-gray = "#afb0b3";
-  lightsaber-blue = "#15f2fd";
-  noble-fir = "#27ae60";
-  paper-white = "#fcfcfc";
-  pimpinella= "#e74c3c";
-  plasma-blue = "#3daee9";
-  red-pink = "#fa2a55";
-  shade-black = "#232629";
-  spring-grass ="#00ff7c";
-  sunbeam-yellow = "#c9ce3b";
+  rosewater = "#F2D5CF";
+  flamingo = "#EEBEBE";
+  pink = "#F4B8E4";
+  mauve = "#CA9EE6";
+  red = "#E78284";
+  maroon = "#EA999C";
+  peach = "#EF9F76";
+  yellow = "#E5C890";
+  green = "#A6D189";
+  teal = "#81C8BE";
+  sky = "#99D1DB";
+  sapphire = "#85C1DC";
+  blue = "#8CAAEE";
+  lavender = "#BABBF1";
+  text = "#C6D0F5";
+  subtext1 = "#B5BFE2";
+  subtext0 = "#A5ADCE";
+  overlay2 = "#949CBB";
+  overlay1 = "#838BA7";
+  overlay0 = "#737994";
+  surface2 = "#626880";
+  surface1 = "#51576D";
+  surface0 = "#414559";
+  base = "#303446";
+  mantle = "#292C3C";
+  crust = "#232634";
 
 in {
   home-manager = {
@@ -38,60 +40,6 @@ in {
             scrolling.smooth = true;
             zoom.default = 90;
             colors = {
-              hints = {
-                bg = shade-black;
-                fg = paper-white;
-              };
-              tabs = {
-                bar = {
-                  bg = shade-black;
-                };
-                even = {
-                  bg = shade-black;
-                  fg = paper-white;
-                };
-                odd = {
-                  bg = shade-black;
-                  fg = paper-white;
-                };
-                selected = {
-                  even = {
-                    bg = plasma-blue;
-                    fg = paper-white;
-                  };
-                  odd = {
-                    bg = plasma-blue;
-                    fg = paper-white;
-                  };
-                };
-              };
-              statusbar = {
-                caret= {
-                  bg = shade-black;
-                };
-                command = {
-                  bg = shade-black;
-                };
-                insert = {
-                  bg = shade-black;
-                };
-                normal = {
-                  bg = shade-black;
-                };
-                passthrough = {
-                  bg = shade-black;
-                };
-                progress = {
-                  bg = plasma-blue;
-                };
-                url = {
-                  success = {
-                    https = {
-                      fg = spring-grass;
-                    };
-                  };
-                };
-              };
               webpage = {
                 preferred_color_scheme = "dark";
                 darkmode = {
@@ -100,6 +48,118 @@ in {
                     page = "always";
                   };
                 };
+              };
+              completion = {
+                category = {
+                  bg = base;
+                  border.bottom = mantle;
+                  border.top = overlay2;
+                  fg = green;
+                };
+                fg = subtext0;
+                item = {
+                  selected = {
+                    bg = surface2;
+                    border = {
+                      bottom = surface2;
+                      top = surface2;
+                    };
+                    fg = text;
+                    match.fg = rosewater;
+                  };
+                };
+                match = {
+                  fg = text;
+                };
+                scrollbar = {
+                  bg = crust;
+                  fg = surface2;
+                };
+              };
+              downloads= {
+                bar.bg = base;
+                error.bg = base;
+                error.fg = red;
+                start.bg = base;
+                start.fg = blue;
+                stop.bg = base;
+                stop.fg = green;
+                system.bg = "none";
+                system.fg = "none";
+              };
+              hints = {
+                bg = peach;
+                fg = mantle;
+                match.fg = subtext1;
+              };
+              keyhint = {
+                bg = mantle;
+                fg = text;
+                suffix.fg = subtext1;
+              };
+              messages = {
+                error.bg = overlay0;
+                error.border = mantle;
+                error.fg = red;
+                info.bg = overlay0;
+                info.border = mantle;
+                info.fg = text;
+                warning.bg = overlay0;
+                warning.border = mantle;
+                warning.fg = peach;
+              };
+              prompts = {
+                bg = mantle;
+                border = "1px solid " + overlay0;
+                fg = text;
+                selected.bg = surface2;
+                selected.fg = rosewater;
+              };
+              statusbar = {
+                normal.bg = base;
+                insert.bg = crust;
+                command.bg = base;
+                caret.bg = base;
+                caret.selection.bg = base;
+                progress.bg = base;
+                passthrough.bg = base;
+                normal.fg = text;
+                insert.fg = rosewater;
+                command.fg = text;
+                passthrough.fg = peach;
+                caret.fg = peach;
+                caret.selection.fg = peach;
+                url.error.fg = red;
+                url.fg = text;
+                url.hover.fg = sky;
+                url.success.http.fg = teal;
+                url.success.https.fg = green;
+                url.warn.fg = yellow;
+                private.bg = mantle;
+                private.fg = subtext1;
+                command.private.bg = base;
+                command.private.fg = subtext1;
+              };
+              tabs = {
+                bar.bg = crust;
+                even.bg = surface2;
+                odd.bg = surface1;
+                even.fg = overlay2;
+                odd.fg = overlay2;
+                indicator.error = red;
+                indicator.system = "none";
+                selected.even.bg = base;
+                selected.odd.bg = base;
+                selected.even.fg = text;
+                selected.odd.fg = text;
+              };
+              contextmenu = {
+                menu.bg = base;
+                menu.fg = text;
+                disabled.bg = mantle;
+                disabled.fg = overlay0;
+                selected.bg = overlay0;
+                selected.fg = rosewater;
               };
             };
             content = {
