@@ -18,9 +18,8 @@ let
   # colors
   foreground = "#C6D0F5"; # text
   background = "#303446"; # base
-  regular0 = "#51576D";   # surface 1
   regular1 = "#E78284";   # red
-  bright7 = "#A5ADCE";    # subtext 0
+  regular4 = "#8CAAEE";   # blue
 
 in {
   home-manager = {
@@ -179,25 +178,25 @@ in {
               colors = {
                 background = background;
                 focused = {
-                  border = bright7;
-                  background = bright7;
+                  border = regular4;
+                  background = regular4;
                   text = foreground;
-                  indicator = bright7;
-                  childBorder = bright7;
+                  indicator = regular4;
+                  childBorder = regular4;
                 };
                 focusedInactive = {
-                  border = regular0;
-                  background = regular0;
+                  border = regular4;
+                  background = regular4;
                   text = foreground;
-                  indicator = regular0;
-                  childBorder = regular0;
+                  indicator = regular4;
+                  childBorder = regular4;
                 };
                 unfocused = {
-                  border = regular0;
-                  background = regular0;
+                  border = regular4;
+                  background = regular4;
                   text = foreground;
-                  indicator = regular0;
-                  childBorder = regular0;
+                  indicator = regular4;
+                  childBorder = regular4;
                 };
                 urgent = {
                   border = regular1;
@@ -207,11 +206,11 @@ in {
                   childBorder = regular1;
                 };
                 placeholder = {
-                  border = regular0;
-                  background = regular0;
+                  border = regular4;
+                  background = regular4;
                   text = foreground;
-                  indicator = regular0;
-                  childBorder = regular0;
+                  indicator = regular4;
+                  childBorder = regular4;
                 };
               };
               modes = {
