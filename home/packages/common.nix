@@ -12,6 +12,9 @@ in {
           babelfish # convert bash to fish shell
           bc # gnu software calculator
           catdoc # microsoft office to text converter
+          catppuccin # soothing pastel themes
+          catppuccin-kde # soothing pastel theme for kde
+          catppuccin-kvantum # soothing pastel theme for kvantum
           clinfo # information about opencl platforms
           cpufetch # cpu fetching architecture tool
           disfetch # distro fetching program
