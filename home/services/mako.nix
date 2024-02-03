@@ -12,7 +12,7 @@ in {
       services = {
         mako = {
           enable = true;
-          defaultTimeout = 5000; # 5s
+          defaultTimeout = 10000; # 5s
           font = "monospace 8";
           margin = "30";
           padding = "5";
