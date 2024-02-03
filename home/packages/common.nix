@@ -52,6 +52,7 @@ in {
           scrcpy # mirroring device
           slurp # screenshot functionality
           swappy # snapshot editing tool
+          swaybg #wallpaper tool for wayland compositors
           swaykbdd # per-window keyboard layout for sway
           tgpt # chatgpt in terminal without needing api key
           tree # produce a depth indented directory listing
