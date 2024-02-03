@@ -36,7 +36,7 @@ Rofi sink/source audio launcher.
   - [services](./nixos/services): List of system services.
   - [system](./nixos/system): List of system settings.
   - [virtual](./nixos/virtual): Isolation environments and virtual machines.
-- [imgs](./imgs): List of screenshot images.
+- [images](./images): List of assets, screenshots and wallpapers.
 
 ## 💎 List of apps
 
