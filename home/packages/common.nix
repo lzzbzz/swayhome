@@ -41,6 +41,7 @@ in {
           nix-health # check the health of your nix setup
           nix-search-cli # cli for searching package
           odt2txt # convert odt to txt
+          optipng # a png optimizer
           pamixer # audio volume
           pfetch # pretty system information tool
           poppler_utils # pdf rendering library
