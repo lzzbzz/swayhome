@@ -16,32 +16,11 @@ let
   right = "l";
 
   # colors
-  abyss-blue = "#2980b9";
-  alternate-gray = "#bdc3c7";
-  beware-orange = "#f67400";
-  cadmium-orange = "#ed872d";
-  cardboard-gray = "#eff0f1";
-  charcoal-gray = "#31363b";
-  citrus-yellow = "#fcd116";
-  coastal-fog = "#7f8c8d";
-  hot-purple = "#af69ef";
-  hover-blue = "#93cee9";
-  hyper-blue = "#3daee6";
-  icon-blue = "#1d99f3";
-  icon-gray = "#4d4d4d";
-  icon-red = "#da4453";
-  icon-yellow = "#fdbc4b";
-  lazy-gray = "#afb0b3";
-  lightsaber-blue = "#15f2fd";
-  noble-fir = "#27ae60";
-  paper-white = "#fcfcfc";
-  pimpinella= "#e74c3c";
-  pinkish-purple = "#d648d7";
-  plasma-blue = "#3daee9";
-  red-pink = "#fa2a55";
-  shade-black = "#232629";
-  spring-grass ="#32e17c";
-  sunbeam-yellow = "#c9ce3b";
+  foreground = "#C6D0F5"; # text
+  background = "#303446"; # base
+  regular0 = "#51576D";   # surface 1
+  regular1 = "#E78284";   # red
+  bright7 = "#A5ADCE";    # subtext 0
 
 in {
   home-manager = {
@@ -64,14 +43,14 @@ in {
                 size = 8.0;
               };
               gaps = {
-                inner = 5;
+                inner = 15;
               };
               startup = [
                 { command = "${autotiling}/bin/autotiling"; }
               ];
               output = {
                 "*" = {
-                  bg = "${./image/wallpaper.jpg} fill";
+                  bg = "${./../../imgs/wallpaper.png} fill";
                 };
               };
               input = {
@@ -202,41 +181,41 @@ in {
                 "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 2";
               };
               colors = {
-                background = shade-black;
+                background = background;
                 focused = {
-                  border = plasma-blue;
-                  background = plasma-blue;
-                  text = paper-white;
-                  indicator = plasma-blue;
-                  childBorder = plasma-blue;
+                  border = bright7;
+                  background = bright7;
+                  text = foreground;
+                  indicator = bright7;
+                  childBorder = bright7;
                 };
                 focusedInactive = {
-                  border = charcoal-gray;
-                  background = charcoal-gray;
-                  text = paper-white;
-                  indicator = charcoal-gray;
-                  childBorder = charcoal-gray;
+                  border = regular0;
+                  background = regular0;
+                  text = foreground;
+                  indicator = regular0;
+                  childBorder = regular0;
                 };
                 unfocused = {
-                  border = charcoal-gray;
-                  background = charcoal-gray;
-                  text = paper-white;
-                  indicator = charcoal-gray;
-                  childBorder = charcoal-gray;
+                  border = regular0;
+                  background = regular0;
+                  text = foreground;
+                  indicator = regular0;
+                  childBorder = regular0;
                 };
                 urgent = {
-                  border = beware-orange;
-                  background = beware-orange;
-                  text = paper-white;
-                  indicator = beware-orange;
-                  childBorder = beware-orange;
+                  border = regular1;
+                  background = regular1;
+                  text = foreground;
+                  indicator = regular1;
+                  childBorder = regular1;
                 };
                 placeholder = {
-                  border = charcoal-gray;
-                  background = charcoal-gray;
-                  text = paper-white;
-                  indicator = charcoal-gray;
-                  childBorder = charcoal-gray;
+                  border = regular0;
+                  background = regular0;
+                  text = foreground;
+                  indicator = regular0;
+                  childBorder = regular0;
                 };
               };
               modes = {
