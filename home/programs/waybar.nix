@@ -1,33 +1,19 @@
 { ... }: let
   name = "hervyqa";
 
-  # colors
-  abyss-blue = "#2980b9";
-  alternate-gray = "#bdc3c7";
-  beware-orange = "#f67400";
-  cadmium-orange = "#ed872d";
-  cardboard-gray = "#eff0f1";
-  charcoal-gray = "#31363b";
-  citrus-yellow = "#fcd116";
-  coastal-fog = "#7f8c8d";
-  hot-purple = "#af69ef";
-  hover-blue = "#93cee9";
-  hyper-blue = "#3daee6";
-  icon-blue = "#1d99f3";
-  icon-gray = "#4d4d4d";
-  icon-red = "#da4453";
-  icon-yellow = "#fdbc4b";
-  lazy-gray = "#afb0b3";
-  lightsaber-blue = "#15f2fd";
-  noble-fir = "#27ae60";
-  paper-white = "#fcfcfc";
-  pimpinella= "#e74c3c";
-  pinkish-purple = "#d648d7";
-  plasma-blue = "#3daee9";
-  red-pink = "#fa2a55";
-  shade-black = "#232629";
-  spring-grass ="#32e17c";
-  sunbeam-yellow = "#c9ce3b";
+  # base colors
+  foreground = "#C6D0F5"; # text
+  background = "#303446"; # base
+  regular1 = "#E78284";   # red
+  bright7 = "#A5ADCE";    # subtext 0
+
+  # module color
+  color0 = "#414559";     # surface 0
+  color1 = "#51576D";     # surface 1
+  color2 = "#626880";     # surface 2
+  color3 = "#737994";     # overlay 0
+  color4 = "#838BA7";     # overlay 1
+  color5 = "#949CBB";     # overlay 2
 
 in {
   home-manager = {
@@ -280,9 +266,9 @@ in {
             }
 
             window#waybar {
-              background-color: ${shade-black};
-              border-bottom: 3px solid ${plasma-blue};
-              color: ${paper-white};
+              background-color: ${background};
+              border-bottom: 3px solid ${bright7};
+              color: ${foreground};
               transition-property: background-color;
               transition-duration: .5s;
             }
@@ -296,16 +282,16 @@ in {
               background-color: transparent;
             }
             window#waybar.solo {
-              background-color: ${plasma-blue};
+              background-color: ${bright7};
             }
             */
 
             window#waybar.termite {
-              background-color: ${plasma-blue};
+              background-color: ${bright7};
             }
 
             window#waybar.chromium {
-              background-color: ${plasma-blue};
+              background-color: ${bright7};
               border: none;
             }
 
@@ -317,7 +303,7 @@ in {
 
             button:hover {
               background: inherit;
-              box-shadow: inset 0 -3px ${paper-white};
+              box-shadow: inset 0 -3px ${foreground};
             }
 
             #workspaces button {
@@ -330,17 +316,17 @@ in {
             }
 
             #workspaces button.focused {
-              background-color: ${plasma-blue};
-              box-shadow: inset 0 -3px ${paper-white};
+              background-color: ${bright7};
+              box-shadow: inset 0 -3px ${foreground};
             }
 
             #workspaces button.urgent {
-              background-color: ${beware-orange};
+              background-color: ${regular1};
             }
 
             #mode {
-              background-color: ${plasma-blue};
-              border-bottom: 3px solid ${paper-white};
+              background-color: ${bright7};
+              border-bottom: 3px solid ${foreground};
             }
 
             #clock,
@@ -377,25 +363,25 @@ in {
             }
 
             #clock {
-              background-color: #263741;
+              background-color: ${color2};
             }
 
             #battery {
-              background-color: #2e607c;
+              background-color: ${color3};
             }
 
             #battery.charging, #battery.plugged {
-              background-color: #2e607c;
+              background-color: ${color3};
             }
 
             @keyframes blink {
               to {
-                background-color: #2e607c;
+                background-color: ${color5};
               }
             }
 
             #battery.critical:not(.charging) {
-              background-color: ${beware-orange};
+              background-color: ${color5};
               animation-name: blink;
               animation-duration: 0.5s;
               animation-timing-function: linear;
@@ -404,76 +390,76 @@ in {
             }
 
             #bluetooth {
-              background-color: #263741;
+              background-color: ${color0};
             }
 
             label:focus {
-              background-color: ${plasma-blue};
+              background-color: ${bright7};
             }
 
             #cpu {
-              background-color: #368bb8;
+              background-color: ${color3};
             }
 
             #memory {
-              background-color: #399ccf;
+              background-color: ${color4};
             }
 
             #disk {
-              background-color: ${plasma-blue};
+              background-color: ${color4};
             }
 
             #backlight {
-              background-color: #3687b2;
+              background-color: ${color4};
             }
 
             #network {
-              background-color: #2e607c;
+              background-color: ${color1};
             }
 
             #network.disconnected {
-              background-color: #28404d;
+              background-color: ${color1};
             }
 
             #pulseaudio {
-              background-color: #337aa0;
+              background-color: ${color2};
             }
 
             #pulseaudio.muted {
-              background-color: #337aa0;
+              background-color: ${color2};
             }
 
             #wireplumber {
-              background-color: #337aa0;
+              background-color: ${color2};
             }
 
             #wireplumber.muted {
-              background-color: #337aa0;
+              background-color: ${color2};
             }
 
             #custom-media {
-              background-color: ${plasma-blue};
+              background-color: ${color2};
               min-width: 100px;
             }
 
             #custom-media.custom-spotify {
-              background-color: ${plasma-blue};
+              background-color: ${color2};
             }
 
             #custom-media.custom-vlc {
-              background-color: ${plasma-blue};
+              background-color: ${color2};
             }
 
             #temperature {
-              background-color: ${plasma-blue};
+              background-color: ${color5};
             }
 
             #temperature.critical {
-              background-color: ${beware-orange};
+              background-color: ${color5};
             }
 
             #tray {
-              background-color: ${shade-black};
+              background-color: ${color1};
             }
 
             #tray > .passive {
@@ -482,15 +468,15 @@ in {
 
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
-              background-color: ${plasma-blue};
+              background-color: ${color5};
             }
 
             #idle_inhibitor {
-              background-color: ${plasma-blue};
+              background-color: ${color5};
             }
 
             #idle_inhibitor.activated {
-              background-color: ${plasma-blue};
+              background-color: ${color5};
             }
 
             #mpd {
