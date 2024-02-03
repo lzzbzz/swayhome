@@ -23,20 +23,20 @@ Rofi sink/source audio launcher.
 
 ## 💠 File structure
 
-- [home](./home): Home-manager configuration.
-  - [packages](./home/packages): List of user packages without configuration.
-  - [programs](./home/programs): List of user packages with configuration.
-  - [services](./home/services): List of user services.
-  - [theme](./home/theme): List of user themes (gtk and qt).
-  - [wayland](./home/wayland): Window manager configuration (sway).
-  - [xdg](./home/xdg): Manage mimeapps and user-dirs.
-- [nixos](./nixos): System configuration.
-  - [hardware](./nixos/hardware): List of hardware configuration.
-  - [programs](./nixos/programs): List of programs installed through the system.
-  - [services](./nixos/services): List of system services.
-  - [system](./nixos/system): List of system settings.
-  - [virtual](./nixos/virtual): Isolation environments and virtual machines.
-- [images](./images): List of assets, screenshots and wallpapers.
+- [home](./home)                 : Home-manager configuration.
+  - [packages](./home/packages)  : List of user packages without configuration.
+  - [programs](./home/programs)  : List of user packages with configuration.
+  - [services](./home/services)  : List of user services.
+  - [theme](./home/theme)        : List of user themes (gtk and qt).
+  - [wayland](./home/wayland)    : Window manager configuration (sway).
+  - [xdg](./home/xdg)            : Manage mimeapps and user-dirs.
+- [nixos](./nixos)               : System configuration.
+  - [hardware](./nixos/hardware) : List of hardware configuration.
+  - [programs](./nixos/programs) : List of programs installed through the system.
+  - [services](./nixos/services) : List of system services.
+  - [system](./nixos/system)     : List of system settings.
+  - [virtual](./nixos/virtual)   : Isolation environments and virtual machines.
+- [images](./images)             : List of assets, screenshots and wallpapers.
 
 ## 💎 List of apps
 
