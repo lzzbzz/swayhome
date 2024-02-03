@@ -4,7 +4,7 @@
   # colors
   foreground = "#C6D0F5"; # text
   background = "#303446"; # base
-  bright7 = "#A5ADCE";    # subtext 0
+  regular4 = "#8CAAEE";   # blue
 
 in {
   home-manager = {
@@ -17,7 +17,7 @@ in {
           margin = "30";
           padding = "5";
           borderSize = 3;
-          borderColor = bright7;
+          borderColor = regular4;
           backgroundColor = background;
           textColor = foreground;
         };
