@@ -4,6 +4,7 @@
   # colors
   foreground = "#C6D0F5"; # text
   background = "#303446"; # base
+  regular0 = "#414559";   # surface 0
   regular4 = "#8CAAEE";   # blue
 
 in {
@@ -20,6 +21,7 @@ in {
           borderColor = regular4;
           backgroundColor = background;
           textColor = foreground;
+          progressColor = "over ${regular0}";
         };
       };
     };
