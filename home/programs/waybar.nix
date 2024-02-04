@@ -61,15 +61,15 @@ in {
                 sort-by-number = true;
                 format = "{icon}";
                 format-icons = {
-                  "1" = "I";
-                  "2" = "II";
-                  "3" = "III";
-                  "4" = "IV";
-                  "5" = "V";
-                  "6" = "VI";
-                  "7" = "VII";
-                  "8" = "VIII";
-                  "9" = "IX";
+                  "1" = "一";
+                  "2" = "二";
+                  "3" = "三";
+                  "4" = "四";
+                  "5" = "五";
+                  "6" = "六";
+                  "7" = "七";
+                  "8" = "八";
+                  "9" = "九";
                 };
                 persistent-workspaces = let
                   first = [
@@ -235,9 +235,9 @@ in {
             }
 
             window#waybar {
+              color: ${foreground};
               background-color: ${background};
               border-bottom: 3px solid ${regular4};
-              color: ${foreground};
               transition-property: background-color;
               transition-duration: .5s;
             }
@@ -331,34 +331,34 @@ in {
 
             #clock {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular7};
             }
 
             #battery {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular6};
             }
 
             #battery.charging, #battery.plugged {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular6};
             }
 
             @keyframes blink {
               to {
                 color: ${regular0};
-                background-color: ${background};
+                background-color: transparent;
                 border-bottom: 3px solid ${regular6};
               }
             }
 
             #battery.critical:not(.charging) {
               color: ${regular0};
-              background-color: ${background};
-              border-bottom: 3px solid ${regular1};
+              background-color: ${regular1};
+              border-bottom: 3px solid ${regular6};
               animation-name: blink;
               animation-duration: 0.5s;
               animation-timing-function: linear;
@@ -368,89 +368,89 @@ in {
 
             #bluetooth {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular4};
             }
 
             label:focus {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular4};
             }
 
             #cpu {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular4};
             }
 
             #memory {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
 
             #disk {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
 
             #backlight {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
 
             #network {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular3};
             }
 
             #network.disconnected {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular3};
             }
 
             #pulseaudio {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular2};
             }
 
             #pulseaudio.muted {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular2};
             }
 
             #wireplumber {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular2};
             }
 
             #wireplumber.muted {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular2};
             }
 
             #temperature {
               color: ${regular0};
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular6};
             }
 
             #temperature.critical {
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular6};
             }
 
             #tray {
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular4};
             }
 
@@ -460,27 +460,27 @@ in {
 
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular6};
             }
 
             #mpd {
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
 
             #mpd.disconnected {
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
 
             #mpd.stopped {
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
 
             #mpd.paused {
-              background-color: ${background};
+              background-color: transparent;
               border-bottom: 3px solid ${regular5};
             }
           '';
