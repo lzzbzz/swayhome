@@ -23,7 +23,7 @@ in {
             mainBar = {
               layer = "bottom";
               position = "top";
-              height = 23;
+              height = 24;
               spacing = 0;
               output = [
                 "eDP-1"
@@ -32,8 +32,6 @@ in {
               modules-left = [
                 "sway/workspaces"
                 "sway/mode"
-                "sway/scratchpad"
-                "custom/media"
               ];
               modules-center = [
                 "sway/window"
@@ -106,7 +104,7 @@ in {
                 tooltip-format = "{app}: {title}";
               };
               "sway/window" = {
-                max-length = 40;
+                max-length = 30;
               };
               "bluetooth" = {
                 format = "{status} ";
@@ -141,13 +139,6 @@ in {
                 };
                 tooltip-format = "MPD (connected)";
                 tooltip-format-disconnected = "MPD (disconnected)";
-              };
-              "idle_inhibitor" = {
-                format = "{icon}";
-                format-icons = {
-                  activated = "";
-                  deactivated = "";
-                };
               };
               "tray" = {
                 icon-size = 13;
@@ -235,18 +226,6 @@ in {
                     "" "" ""
                   ];
                 };
-                "on-click" = "pavucontrol";
-              };
-              "custom/media" = {
-                format = "{icon} {}";
-                return-type = "json";
-                max-length = 40;
-                format-icons = {
-                  spotify = "";
-                  default = "";
-                };
-                escape = true;
-                exec = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; # Script in resources folder
               };
             };
           };
@@ -332,11 +311,8 @@ in {
             #network,
             #pulseaudio,
             #wireplumber,
-            #custom-media,
             #tray,
             #mode,
-            #idle_inhibitor,
-            #scratchpad,
             #mpd {
               padding: 0 10px;
             }
@@ -446,22 +422,6 @@ in {
               background-color: ${regular2};
             }
 
-            #custom-media {
-              color: ${regular0};
-              background-color: ${regular2};
-              min-width: 100px;
-            }
-
-            #custom-media.custom-spotify {
-              color: ${regular0};
-              background-color: ${regular2};
-            }
-
-            #custom-media.custom-vlc {
-              color: ${regular0};
-              background-color: ${regular2};
-            }
-
             #temperature {
               color: ${regular0};
               background-color: ${regular6};
@@ -484,14 +444,6 @@ in {
               background-color: ${regular6};
             }
 
-            #idle_inhibitor {
-              background-color: ${regular6};
-            }
-
-            #idle_inhibitor.activated {
-              background-color: ${regular6};
-            }
-
             #mpd {
               background-color: #2d5b74;
             }
@@ -506,36 +458,6 @@ in {
 
             #mpd.paused {
               background-color: #2d5b74;
-            }
-
-            #language {
-              background: #00b093;
-              padding: 0 5px;
-              margin: 0 5px;
-              min-width: 16px;
-            }
-
-            #keyboard-state {
-              background: #97e1ad;
-              padding: 0 0px;
-              margin: 0 5px;
-              min-width: 16px;
-            }
-
-            #keyboard-state > label {
-              padding: 0 5px;
-            }
-
-            #keyboard-state > label.locked {
-              background: rgba(0, 0, 0, 0.2);
-            }
-
-            #scratchpad {
-              background: rgba(0, 0, 0, 0.2);
-            }
-
-            #scratchpad.empty {
-              background-color: transparent;
             }
           '';
         };
