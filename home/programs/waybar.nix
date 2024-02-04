@@ -34,7 +34,7 @@ in {
                 "sway/mode"
               ];
               modules-center = [
-                "sway/window"
+                "clock"
               ];
               modules-right = [
                 "bluetooth"
@@ -42,7 +42,6 @@ in {
                 "pulseaudio"
                 "backlight"
                 "battery"
-                "clock"
                 "tray"
               ];
               "keyboard-state" = {
@@ -332,29 +331,34 @@ in {
 
             #clock {
               color: ${regular0};
-              background-color: ${regular7};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular7};
             }
 
             #battery {
               color: ${regular0};
-              background-color: ${regular6};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular6};
             }
 
             #battery.charging, #battery.plugged {
               color: ${regular0};
-              background-color: ${regular6};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular6};
             }
 
             @keyframes blink {
               to {
                 color: ${regular0};
-                background-color: ${regular6};
+                background-color: ${background};
+                border-bottom: 3px solid ${regular6};
               }
             }
 
             #battery.critical:not(.charging) {
               color: ${regular0};
-              background-color: ${regular1};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular1};
               animation-name: blink;
               animation-duration: 0.5s;
               animation-timing-function: linear;
@@ -364,75 +368,90 @@ in {
 
             #bluetooth {
               color: ${regular0};
-              background-color: ${regular4};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular4};
             }
 
             label:focus {
               color: ${regular0};
-              background-color: ${regular4};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular4};
             }
 
             #cpu {
               color: ${regular0};
-              background-color: ${regular4};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular4};
             }
 
             #memory {
               color: ${regular0};
-              background-color: ${regular5};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
 
             #disk {
               color: ${regular0};
-              background-color: ${regular5};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
 
             #backlight {
               color: ${regular0};
-              background-color: ${regular5};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
 
             #network {
               color: ${regular0};
-              background-color: ${regular3};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular3};
             }
 
             #network.disconnected {
               color: ${regular0};
-              background-color: ${regular3};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular3};
             }
 
             #pulseaudio {
               color: ${regular0};
-              background-color: ${regular2};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular2};
             }
 
             #pulseaudio.muted {
               color: ${regular0};
-              background-color: ${regular2};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular2};
             }
 
             #wireplumber {
               color: ${regular0};
-              background-color: ${regular2};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular2};
             }
 
             #wireplumber.muted {
               color: ${regular0};
-              background-color: ${regular2};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular2};
             }
 
             #temperature {
               color: ${regular0};
-              background-color: ${regular6};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular6};
             }
 
             #temperature.critical {
-              background-color: ${regular6};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular6};
             }
 
             #tray {
-              background-color: ${regular4};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular4};
             }
 
             #tray > .passive {
@@ -441,23 +460,28 @@ in {
 
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
-              background-color: ${regular6};
+              background-color: ${background};
+              border-bottom: 3px solid ${regular6};
             }
 
             #mpd {
-              background-color: #2d5b74;
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
 
             #mpd.disconnected {
-              background-color: #2d5b74;
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
 
             #mpd.stopped {
-              background-color: #2d5b74;
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
 
             #mpd.paused {
-              background-color: #2d5b74;
+              background-color: ${background};
+              border-bottom: 3px solid ${regular5};
             }
           '';
         };
