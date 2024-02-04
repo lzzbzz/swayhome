@@ -2,16 +2,24 @@
   name = "hervyqa";
 
   # custom colors
-  foreground = "#C6D0F5";    # text
-  background = "#303446";    # base
-  regular0   = "#DFDFDF";    # papirus
-  regular1   = "#E78284";    # red
-  regular2   = "#A6D189";    # green
-  regular3   = "#EF9F76";    # orange
-  regular4   = "#8CAAEE";    # blue
-  regular5   = "#EA999C";    # maroon
-  regular6   = "#81C8BE";    # teal
-  regular7   = "#CA9EE6";    # mauve
+  foreground = "#C6D0F5";   # text
+  background = "#303446";   # base
+  regular0   = "#DFDFDF";   # papirus
+  regular1   = "#E78284";   # red
+  regular2   = "#A6D189";   # green
+  regular3   = "#E5C890";   # yellow
+  regular4   = "#8CAAEE";   # blue
+  regular5   = "#F4B8E4";   # pink
+  regular6   = "#81C8BE";   # teal
+  regular7   = "#F2D5CF";   # rosewater
+  regular8   = "#EEBEBE";   # flamingo
+  regular9   = "#CA9EE6";   # mauve
+  regular10  = "#EA999C";   # maroon
+  regular11  = "#EF9F76";   # peach
+  regular12  = "#81C8BE";   # teal
+  regular13  = "#99D1DB";   # sky
+  regular14  = "#85C1DC";   # sapphire
+  regular15  = "#BABBF1";   # lavender
 
 in {
   home-manager = {
@@ -332,7 +340,7 @@ in {
             #clock {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular7};
+              border-bottom: 3px solid ${regular13};
             }
 
             #battery {
@@ -369,7 +377,7 @@ in {
             #bluetooth {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular4};
+              border-bottom: 3px solid ${regular8};
             }
 
             label:focus {
@@ -381,19 +389,19 @@ in {
             #cpu {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular4};
+              border-bottom: 3px solid ${regular10};
             }
 
             #memory {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular5};
+              border-bottom: 3px solid ${regular11};
             }
 
             #disk {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular5};
+              border-bottom: 3px solid ${regular12};
             }
 
             #backlight {
@@ -441,17 +449,17 @@ in {
             #temperature {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular6};
+              border-bottom: 3px solid ${regular7};
             }
 
             #temperature.critical {
               background-color: transparent;
-              border-bottom: 3px solid ${regular6};
+              border-bottom: 3px solid ${regular7};
             }
 
             #tray {
               background-color: transparent;
-              border-bottom: 3px solid ${regular4};
+              border-bottom: 3px solid ${regular9};
             }
 
             #tray > .passive {
@@ -461,27 +469,27 @@ in {
             #tray > .needs-attention {
               -gtk-icon-effect: highlight;
               background-color: transparent;
-              border-bottom: 3px solid ${regular6};
+              border-bottom: 3px solid ${regular14};
             }
 
             #mpd {
               background-color: transparent;
-              border-bottom: 3px solid ${regular5};
+              border-bottom: 3px solid ${regular15};
             }
 
             #mpd.disconnected {
               background-color: transparent;
-              border-bottom: 3px solid ${regular5};
+              border-bottom: 3px solid ${regular15};
             }
 
             #mpd.stopped {
               background-color: transparent;
-              border-bottom: 3px solid ${regular5};
+              border-bottom: 3px solid ${regular15};
             }
 
             #mpd.paused {
               background-color: transparent;
-              border-bottom: 3px solid ${regular5};
+              border-bottom: 3px solid ${regular15};
             }
           '';
         };
