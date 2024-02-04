@@ -173,6 +173,21 @@ in {
               notifications = {
                 enabled = true;
               };
+              blocking.adblock.lists = [
+                "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
+                "https://easylist-downloads.adblockplus.org/easylist.txt"
+                "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
+                "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt"
+                "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
+                "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate List.txt"
+                "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt"
+                "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt"
+                "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+                "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt"
+                "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
+                "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt"
+                "https://www.fanboy.co.nz/enhancedstats.txt"
+              ];
             };
             fonts = {
               completion.entry = "8.0pt Monospace";
