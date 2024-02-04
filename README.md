@@ -45,6 +45,7 @@ Uniform look for QT5/6 and GTK2/3/4 applications with
 | Bluetooth         | `rofi`+`bluetoothctl`      |              | Interface to connect to bluetooth devices.              |
 | Browser           | `qutebrowser`              | `firefox`    | Keyboard-focused browser.                               |
 | Display settings  | `wdisplay`                 |              | Configuring displays in Wayland compositor.             |
+| Dynamic wallpaper | `wpaperd`                  |              | Minimal wallpaper daemon for Wayland.                   |
 | File manager      | `joshuto`                  |              | Ranger-like terminal file manager.                      |
 | Fonts             | `monospace:8`              |              | Minimalist monospace font.                              |
 | GTK2/3/4 theme    | `catppuccin-gtk`           |              | Catppuccin Frappe Pastel GTK Themes.                    |
@@ -65,7 +66,6 @@ Uniform look for QT5/6 and GTK2/3/4 applications with
 | Text editor       | `helix`                    | `neovim`     | Post-modern modal text editor.                          |
 | Video player      | `mpv`                      |              | General-purpose media player.                           |
 | Volume control    | `pamixer`                  | `pulsemixer` | Command line mixer.                                     |
-| Dynamic wallpaper | `wpaperd`                  |              | Minimal wallpaper daemon for Wayland.                   |
 
 ## 🐳 Sway usage
 
