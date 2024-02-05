@@ -41,6 +41,7 @@ in {
             highlight-color = "#575268";
             highlight-fg = "#F4B8E4";
             highlight-active-color = "#F4B8E4";
+            selection-clipboard = "clipboard";
             statusbar-home-tilde = true;
             scroll-page-aware = true;
             window-title-basename = true;
