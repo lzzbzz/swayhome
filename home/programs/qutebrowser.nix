@@ -170,6 +170,7 @@ in {
               };
             };
             content = {
+              autoplay = false;
               notifications = {
                 enabled = true;
               };
