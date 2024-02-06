@@ -5,12 +5,13 @@ in {
     users.${name} = {
       programs = {
         firefox = {
-          enable = false;
+          enable = true;
           profiles = {
             ${name} = {
               isDefault = true;
               search = {
                 default = "DuckDuckGo";
+                force = true;
                 privateDefault = "DuckDuckGo";
               };
               settings = {
