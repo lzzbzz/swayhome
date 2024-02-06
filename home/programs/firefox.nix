@@ -5,7 +5,7 @@ in {
     users.${name} = {
       programs = {
         firefox = {
-          enable = true;
+          enable = false;
           profiles = {
             ${name} = {
               isDefault = true;
