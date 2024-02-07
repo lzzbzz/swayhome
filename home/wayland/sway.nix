@@ -92,6 +92,7 @@ in {
                 criteria = [
                   { app_id = "at.yrlf.wl_mirror"; }
                   { app_id = "imv"; }
+                  { app_id = "kvantummanager"; }
                   { app_id = "mpv"; }
                   { app_id = "org.pwmt.zathura"; }
                   { app_id = "qt5ct"; }
