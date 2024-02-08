@@ -152,10 +152,9 @@ in {
                 spacing = 8;
               };
               "clock" = {
-                timezone = "Asia/Jakarta";
-                tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-                format = "{:%H:%M }";
-                format-alt = "{:%Y-%m-%d }";
+                interval = 60;
+                tooltip = false;
+                format = "{:%d.%m.%Y %H:%M }";
               };
               "cpu" = {
                 format = "{usage}% ";
