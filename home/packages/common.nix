@@ -29,6 +29,7 @@ in {
           glxinfo # test utilities for opengl
           grim # screenshot functionality
           hexyl # command-line hex viewer
+          hugo # modern static website engine
           hut # cli tool for sourcehut
           imagemagick # convert image
           inxi # info for device specification
