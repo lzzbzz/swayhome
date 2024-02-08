@@ -180,7 +180,7 @@ in {
                 # device = "acpi_video1";
                 format = "{percent}% {icon}";
                 format-icons = [
-                  "" "" "" "" "" "" "" "" ""
+                  "" "" "" "" "" "" "" "" "" "" ""
                 ];
               };
               "battery" = {
@@ -220,7 +220,7 @@ in {
                 format-bluetooth-muted = " {icon} {format_source}";
                 format-muted = " {format_source}";
                 format-source = "{volume}% ";
-                format-source-muted = "";
+                format-source-muted = "";
                 format-icons = {
                   headphone = "";
                   hands-free = "";
