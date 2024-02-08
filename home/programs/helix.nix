@@ -28,6 +28,13 @@ in {
                 display-messages = true;
               };
 
+              soft-wrap = {
+                enable = true;
+                max-wrap = 25;
+                max-indent-retain = 0;
+                wrap-indicator = "";
+              };
+
               whitespace.render = {
                 space = "all";
                 tab = "all";
