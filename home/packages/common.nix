@@ -9,7 +9,6 @@ in {
       home = {
         packages = with pkgs; [
           axel # console downloading program
-          babelfish # convert bash to fish shell
           bc # gnu software calculator
           catdoc # microsoft office to text converter
           catppuccin # soothing pastel themes
@@ -52,7 +51,6 @@ in {
           scour # compress svg
           scrcpy # mirroring device
           slurp # screenshot functionality
-          swappy # snapshot editing tool
           swaybg #wallpaper tool for wayland compositors
           swaykbdd # per-window keyboard layout for sway
           tgpt # chatgpt in terminal without needing api key

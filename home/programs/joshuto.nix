@@ -55,12 +55,6 @@ in {
                   command = "exiftool";
                   confirm_exit = true;
                 }
-                {
-                  command = "swappy";
-                  args = [ "-f" ];
-                  fork = true;
-                  silent = true;
-                }
               ];
               video_default = [
                 {
