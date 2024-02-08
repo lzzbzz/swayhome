@@ -6,8 +6,6 @@
     ./datacli.nix
     ./datagui.nix
     ./design.nix
-    ./gamedev.nix
-    ./games.nix
     ./internet.nix
     ./langserver.nix
     ./latex.nix
@@ -18,7 +16,6 @@
     ./octave.nix
     ./office.nix
     ./python.nix
-    ./root.nix
     ./rstudio.nix
     ./scala.nix
     ./ssg.nix
