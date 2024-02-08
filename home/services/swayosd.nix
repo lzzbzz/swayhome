@@ -6,7 +6,6 @@ in {
       services = {
         swayosd = {
           enable = false;
-          maxVolume = 120;
         };
       };
     };
