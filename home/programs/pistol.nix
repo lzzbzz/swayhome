@@ -5,7 +5,7 @@ in {
     users.${name} = {
       programs = {
         pistol = {
-          enable = true;
+          enable = false;
           associations = [
             {
               mime = "application/json";
