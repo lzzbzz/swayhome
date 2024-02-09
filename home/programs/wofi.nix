@@ -5,7 +5,7 @@ in {
     users.${name} = {
       programs = {
         wofi = {
-          enable = true;
+          enable = false;
           settings = {
             location = "bottom-right";
             allow_markup = true;
