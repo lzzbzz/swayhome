@@ -171,7 +171,7 @@ in {
                 # mic control
                 "${modifier}+XF86AudioRaiseVolume" = "exec ${pamixer}/bin/pamixer --default-source --increase 2";
                 "${modifier}+XF86AudioLowerVolume" = "exec ${pamixer}/bin/pamixer --default-source --decrease 2";
-                "${modifier}+XF86AudioMicMute" = "exec ${pamixer}/bin/pamixer --default-source -t";
+                "${modifier}+XF86AudioMute" = "exec ${pamixer}/bin/pamixer --default-source -t";
 
                 # brightness
                 "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 2";
