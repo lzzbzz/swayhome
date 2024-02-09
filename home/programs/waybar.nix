@@ -49,6 +49,8 @@ in {
                 "network"
                 "pulseaudio"
                 "backlight"
+                "cpu"
+                "memory"
                 "battery"
                 "tray"
               ];
@@ -154,7 +156,7 @@ in {
               "clock" = {
                 interval = 60;
                 tooltip = false;
-                format = "{:%d.%m.%Y %H:%M }";
+                format = "{:%d.%m.%Y  %H:%M }";
               };
               "cpu" = {
                 format = "{usage}% ";
@@ -218,9 +220,9 @@ in {
                 format = "{volume}% {icon} {format_source}";
                 format-bluetooth = "{volume}% {icon} {format_source}";
                 format-bluetooth-muted = " {icon} {format_source}";
-                format-muted = " {format_source}";
+                format-muted = "{volume}%  {format_source}";
                 format-source = "{volume}% ";
-                format-source-muted = "";
+                format-source-muted = "{volume}% ";
                 format-icons = {
                   headphone = "";
                   hands-free = "";
