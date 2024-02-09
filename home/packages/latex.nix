@@ -7,8 +7,7 @@ in {
   home-manager = {
     users.${name} = {
       home = {
-        packages = with pkgs;
-        with libsForQt5; [
+        packages = with pkgs; [
         (texlive.combine { inherit (texlive)
           amsmath
           capt-of
