@@ -5,7 +5,7 @@ in {
     users.${name} = {
       programs = {
         micro = {
-          enable = true;
+          enable = false;
           settings = {
           };
         };
