@@ -44,7 +44,7 @@ in {
                 preferred_color_scheme = "dark";
                 bg = base;
                 darkmode = {
-                  enabled = true;
+                  enabled = false;
                   policy = {
                     page = "always";
                   };
