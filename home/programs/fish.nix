@@ -75,7 +75,7 @@ in {
             nrs = "doas nixos-rebuild switch";
             nru = "doas nixos-rebuild switch --upgrade";
             ngc = "doas nix-store --gc";
-            ngd = "doas nix-collect-garbage -d";
+            ngd = "doas nix-collect-garbage --delete-old";
 
             ga = "git add";
             gaa = "git add --all";
