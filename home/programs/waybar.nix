@@ -390,7 +390,7 @@ in {
             #cpu {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular10};
+              border-bottom: 3px solid ${regular3};
             }
 
             #memory {
@@ -414,7 +414,7 @@ in {
             #network {
               color: ${regular0};
               background-color: transparent;
-              border-bottom: 3px solid ${regular3};
+              border-bottom: 3px solid ${regular10};
             }
 
             #network.disconnected {
