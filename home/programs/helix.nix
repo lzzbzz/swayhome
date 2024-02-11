@@ -44,10 +44,7 @@ in {
             keys = {
               normal = {
                 space = {
-                  W = [
-                    ":toggle-option soft-wrap.enable"
-                    ":redraw"
-                  ];
+                  W = ":toggle-option soft-wrap.enable";
                 };
               };
               insert = {
