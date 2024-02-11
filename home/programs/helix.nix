@@ -29,10 +29,9 @@ in {
               };
 
               soft-wrap = {
-                enable = true;
+                enable = false;
                 max-wrap = 25;
                 max-indent-retain = 0;
-                wrap-indicator = "";
               };
 
               whitespace.render = {
@@ -46,6 +45,12 @@ in {
               normal = {
                 C-w = ":w";
                 C-q = ":q";
+                space = {
+                  W = [
+                    ":toggle-option soft-wrap.enable"
+                    ":redraw"
+                  ];
+                };
               };
               insert = {
                 up = "no_op";
