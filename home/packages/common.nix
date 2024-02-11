@@ -55,7 +55,10 @@ in {
           swaybg #wallpaper tool for wayland compositors
           swaykbdd # per-window keyboard layout for sway
           tgpt # chatgpt in terminal without needing api key
+          toipe # trusty terminal typing tester
           tree # produce a depth indented directory listing
+          ttyper # terminal-based typing test
+          typioca # cozy typing speed tester in terminal
           upterm # remote console
           ventoy # cerate usb bootable
           vulkan-tools # khronos official vulkan tools and utilities
