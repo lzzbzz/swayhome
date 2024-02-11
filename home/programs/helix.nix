@@ -43,8 +43,6 @@ in {
 
             keys = {
               normal = {
-                C-w = ":w";
-                C-q = ":q";
                 space = {
                   W = [
                     ":toggle-option soft-wrap.enable"
