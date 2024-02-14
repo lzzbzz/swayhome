@@ -17,6 +17,7 @@
       font-awesome
       hackgen-font
       ibm-plex
+      inconsolata
       inter
       iosevka
       jetbrains-mono
@@ -33,6 +34,9 @@
       overpass
       pecita
       recursive
+      roboto
+      roboto-mono
+      roboto-serif
       source-code-pro
       source-sans
       source-sans-pro
@@ -41,9 +45,9 @@
     ];
     fontconfig = {
       defaultFonts = {
-        monospace = ["Monospace" "Noto Sans Mono" "Source Code Pro"];
-        serif = ["Monospace" "Noto Serif" "Source Serif Pro"];
-        sansSerif = ["Monospace" "Noto Sans" "Source Sans Pro"];
+        monospace = ["Fira Code" "Noto Sans Mono" "Source Code Pro"];
+        serif = ["Fira Code" "Noto Serif" "Source Serif Pro"];
+        sansSerif = ["Fira Code" "Noto Sans" "Source Sans Pro"];
         emoji = ["Noto Color Emoji"];
       };
     };

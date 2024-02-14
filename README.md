@@ -47,7 +47,7 @@ Uniform look for QT5/6 and GTK2/3/4 applications with
 | Display settings  | `wdisplay`                 |              | Configuring displays in Wayland compositor.             |
 | Dynamic wallpaper | `wpaperd`                  |              | Minimal wallpaper daemon for Wayland.                   |
 | File manager      | `joshuto`                  |              | Ranger-like terminal file manager.                      |
-| Fonts             | `monospace:8`              |              | Minimalist monospace font.                              |
+| Fonts             | `fira code:8`              |              | Minimalist monospace font.                              |
 | GTK2/3/4 theme    | `catppuccin-gtk`           |              | Catppuccin Frappe Pastel GTK Themes.                    |
 | QT5/6 theme       | `catppuccin-{kde,kvantum}` |              | Catppuccin Frappe QT Theme via Kvantum manager.         |
 | Icons             | `catppuccin-papirus-icon`  |              | Pixel perfect icon theme for linux.                     |

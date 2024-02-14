@@ -239,7 +239,7 @@ in {
           };
           style = ''
             * {
-              font-family: FontAwesome, Monospace;
+              font-family: FontAwesome, Fira Code;
               font-size: 12px;
             }
 

@@ -13,7 +13,7 @@ in {
       programs = {
         rofi = {
           enable = true;
-          font = "Monospace 8";
+          font = "Fira Code 8";
           extraConfig = {
             case-sensitive = false;
             display-drun = "Apps:";

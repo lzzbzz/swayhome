@@ -9,7 +9,7 @@ in {
           enable = true;
           settings = {
             main = {
-              font = "monospace:size=8";
+              font = "Fira Code:size=8";
               dpi-aware = "no";
               pad = "15x15 center";
             };

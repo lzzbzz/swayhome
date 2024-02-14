@@ -36,7 +36,7 @@ in {
             text-color = "C6D0F5";
             text-ver-color = "8CAAEE";
             text-wrong-color = "EA999C";
-            font = "Monospace";
+            font = "Fira Code";
             font-size = 12;
             disable-caps-lock-text = true;
             ignore-empty-password = true;

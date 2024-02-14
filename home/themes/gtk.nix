@@ -9,7 +9,7 @@ in {
       gtk = {
         enable = true;
         font = {
-          name = "Monospace";
+          name = "Fira Code";
           size= 8;
         };
         theme = {

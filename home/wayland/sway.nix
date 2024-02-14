@@ -39,7 +39,7 @@ in {
                 followMouse = false;
               };
               fonts = {
-                names = ["monospace"];
+                names = ["Fira Code"];
                 size = 8.0;
               };
               gaps = {
