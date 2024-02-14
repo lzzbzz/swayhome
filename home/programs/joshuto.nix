@@ -203,6 +203,7 @@ in {
               css."inherit" = "text_default";
               csv."inherit" = "text_default";
               cu."inherit" = "text_default";
+              desktop."inherit" = "text_default";
               ebuild."inherit" = "text_default";
               eex."inherit" = "text_default";
               env."inherit" = "text_default";
