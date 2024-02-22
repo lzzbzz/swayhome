@@ -197,6 +197,7 @@ in {
               ## text formats
               build."inherit" = "text_default";
               c."inherit" = "text_default";
+              cfg."inherit" = "text_default";
               cmake."inherit" = "text_default";
               conf."inherit" = "text_default";
               cpp."inherit" = "text_default";
