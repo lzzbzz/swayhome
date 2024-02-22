@@ -22,6 +22,7 @@ in {
           efibootmgr # efi boot manager
           exiftool # exif meta information
           fastfetch # show your current hardware
+          fig2dev # tool to convert xfig files to other formats
           ffmpeg # convert video
           ghostscript # convert pdf document
           glib # gsettings
