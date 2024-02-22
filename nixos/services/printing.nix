@@ -16,8 +16,5 @@
         splix
       ];
     };
-    system-config-printer = {
-      enable = true;
-    };
   };
 }
