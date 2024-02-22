@@ -220,8 +220,9 @@ in {
               js."inherit" = "text_default";
               json."inherit" = "text_default";
               kt."inherit" = "text_default";
-              lua."inherit" = "text_default";
+              kvconfig."inherit" = "text_default";
               log."inherit" = "text_default";
+              lua."inherit" = "text_default";
               md."inherit" = "text_default";
               micro."inherit" = "text_default";
               ninja."inherit" = "text_default";
@@ -232,6 +233,7 @@ in {
               qmd."inherit" = "text_default";
               rkt."inherit" = "text_default";
               rs."inherit" = "text_default";
+              rstheme."inherit" = "text_default";
               scss."inherit" = "text_default";
               sh."inherit" = "text_default";
               srt."inherit" = "text_default";
