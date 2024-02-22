@@ -7,5 +7,6 @@
     ./gnupg.nix
     ./light.nix
     ./mtr.nix
+    ./printer.nix
   ];
 }

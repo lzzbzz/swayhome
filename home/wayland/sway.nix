@@ -97,6 +97,7 @@ in {
                   { app_id = "org.pwmt.zathura"; }
                   { app_id = "qt5ct"; }
                   { app_id = "qt6ct"; }
+                  { app_id = "system-config-printer"; }
                   { app_id = "wdisplays"; }
                 ];
               };
