@@ -232,6 +232,7 @@ in {
               py."inherit" = "text_default";
               qmd."inherit" = "text_default";
               rkt."inherit" = "text_default";
+              rktd."inherit" = "text_default";
               rs."inherit" = "text_default";
               rstheme."inherit" = "text_default";
               scss."inherit" = "text_default";
