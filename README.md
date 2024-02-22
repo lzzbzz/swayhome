@@ -19,6 +19,8 @@ Uniform look for QT5/6 and GTK2/3/4 applications with
 ## 💠 File structure
 
 - [home](./home)                 : Home-manager configuration.
+  - [config](./home/config)      : List of user config directory (~/.config).
+  - [fonts](./home/fonts)        : List of user fonts config.
   - [packages](./home/packages)  : List of user packages without configuration.
   - [programs](./home/programs)  : List of user packages with configuration.
   - [services](./home/services)  : List of user services.
