@@ -10,5 +10,6 @@
     ./swayidle.nix
     ./swayosd.nix
     ./syncthing.nix
+    ./xsettingsd.nix
   ];
 }
