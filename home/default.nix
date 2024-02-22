@@ -4,6 +4,7 @@
 in {
   imports = [
     <home-manager/nixos>
+    ./config
     ./fonts
     ./packages
     ./programs
