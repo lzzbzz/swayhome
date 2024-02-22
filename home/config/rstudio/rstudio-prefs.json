@@ -1,0 +1,11 @@
+{
+    "initial_working_directory": "~",
+    "editor_theme": "catppuccin-frappe",
+    "pdf_previewer": "none",
+    "posix_terminal_shell": "custom",
+    "custom_shell_command": "/run/current-system/sw/bin/fish",
+    "help_font_size_points": 8,
+    "font_size_points": 8,
+    "jobs_tab_visibility": "shown",
+    "global_theme": "alternate"
+}
