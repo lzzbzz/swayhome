@@ -95,17 +95,19 @@ Uniform look for QT5/6 and GTK2/3/4 applications with
 
 ### Cloning repository
 
-* Read-only:
+#### Read-only:
 
-```sh
-git clone https://git.sr.ht/~hervyqa/swayhome
-```
+| Repository   | Command                                         |
+| :----------- | :---------------------------------------------- |
+| Github       | `git clone https://github.com/hervyqa/swayhome` |
+| Sourcehut    | `git clone https://git.sr.ht/~hervyqa/swayhome` |
 
-* Read/write (Recommended):
+#### Read & write (Recommended):
 
-```sh
-git clone git@git.sr.ht:~hervyqa/swayhome
-```
+| Repository  | Command                                     |
+| :---------- | :------------------------------------------ |
+| Github      | `git clone git@github.com:hervyqa/swayhome` |
+| Sourcehut   | `git clone git@git.sr.ht:~hervyqa/swayhome` |
 
 ```sh
 cd swayhome
