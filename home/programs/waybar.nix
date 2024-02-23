@@ -71,35 +71,15 @@ in {
                 sort-by-number = true;
                 format = "{icon}";
                 format-icons = {
-                  "1" = "一";
-                  "2" = "二";
-                  "3" = "三";
-                  "4" = "四";
-                  "5" = "五";
-                  "6" = "六";
-                  "7" = "七";
-                  "8" = "八";
-                  "9" = "九";
-                };
-                persistent-workspaces = let
-                  first = [
-                    "eDP-1"
-                    "VGA-1"
-                  ];
-                  second = [
-                    "DP-1" "DP-2" "DP-3" "DP-4"
-                    "HDMI-A-1" "HDMI-A-2"
-                  ];
-                in {
-                  "1" = first;
-                  "2" = first;
-                  "3" = first;
-                  "4" = first;
-                  "5" = first;
-                  "6" = second;
-                  "7" = second;
-                  "8" = second;
-                  "9" = second;
+                  "1" = "1: ";
+                  "2" = "2: ";
+                  "3" = "3: ";
+                  "4" = "4: ";
+                  "5" = "5: ";
+                  "6" = "6: ";
+                  "7" = "7: ";
+                  "8" = "8: ";
+                  "9" = "9: ";
                 };
               };
               "sway/scratchpad" = {
