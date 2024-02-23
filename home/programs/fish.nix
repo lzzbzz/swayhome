@@ -64,18 +64,24 @@ in {
 
             neq = "nix-env -qaP";
             nim = "nix-shell -p nix-info --run 'nix-info -m'";
-            nei = "doas nix-env -iA";
-            neu = "doas nix-env --uninstall";
-            nel = "doas nix-env -p /nix/var/nix/profiles/system --list-generations";
-            ned = "doas nix-env -p /nix/var/nix/profiles/system --delete-generations old";
 
-            ncl = "doas nix-channel --list";
-            ncu = "doas nix-channel --update";
-            nrd = "doas nixos-rebuild dry-build";
-            nrs = "doas nixos-rebuild switch";
-            nru = "doas nixos-rebuild switch --upgrade";
-            ngc = "doas nix-store --gc";
-            ngd = "doas nix-collect-garbage --delete-old";
+            nei = "nix-env -iA";
+            neu = "nix-env --uninstall";
+            nel = "nix-env --list-generations";
+            ned = "nix-env --delete-generations old";
+
+            dnei = "doas nix-env -iA";
+            dneu = "doas nix-env --uninstall";
+            dnel = "doas nix-env -p /nix/var/nix/profiles/system --list-generations";
+            dned = "doas nix-env -p /nix/var/nix/profiles/system --delete-generations old";
+
+            dncl = "doas nix-channel --list";
+            dncu = "doas nix-channel --update";
+            dnrd = "doas nixos-rebuild dry-build";
+            dnrs = "doas nixos-rebuild switch";
+            dnru = "doas nixos-rebuild switch --upgrade";
+            dngc = "doas nix-store --gc";
+            dngd = "doas nix-collect-garbage --delete-old";
 
             ga = "git add";
             gaa = "git add --all";
