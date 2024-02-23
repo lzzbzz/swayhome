@@ -246,7 +246,7 @@ Or using `nrs` from fish abbreviation.
 Nix file: [home/programs/fish.nix](./home/programs/fish.nix).
 
 ```sh
-nrs
+dnrs
 ```
 
 ## 🌊 Check system
