@@ -243,7 +243,7 @@ For next build, i prefer using `doas` as an alternative to `sudo`.
 doas nixos-rebuild switch
 ```
 
-Or using `nrs` from fish abbreviation.
+Or using `dnrs` from fish abbreviation.
 
 Nix file: [home/programs/fish.nix](./home/programs/fish.nix).
 
