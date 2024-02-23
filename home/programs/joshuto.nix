@@ -16,6 +16,7 @@ in {
             xdg_open_fork = true;
 
             display = {
+              column_ratio = [1 6 2];
               show_borders = false;
               show_icons = false;
             };
