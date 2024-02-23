@@ -79,12 +79,6 @@ in {
                   command = "hx";
                 }
                 {
-                  command = "nvim";
-                }
-                {
-                  command = "micro";
-                }
-                {
                   command = "bat";
                   args = [ "--paging=always" ];
                 }
@@ -359,12 +353,6 @@ in {
                   command = "hx";
                 }
                 {
-                  command = "nvim";
-                }
-                {
-                  command = "micro";
-                }
-                {
                   command = "mpv";
                   silent = true;
                 }
@@ -417,12 +405,6 @@ in {
               tex.app_list = [
                 {
                   command = "hx";
-                }
-                {
-                  command = "nvim";
-                }
-                {
-                  command = "micro";
                 }
                 {
                   command = "bat";
