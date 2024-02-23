@@ -85,6 +85,52 @@ in {
                   }
                 ];
               };
+              assigns = {
+                "1" = [
+                  { app_id = "foot"; }
+                ];
+                "2" = [
+                  { app_id = "org.qutebrowser.qutebrowser"; }
+                ];
+                "3" = [
+                  { app_id = "si.biolab.python3"; }
+                  { app_id = "spyder"; }
+                ];
+                "4" = [
+                  { app_id = "DBeaver"; }
+                  { app_id = "rstudio"; }
+                  { app_id = "sqlitebrowser"; }
+                ];
+                "5" = [
+                  { app_id = "vscode"; }
+                  { app_id = "vscodium"; }
+                ];
+                "6" = [
+                  { app_id = "texstudio"; }
+                  { app_id = "libreoffice-base"; }
+                  { app_id = "libreoffice-calc"; }
+                  { app_id = "libreoffice-draw"; }
+                  { app_id = "libreoffice-impress"; }
+                  { app_id = "libreoffice-math"; }
+                  { app_id = "libreoffice-writer"; }
+                ];
+                "7" = [
+                  { app_id = "lmms"; }
+                  { app_id = "org.kde.kdenlive"; }
+                  { app_id = "tenacity"; }
+                ];
+                "8" = [
+                  { app_id = "blender"; }
+                  { app_id = "gimp"; }
+                  { app_id = "inkscape"; }
+                  { app_id = "scribus"; }
+                  { app_id = "synfigstudio"; }
+                  { class = "krita"; }
+                ];
+                "9" = [
+                  { app_id = "org.telegram.desktop"; }
+                ];
+              };
               floating = {
                 modifier = "${modifier}";
                 border = 3;
