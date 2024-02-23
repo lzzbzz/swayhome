@@ -13,7 +13,6 @@
     ./libsqt6.nix
     ./lua.nix
     ./media.nix
-    ./octave.nix
     ./office.nix
     ./python.nix
     ./rstudio.nix
