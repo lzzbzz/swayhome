@@ -136,7 +136,7 @@ in {
               "clock" = {
                 interval = 60;
                 tooltip = false;
-                format = "{:%d.%m.%Y  %H:%M }";
+                format = "{:%A ● %d-%m-%Y ● %H:%M}";
               };
               "cpu" = {
                 format = "{usage}% ";
@@ -302,12 +302,12 @@ in {
             #tray,
             #mode,
             #mpd {
-              padding: 0 5px;
+              padding: 0 8px;
             }
 
             #window,
             #workspaces {
-              margin: 0 4px;
+              margin: 0 8px;
             }
 
             .modules-left > widget:first-child > #workspaces {
