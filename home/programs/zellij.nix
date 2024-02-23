@@ -10,8 +10,9 @@ in {
           enableFishIntegration = true;
           settings = {
             copy_command = "wl-copy";
+            default_layout = "compact";
             default_shell = "fish";
-            pane_frames = false;
+            pane_frames = true;
             simplified_ui = true;
             theme = "catppuccin-frappe";
             plugins = {
