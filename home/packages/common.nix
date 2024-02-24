@@ -22,8 +22,8 @@ in {
           efibootmgr # efi boot manager
           exiftool # exif meta information
           fastfetch # show your current hardware
-          fig2dev # tool to convert xfig files to other formats
           ffmpeg # convert video
+          fig2dev # tool to convert xfig files to other formats
           ghostscript # convert pdf document
           glib # gsettings
           glow # markdown renderer
@@ -41,6 +41,7 @@ in {
           netlify-cli # cli tool for netlify
           nix-health # check the health of your nix setup
           nix-search-cli # cli for searching package
+          nvme-cli # nvm-express user space tooling for linux
           odt2txt # convert odt to txt
           optipng # a png optimizer
           pamixer # audio volume
@@ -55,6 +56,7 @@ in {
           slurp # screenshot functionality
           swaybg #wallpaper tool for wayland compositors
           swaykbdd # per-window keyboard layout for sway
+          tagutil # scriptable music files tags tool and editor
           tgpt # chatgpt in terminal without needing api key
           toipe # trusty terminal typing tester
           tree # produce a depth indented directory listing
