@@ -19,6 +19,7 @@ in {
           disfetch # distro fetching program
           dmidecode # reads information about system hardware
           duf # alternate du
+          dysk # get information on your mounted disks
           efibootmgr # efi boot manager
           exiftool # exif meta information
           fastfetch # show your current hardware
