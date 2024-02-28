@@ -39,6 +39,7 @@ in {
             ds = "du -sh";
             ht = "htop";
             lb = "lsblk -o name,fstype,fsavail,fsused,size,mountpoint";
+            mk = "mkdir -pv";
             mv = "mv -v";
             nc = "ncmpcpp";
             rm = "rm -rfv";
