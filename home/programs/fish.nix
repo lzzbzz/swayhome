@@ -46,8 +46,8 @@ in {
 
             ns = "nix-search -dn";
 
-            yt = "yt-dlp -f bestvideo+bestaudio --embed-thumbnail";
-            ym = "yt-dlp -f bestaudio -x --audio-format vorbis --embed-thumbnail";
+            yt = "yt-dlp -f bestvideo+bestaudio";
+            ym = "yt-dlp -f bestaudio -x --audio-format vorbis";
 
             sa = "systemctl --user start";
             so = "systemctl --user stop";
