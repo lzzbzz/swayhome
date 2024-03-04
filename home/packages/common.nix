@@ -16,6 +16,7 @@ in {
           catppuccin-kvantum # soothing pastel theme for kvantum
           clinfo # information about opencl platforms
           cpufetch # cpu fetching architecture tool
+          dig # domain name server
           disfetch # distro fetching program
           dmidecode # reads information about system hardware
           duf # alternate du
