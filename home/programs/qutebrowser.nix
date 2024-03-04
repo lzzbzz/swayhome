@@ -1,4 +1,7 @@
-{ ... }: let
+{
+  pkgs,
+  ...
+}: let
   name = "hervyqa";
 
   # colors
