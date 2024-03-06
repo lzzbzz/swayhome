@@ -12,7 +12,7 @@ in {
             copy_command = "wl-copy";
             default_layout = "compact";
             default_shell = "fish";
-            pane_frames = true;
+            pane_frames = false;
             simplified_ui = true;
             theme = "catppuccin-frappe";
             plugins = {
