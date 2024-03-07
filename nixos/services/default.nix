@@ -2,20 +2,20 @@
   imports = [
     ./blueman.nix
     ./clamav.nix
-    ./clickhouse.nix
+    # ./clickhouse.nix
     ./dnscrypt.nix
     ./earlyoom.nix
     ./fstrim.nix
-    ./grafana.nix
+    # ./grafana.nix
     ./greetd.nix
-    ./hdapsd.nix
-    ./metabase.nix
-    ./mongodb.nix
-    ./mysql.nix
+    # ./hdapsd.nix
+    # ./metabase.nix
+    # ./mongodb.nix
+    # ./mysql.nix
     ./openssh.nix
-    ./pcscd.nix
+    # ./pcscd.nix
     ./pipewire.nix
-    ./postgresql.nix
+    # ./postgresql.nix
     ./power-profiles.nix
     ./printing.nix
     ./redis.nix

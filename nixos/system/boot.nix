@@ -6,7 +6,7 @@
       };
       efi = {
         canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot/efi";
+        efiSysMountPoint = "/boot/EFI";
       };
       grub = {
         # true: If dual boot.

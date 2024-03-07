@@ -3,7 +3,7 @@
   ...
 }: let
   name = "lzbz";
-  fullname = "Hervy Qurrotul Ainur Rozi";
+  fullname = "lzbz";
 in {
   users = {
     defaultUserShell = pkgs.fish;
@@ -13,20 +13,20 @@ in {
         description = "${fullname}";
         uid = 1000;
         extraGroups = [
-          "adbusers"
+          # "adbusers"
           "audio"
           "clamav"
           "corectrl"
           "disk"
-          "docker"
+          # "docker"
           "input"
-          "jupyter"
+          # "jupyter"
           "lp"
-          "mongodb"
-          "mysql"
+          # "mongodb"
+          # "mysql"
           "network"
           "networkmanager"
-          "postgres"
+          # "postgres"
           "power"
           "scanner"
           "sound"

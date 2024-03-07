@@ -1,7 +1,7 @@
 { ... }: {
   imports = [
-    ./cliphist.nix
-    ./espanso.nix
+    # ./cliphist.nix
+    # ./espanso.nix
     ./gpg-agent.nix
     ./kanshi.nix
     ./keyring.nix
