@@ -8,31 +8,25 @@
       availableKernelModules = [
         "ahci"
         "ehci_pci"
+        "nvme"
         "sd_mod"
         "sr_mod"
+        "thunderbolt"
         "uas"
         "usb_storage"
         "usbhid"
         "xhci_pci"
       ];
-      kernelModules = [
-        "amdgpu"
-      ];
-      luks.devices = {
-        "nixos" = {
-          device = "/dev/disk/by-uuid/832b5bb1-889c-407d-972a-db398eab8c59";
-        };
-      };
+      kernelModules = [ ];
     };
     kernelModules = [
-      "kvm-amd"
       "kvm-intel"
       "snd-aloop"
       "v4l2loopback"
     ];
     kernelPackages = pkgs.linuxPackages-rt_latest;
     kernelParams = [
-      "mitigations=off"
+      "mitigations=auto"
     ];
     plymouth = {
       enable = false;
