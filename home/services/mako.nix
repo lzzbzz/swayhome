@@ -1,5 +1,5 @@
 { ... }: let
-  name = "hervyqa";
+  name = "lzbz";
 
   # colors
   foreground = "#C6D0F5"; # text

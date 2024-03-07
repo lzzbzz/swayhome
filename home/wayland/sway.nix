@@ -6,7 +6,7 @@
 with lib;
 with pkgs;
 let
-  name = "hervyqa";
+  name = "lzbz";
   modifier = "Mod4";
 
   # navigation

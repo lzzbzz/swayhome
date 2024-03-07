@@ -6,14 +6,14 @@ Include [Sway WM](https://swaywm.org) and
 
 ## 🐬 Gallery
 
-![images](./images/gallery/20240204_18h39m37s_@hervyqa.png)
+![images](./images/gallery/20240204_18h39m37s_@lzbz.png)
 
-![images](./images/gallery/20240204_18h50m14s_@hervyqa.png)
+![images](./images/gallery/20240204_18h50m14s_@lzbz.png)
 
 Uniform look for QT5/6 and GTK2/3/4 applications with
 [Catppuccin Frappe](https://github.com/catppuccin/catppuccin) themes.
 
-![images](./images/gallery/20240204_18h51m31s_@hervyqa.png)
+![images](./images/gallery/20240204_18h51m31s_@lzbz.png)
 
 
 ## 💠 File structure
@@ -99,15 +99,15 @@ Uniform look for QT5/6 and GTK2/3/4 applications with
 
 | Repository   | Command                                         |
 | :----------- | :---------------------------------------------- |
-| Github       | `git clone https://github.com/hervyqa/swayhome` |
-| Sourcehut    | `git clone https://git.sr.ht/~hervyqa/swayhome` |
+| Github       | `git clone https://github.com/lzbz/swayhome` |
+| Sourcehut    | `git clone https://git.sr.ht/~lzbz/swayhome` |
 
 #### Read & write (Recommended):
 
 | Repository  | Command                                     |
 | :---------- | :------------------------------------------ |
-| Github      | `git clone git@github.com:hervyqa/swayhome` |
-| Sourcehut   | `git clone git@git.sr.ht:~hervyqa/swayhome` |
+| Github      | `git clone git@github.com:lzbz/swayhome` |
+| Sourcehut   | `git clone git@git.sr.ht:~lzbz/swayhome` |
 
 ```sh
 cd swayhome
@@ -141,9 +141,9 @@ another name and value. For example:
 ```nix
 ...
 }: let
-  name = "hervyqa";
+  name = "lzbz";
   fullname = "Hervy Qurrotul Ainur Rozi";
-  email = "hervyqa@proton.me";
+  email = "lzbz@proton.me";
   timezone = "Asia/Jakarta";
   defaultlocale = "en_US.UTF-8";
   extralocale = "id_ID.UTF-8";
@@ -264,7 +264,7 @@ Sample output.
 - multi-user?: `yes`
 - sandbox: `yes`
 - version: `nix-env (Nix) 2.18.1`
-- channels(hervyqa): `""`
+- channels(lzbz): `""`
 - channels(root): `"home-manager-23.11.tar.gz, nixos-23.11"`
 - nixpkgs: `/nix/var/nix/profiles/per-user/root/channels/nixos`
 
@@ -272,4 +272,4 @@ Sample output.
 
 [MIT License](./LICENSE.md)
 
-Copyright (c) 2024 [Hervy Qurrotul Ainur Rozi](https://hervyqa.id)
+Copyright (c) 2024 [Hervy Qurrotul Ainur Rozi](https://lzbz.id)

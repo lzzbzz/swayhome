@@ -1,5 +1,5 @@
 { ... }: let
-  name = "hervyqa";
+  name = "lzbz";
 
   # colors with quotation marks
   bright4 = "'#8CAAEE'";    # blue

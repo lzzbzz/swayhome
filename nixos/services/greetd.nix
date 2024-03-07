@@ -2,7 +2,7 @@
   pkgs,
   ...
 }: let
-  name = "hervyqa";
+  name = "lzbz";
 in {
   services = {
    greetd = {

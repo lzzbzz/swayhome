@@ -1,6 +1,6 @@
 { ... }: let
-  name = "hervyqa";
-  email = "hervyqa@proton.me";
+  name = "lzbz";
+  email = "lzbz@proton.me";
   fullname = "Hervy Qurrotul Ainur Rozi";
   # gpg --list-secret-keys --keyid-format=long
   signingkey = "C10684E03E228DC0";

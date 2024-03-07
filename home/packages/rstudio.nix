@@ -2,7 +2,7 @@
   pkgs,
   ...
 }: let
-  name = "hervyqa";
+  name = "lzbz";
 in {
   home-manager = {
     users.${name} = {

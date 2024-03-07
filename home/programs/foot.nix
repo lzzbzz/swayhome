@@ -1,5 +1,5 @@
 { ... }: let
-  name = "hervyqa";
+  name = "lzbz";
 
 in {
   home-manager = {

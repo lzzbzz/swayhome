@@ -1,5 +1,5 @@
 { ... }: let
-  name = "hervyqa";
+  name = "lzbz";
 
   # colors without hastag
   abyss-blue = "2980b9";

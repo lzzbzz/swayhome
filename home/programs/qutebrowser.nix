@@ -2,7 +2,7 @@
   pkgs,
   ...
 }: let
-  name = "hervyqa";
+  name = "lzbz";
 
   # colors
   rosewater = "#F2D5CF";
