@@ -3,7 +3,7 @@
     # ./adb.nix
     # ./cnf.nix
     ./dconf.nix
-    # ./fish.nix
+    ./fish.nix
     ./gnupg.nix
     ./light.nix
     # ./mtr.nix
